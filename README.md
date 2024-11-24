@@ -2,6 +2,10 @@
 
 This library provides a thin, type-safe binding for OpenGL.
 
+## Why the fork
+
+- Generated bindings for OpenGL 4.1 Core (macOS support)
+
 ## Example
 
 ```zig
