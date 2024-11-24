@@ -5,14 +5,14 @@
 
 //
 // Generation parameters:
-// API:        GL_VERSION_4_5
+// API:        GL_VERSION_4_1
 // Profile:    core
 // Extensions:
 //
 
 //
 // This file was generated with the following command line:
-// generator /home/felix/projects/libraries/zig-opengl/bin/Debug/net6.0/generator.dll /home/felix/projects/libraries/zig-opengl/OpenGL-Registry/xml/gl.xml binding.zig GL_VERSION_4_5
+// generator /Users/talius/Dev/Libraries/zig-opengl/bin/Debug/net7.0/generator.dll OpenGL-Registry/xml/gl.xml bindings.zig GL_VERSION_4_1
 //
 
 const std = @import("std");
@@ -82,7 +82,6 @@ pub const LINE_STRIP = 0x0003;
 pub const TRIANGLES = 0x0004;
 pub const TRIANGLE_STRIP = 0x0005;
 pub const TRIANGLE_FAN = 0x0006;
-pub const COMPRESSED_SRGB8_ETC2 = 0x9275;
 pub const NEVER = 0x0200;
 pub const LESS = 0x0201;
 pub const EQUAL = 0x0202;
@@ -241,130 +240,6 @@ pub const TEXTURE_MIN_FILTER = 0x2801;
 pub const TEXTURE_WRAP_S = 0x2802;
 pub const TEXTURE_WRAP_T = 0x2803;
 pub const REPEAT = 0x2901;
-pub const MAX_COMPUTE_WORK_GROUP_COUNT = 0x91BE;
-pub const MAX_COMPUTE_WORK_GROUP_INVOCATIONS = 0x90EB;
-pub const MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS = 0x8266;
-pub const MAX_COMPUTE_ATOMIC_COUNTERS = 0x8265;
-pub const MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS = 0x8264;
-pub const MAX_COMPUTE_UNIFORM_COMPONENTS = 0x8263;
-pub const MAX_COMPUTE_SHARED_MEMORY_SIZE = 0x8262;
-pub const MAX_COMPUTE_IMAGE_UNIFORMS = 0x91BD;
-pub const MAX_COMPUTE_TEXTURE_IMAGE_UNITS = 0x91BC;
-pub const MAX_COMPUTE_UNIFORM_BLOCKS = 0x91BB;
-pub const COMPUTE_SHADER = 0x91B9;
-pub const MAX_ELEMENT_INDEX = 0x8D6B;
-pub const ANY_SAMPLES_PASSED_CONSERVATIVE = 0x8D6A;
-pub const PRIMITIVE_RESTART_FIXED_INDEX = 0x8D69;
-pub const COMPRESSED_SIGNED_RG11_EAC = 0x9273;
-pub const COMPRESSED_RG11_EAC = 0x9272;
-pub const COMPRESSED_SIGNED_R11_EAC = 0x9271;
-pub const COMPRESSED_R11_EAC = 0x9270;
-pub const COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 = 0x9276;
-pub const COMPRESSED_RGB8_ETC2 = 0x9274;
-pub const VERTEX_ATTRIB_ARRAY_LONG = 0x874E;
-pub const NUM_SHADING_LANGUAGE_VERSIONS = 0x82E9;
-pub const TEXTURE_IMMUTABLE_FORMAT = 0x912F;
-pub const COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT = 0x8E8F;
-pub const COMPRESSED_RGB_BPTC_SIGNED_FLOAT = 0x8E8E;
-pub const COMPRESSED_SRGB_ALPHA_BPTC_UNORM = 0x8E8D;
-pub const COMPRESSED_RGBA_BPTC_UNORM = 0x8E8C;
-pub const MAX_COMBINED_IMAGE_UNIFORMS = 0x90CF;
-pub const MAX_FRAGMENT_IMAGE_UNIFORMS = 0x90CE;
-pub const MAX_GEOMETRY_IMAGE_UNIFORMS = 0x90CD;
-pub const MAX_TESS_EVALUATION_IMAGE_UNIFORMS = 0x90CC;
-pub const MAX_TESS_CONTROL_IMAGE_UNIFORMS = 0x90CB;
-pub const MAX_VERTEX_IMAGE_UNIFORMS = 0x90CA;
-pub const IMAGE_FORMAT_COMPATIBILITY_BY_CLASS = 0x90C9;
-pub const IMAGE_FORMAT_COMPATIBILITY_BY_SIZE = 0x90C8;
-pub const IMAGE_FORMAT_COMPATIBILITY_TYPE = 0x90C7;
-pub const IMAGE_BINDING_FORMAT = 0x906E;
-pub const MAX_IMAGE_SAMPLES = 0x906D;
-pub const UNSIGNED_INT_IMAGE_2D_MULTISAMPLE_ARRAY = 0x906C;
-pub const UNSIGNED_INT_IMAGE_2D_MULTISAMPLE = 0x906B;
-pub const UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY = 0x906A;
-pub const UNSIGNED_INT_IMAGE_2D_ARRAY = 0x9069;
-pub const UNSIGNED_INT_IMAGE_1D_ARRAY = 0x9068;
-pub const UNSIGNED_INT_IMAGE_BUFFER = 0x9067;
-pub const UNSIGNED_INT_IMAGE_CUBE = 0x9066;
-pub const UNSIGNED_INT_IMAGE_2D_RECT = 0x9065;
-pub const UNSIGNED_INT_IMAGE_3D = 0x9064;
-pub const INT_IMAGE_CUBE = 0x905B;
-pub const INT_IMAGE_2D_RECT = 0x905A;
-pub const INT_IMAGE_3D = 0x9059;
-pub const INT_IMAGE_2D = 0x9058;
-pub const INT_IMAGE_1D = 0x9057;
-pub const IMAGE_2D_MULTISAMPLE_ARRAY = 0x9056;
-pub const IMAGE_2D_MULTISAMPLE = 0x9055;
-pub const IMAGE_CUBE_MAP_ARRAY = 0x9054;
-pub const IMAGE_2D_ARRAY = 0x9053;
-pub const IMAGE_1D_ARRAY = 0x9052;
-pub const IMAGE_BUFFER = 0x9051;
-pub const IMAGE_CUBE = 0x9050;
-pub const IMAGE_2D_RECT = 0x904F;
-pub const IMAGE_3D = 0x904E;
-pub const IMAGE_2D = 0x904D;
-pub const IMAGE_1D = 0x904C;
-pub const IMAGE_BINDING_ACCESS = 0x8F3E;
-pub const IMAGE_BINDING_LAYER = 0x8F3D;
-pub const IMAGE_BINDING_LAYERED = 0x8F3C;
-pub const IMAGE_BINDING_LEVEL = 0x8F3B;
-pub const IMAGE_BINDING_NAME = 0x8F3A;
-pub const MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS = 0x8F39;
-pub const MAX_IMAGE_UNITS = 0x8F38;
-pub const ALL_BARRIER_BITS = 0xFFFFFFFF;
-pub const ATOMIC_COUNTER_BARRIER_BIT = 0x00001000;
-pub const TRANSFORM_FEEDBACK_BARRIER_BIT = 0x00000800;
-pub const FRAMEBUFFER_BARRIER_BIT = 0x00000400;
-pub const BUFFER_UPDATE_BARRIER_BIT = 0x00000200;
-pub const TEXTURE_UPDATE_BARRIER_BIT = 0x00000100;
-pub const PIXEL_BUFFER_BARRIER_BIT = 0x00000080;
-pub const COMMAND_BARRIER_BIT = 0x00000040;
-pub const SHADER_IMAGE_ACCESS_BARRIER_BIT = 0x00000020;
-pub const TEXTURE_FETCH_BARRIER_BIT = 0x00000008;
-pub const UNIFORM_BARRIER_BIT = 0x00000004;
-pub const ELEMENT_ARRAY_BARRIER_BIT = 0x00000002;
-pub const VERTEX_ATTRIB_ARRAY_BARRIER_BIT = 0x00000001;
-pub const UNSIGNED_INT_ATOMIC_COUNTER = 0x92DB;
-pub const UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX = 0x92DA;
-pub const ACTIVE_ATOMIC_COUNTER_BUFFERS = 0x92D9;
-pub const MAX_ATOMIC_COUNTER_BUFFER_BINDINGS = 0x92DC;
-pub const MAX_ATOMIC_COUNTER_BUFFER_SIZE = 0x92D8;
-pub const MAX_COMBINED_ATOMIC_COUNTERS = 0x92D7;
-pub const MAX_FRAGMENT_ATOMIC_COUNTERS = 0x92D6;
-pub const MAX_GEOMETRY_ATOMIC_COUNTERS = 0x92D5;
-pub const MAX_TESS_EVALUATION_ATOMIC_COUNTERS = 0x92D4;
-pub const MAX_VERTEX_ATOMIC_COUNTERS = 0x92D2;
-pub const MAX_COMBINED_ATOMIC_COUNTER_BUFFERS = 0x92D1;
-pub const MAX_FRAGMENT_ATOMIC_COUNTER_BUFFERS = 0x92D0;
-pub const MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS = 0x92CE;
-pub const MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS = 0x92CD;
-pub const MAX_VERTEX_ATOMIC_COUNTER_BUFFERS = 0x92CC;
-pub const ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER = 0x92CB;
-pub const ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER = 0x92CA;
-pub const ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER = 0x92C9;
-pub const ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER = 0x92C8;
-pub const ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER = 0x92C7;
-pub const ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTER_INDICES = 0x92C6;
-pub const ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTERS = 0x92C5;
-pub const ATOMIC_COUNTER_BUFFER_DATA_SIZE = 0x92C4;
-pub const ATOMIC_COUNTER_BUFFER_SIZE = 0x92C3;
-pub const ATOMIC_COUNTER_BUFFER_START = 0x92C2;
-pub const ATOMIC_COUNTER_BUFFER_BINDING = 0x92C1;
-pub const ATOMIC_COUNTER_BUFFER = 0x92C0;
-pub const MIN_MAP_BUFFER_ALIGNMENT = 0x90BC;
-pub const NUM_SAMPLE_COUNTS = 0x9380;
-pub const PACK_COMPRESSED_BLOCK_SIZE = 0x912E;
-pub const PACK_COMPRESSED_BLOCK_DEPTH = 0x912D;
-pub const PACK_COMPRESSED_BLOCK_HEIGHT = 0x912C;
-pub const PACK_COMPRESSED_BLOCK_WIDTH = 0x912B;
-pub const UNPACK_COMPRESSED_BLOCK_SIZE = 0x912A;
-pub const UNPACK_COMPRESSED_BLOCK_DEPTH = 0x9129;
-pub const UNPACK_COMPRESSED_BLOCK_HEIGHT = 0x9128;
-pub const UNPACK_COMPRESSED_BLOCK_WIDTH = 0x9127;
-pub const TRANSFORM_FEEDBACK_PAUSED = 0x8E23;
-pub const TRANSFORM_FEEDBACK_ACTIVE = 0x8E24;
-pub const COPY_WRITE_BUFFER_BINDING = 0x8F37;
-pub const COPY_READ_BUFFER_BINDING = 0x8F36;
 pub const UNDEFINED_VERTEX = 0x8260;
 pub const VIEWPORT_INDEX_PROVOKING_VERTEX = 0x825F;
 pub const LAYER_PROVOKING_VERTEX = 0x825E;
@@ -411,239 +286,6 @@ pub const PATCH_DEFAULT_OUTER_LEVEL = 0x8E74;
 pub const PATCH_DEFAULT_INNER_LEVEL = 0x8E73;
 pub const PATCH_VERTICES = 0x8E72;
 pub const PATCHES = 0x000E;
-pub const VERTEX_BINDING_BUFFER = 0x8F4F;
-pub const MAX_VERTEX_ATTRIB_BINDINGS = 0x82DA;
-pub const MAX_VERTEX_ATTRIB_RELATIVE_OFFSET = 0x82D9;
-pub const VERTEX_BINDING_STRIDE = 0x82D8;
-pub const VERTEX_BINDING_OFFSET = 0x82D7;
-pub const VERTEX_BINDING_DIVISOR = 0x82D6;
-pub const VERTEX_ATTRIB_RELATIVE_OFFSET = 0x82D5;
-pub const VERTEX_ATTRIB_BINDING = 0x82D4;
-pub const TEXTURE_IMMUTABLE_LEVELS = 0x82DF;
-pub const TEXTURE_VIEW_NUM_LAYERS = 0x82DE;
-pub const TEXTURE_VIEW_MIN_LAYER = 0x82DD;
-pub const TEXTURE_VIEW_NUM_LEVELS = 0x82DC;
-pub const TEXTURE_VIEW_MIN_LEVEL = 0x82DB;
-pub const TEXTURE_BUFFER_OFFSET_ALIGNMENT = 0x919F;
-pub const TEXTURE_BUFFER_SIZE = 0x919E;
-pub const TEXTURE_BUFFER_OFFSET = 0x919D;
-pub const DEPTH_STENCIL_TEXTURE_MODE = 0x90EA;
-pub const MAX_COMBINED_SHADER_OUTPUT_RESOURCES = 0x8F39;
-pub const SHADER_STORAGE_BARRIER_BIT = 0x00002000;
-pub const SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT = 0x90DF;
-pub const MAX_SHADER_STORAGE_BLOCK_SIZE = 0x90DE;
-pub const MAX_SHADER_STORAGE_BUFFER_BINDINGS = 0x90DD;
-pub const MAX_COMBINED_SHADER_STORAGE_BLOCKS = 0x90DC;
-pub const MAX_COMPUTE_SHADER_STORAGE_BLOCKS = 0x90DB;
-pub const MAX_FRAGMENT_SHADER_STORAGE_BLOCKS = 0x90DA;
-pub const MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS = 0x90D9;
-pub const MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS = 0x90D8;
-pub const MAX_GEOMETRY_SHADER_STORAGE_BLOCKS = 0x90D7;
-pub const MAX_VERTEX_SHADER_STORAGE_BLOCKS = 0x90D6;
-pub const SHADER_STORAGE_BUFFER_SIZE = 0x90D5;
-pub const SHADER_STORAGE_BUFFER_START = 0x90D4;
-pub const SHADER_STORAGE_BUFFER_BINDING = 0x90D3;
-pub const SHADER_STORAGE_BUFFER = 0x90D2;
-pub const IS_PER_PATCH = 0x92E7;
-pub const LOCATION_INDEX = 0x930F;
-pub const LOCATION = 0x930E;
-pub const TOP_LEVEL_ARRAY_STRIDE = 0x930D;
-pub const TOP_LEVEL_ARRAY_SIZE = 0x930C;
-pub const REFERENCED_BY_COMPUTE_SHADER = 0x930B;
-pub const REFERENCED_BY_FRAGMENT_SHADER = 0x930A;
-pub const REFERENCED_BY_GEOMETRY_SHADER = 0x9309;
-pub const REFERENCED_BY_TESS_EVALUATION_SHADER = 0x9308;
-pub const REFERENCED_BY_TESS_CONTROL_SHADER = 0x9307;
-pub const REFERENCED_BY_VERTEX_SHADER = 0x9306;
-pub const ACTIVE_VARIABLES = 0x9305;
-pub const NUM_ACTIVE_VARIABLES = 0x9304;
-pub const BUFFER_DATA_SIZE = 0x9303;
-pub const BUFFER_BINDING = 0x9302;
-pub const ATOMIC_COUNTER_BUFFER_INDEX = 0x9301;
-pub const IS_ROW_MAJOR = 0x9300;
-pub const MATRIX_STRIDE = 0x92FF;
-pub const ARRAY_STRIDE = 0x92FE;
-pub const BLOCK_INDEX = 0x92FD;
-pub const OFFSET = 0x92FC;
-pub const ARRAY_SIZE = 0x92FB;
-pub const TYPE = 0x92FA;
-pub const NAME_LENGTH = 0x92F9;
-pub const MAX_NUM_COMPATIBLE_SUBROUTINES = 0x92F8;
-pub const MAX_NUM_ACTIVE_VARIABLES = 0x92F7;
-pub const MAX_NAME_LENGTH = 0x92F6;
-pub const ACTIVE_RESOURCES = 0x92F5;
-pub const TRANSFORM_FEEDBACK_VARYING = 0x92F4;
-pub const COMPUTE_SUBROUTINE_UNIFORM = 0x92F3;
-pub const FRAGMENT_SUBROUTINE_UNIFORM = 0x92F2;
-pub const GEOMETRY_SUBROUTINE_UNIFORM = 0x92F1;
-pub const TESS_EVALUATION_SUBROUTINE_UNIFORM = 0x92F0;
-pub const TESS_CONTROL_SUBROUTINE_UNIFORM = 0x92EF;
-pub const VERTEX_SUBROUTINE_UNIFORM = 0x92EE;
-pub const COMPUTE_SUBROUTINE = 0x92ED;
-pub const FRAGMENT_SUBROUTINE = 0x92EC;
-pub const GEOMETRY_SUBROUTINE = 0x92EB;
-pub const TESS_EVALUATION_SUBROUTINE = 0x92EA;
-pub const TESS_CONTROL_SUBROUTINE = 0x92E9;
-pub const VERTEX_SUBROUTINE = 0x92E8;
-pub const SHADER_STORAGE_BLOCK = 0x92E6;
-pub const BUFFER_VARIABLE = 0x92E5;
-pub const PROGRAM_OUTPUT = 0x92E4;
-pub const PROGRAM_INPUT = 0x92E3;
-pub const UNIFORM_BLOCK = 0x92E2;
-pub const UNIFORM = 0x92E1;
-pub const VIEW_CLASS_BPTC_FLOAT = 0x82D3;
-pub const VIEW_CLASS_BPTC_UNORM = 0x82D2;
-pub const VIEW_CLASS_RGTC2_RG = 0x82D1;
-pub const VIEW_CLASS_RGTC1_RED = 0x82D0;
-pub const VIEW_CLASS_S3TC_DXT5_RGBA = 0x82CF;
-pub const VIEW_CLASS_S3TC_DXT3_RGBA = 0x82CE;
-pub const VIEW_CLASS_S3TC_DXT1_RGBA = 0x82CD;
-pub const VIEW_CLASS_S3TC_DXT1_RGB = 0x82CC;
-pub const VIEW_CLASS_8_BITS = 0x82CB;
-pub const VIEW_CLASS_16_BITS = 0x82CA;
-pub const VIEW_CLASS_24_BITS = 0x82C9;
-pub const VIEW_CLASS_32_BITS = 0x82C8;
-pub const VIEW_CLASS_48_BITS = 0x82C7;
-pub const VIEW_CLASS_64_BITS = 0x82C6;
-pub const VIEW_CLASS_96_BITS = 0x82C5;
-pub const VIEW_CLASS_128_BITS = 0x82C4;
-pub const IMAGE_CLASS_10_10_10_2 = 0x82C3;
-pub const IMAGE_CLASS_11_11_10 = 0x82C2;
-pub const IMAGE_CLASS_1_X_8 = 0x82C1;
-pub const IMAGE_CLASS_2_X_8 = 0x82C0;
-pub const IMAGE_CLASS_4_X_8 = 0x82BF;
-pub const IMAGE_CLASS_1_X_16 = 0x82BE;
-pub const IMAGE_CLASS_2_X_16 = 0x82BD;
-pub const IMAGE_CLASS_4_X_16 = 0x82BC;
-pub const IMAGE_CLASS_1_X_32 = 0x82BB;
-pub const IMAGE_CLASS_2_X_32 = 0x82BA;
-pub const IMAGE_CLASS_4_X_32 = 0x82B9;
-pub const CAVEAT_SUPPORT = 0x82B8;
-pub const FULL_SUPPORT = 0x82B7;
-pub const VIEW_COMPATIBILITY_CLASS = 0x82B6;
-pub const TEXTURE_VIEW = 0x82B5;
-pub const CLEAR_BUFFER = 0x82B4;
-pub const TEXTURE_COMPRESSED_BLOCK_SIZE = 0x82B3;
-pub const TEXTURE_COMPRESSED_BLOCK_HEIGHT = 0x82B2;
-pub const TEXTURE_COMPRESSED_BLOCK_WIDTH = 0x82B1;
-pub const SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE = 0x82AF;
-pub const SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE = 0x82AE;
-pub const SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST = 0x82AD;
-pub const SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST = 0x82AC;
-pub const IMAGE_PIXEL_TYPE = 0x82AA;
-pub const IMAGE_PIXEL_FORMAT = 0x82A9;
-pub const IMAGE_COMPATIBILITY_CLASS = 0x82A8;
-pub const IMAGE_TEXEL_SIZE = 0x82A7;
-pub const SHADER_IMAGE_ATOMIC = 0x82A6;
-pub const SHADER_IMAGE_STORE = 0x82A5;
-pub const SHADER_IMAGE_LOAD = 0x82A4;
-pub const TEXTURE_GATHER_SHADOW = 0x82A3;
-pub const TEXTURE_GATHER = 0x82A2;
-pub const TEXTURE_SHADOW = 0x82A1;
-pub const COMPUTE_TEXTURE = 0x82A0;
-pub const FRAGMENT_TEXTURE = 0x829F;
-pub const GEOMETRY_TEXTURE = 0x829E;
-pub const TESS_EVALUATION_TEXTURE = 0x829D;
-pub const TESS_CONTROL_TEXTURE = 0x829C;
-pub const VERTEX_TEXTURE = 0x829B;
-pub const FILTER = 0x829A;
-pub const SRGB_WRITE = 0x8298;
-pub const SRGB_READ = 0x8297;
-pub const COLOR_ENCODING = 0x8296;
-pub const AUTO_GENERATE_MIPMAP = 0x8295;
-pub const MANUAL_GENERATE_MIPMAP = 0x8294;
-pub const MIPMAP = 0x8293;
-pub const GET_TEXTURE_IMAGE_TYPE = 0x8292;
-pub const GET_TEXTURE_IMAGE_FORMAT = 0x8291;
-pub const TEXTURE_IMAGE_TYPE = 0x8290;
-pub const TEXTURE_IMAGE_FORMAT = 0x828F;
-pub const READ_PIXELS_TYPE = 0x828E;
-pub const READ_PIXELS_FORMAT = 0x828D;
-pub const READ_PIXELS = 0x828C;
-pub const FRAMEBUFFER_BLEND = 0x828B;
-pub const FRAMEBUFFER_RENDERABLE_LAYERED = 0x828A;
-pub const FRAMEBUFFER_RENDERABLE = 0x8289;
-pub const STENCIL_RENDERABLE = 0x8288;
-pub const DEPTH_RENDERABLE = 0x8287;
-pub const COLOR_RENDERABLE = 0x8286;
-pub const STENCIL_COMPONENTS = 0x8285;
-pub const DEPTH_COMPONENTS = 0x8284;
-pub const COLOR_COMPONENTS = 0x8283;
-pub const MAX_COMBINED_DIMENSIONS = 0x8282;
-pub const MAX_LAYERS = 0x8281;
-pub const MAX_DEPTH = 0x8280;
-pub const MAX_HEIGHT = 0x827F;
-pub const MAX_WIDTH = 0x827E;
-pub const INTERNALFORMAT_STENCIL_TYPE = 0x827D;
-pub const INTERNALFORMAT_DEPTH_TYPE = 0x827C;
-pub const INTERNALFORMAT_ALPHA_TYPE = 0x827B;
-pub const INTERNALFORMAT_BLUE_TYPE = 0x827A;
-pub const INTERNALFORMAT_GREEN_TYPE = 0x8279;
-pub const INTERNALFORMAT_RED_TYPE = 0x8278;
-pub const INTERNALFORMAT_SHARED_SIZE = 0x8277;
-pub const INTERNALFORMAT_STENCIL_SIZE = 0x8276;
-pub const INTERNALFORMAT_DEPTH_SIZE = 0x8275;
-pub const INTERNALFORMAT_ALPHA_SIZE = 0x8274;
-pub const INTERNALFORMAT_BLUE_SIZE = 0x8273;
-pub const INTERNALFORMAT_GREEN_SIZE = 0x8272;
-pub const INTERNALFORMAT_RED_SIZE = 0x8271;
-pub const INTERNALFORMAT_PREFERRED = 0x8270;
-pub const INTERNALFORMAT_SUPPORTED = 0x826F;
-pub const MAX_FRAMEBUFFER_SAMPLES = 0x9318;
-pub const MAX_FRAMEBUFFER_LAYERS = 0x9317;
-pub const MAX_FRAMEBUFFER_HEIGHT = 0x9316;
-pub const MAX_FRAMEBUFFER_WIDTH = 0x9315;
-pub const FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS = 0x9314;
-pub const FRAMEBUFFER_DEFAULT_SAMPLES = 0x9313;
-pub const FRAMEBUFFER_DEFAULT_LAYERS = 0x9312;
-pub const FRAMEBUFFER_DEFAULT_HEIGHT = 0x9311;
-pub const FRAMEBUFFER_DEFAULT_WIDTH = 0x9310;
-pub const MAX_UNIFORM_LOCATIONS = 0x826E;
-pub const CONTEXT_FLAG_DEBUG_BIT = 0x00000002;
-pub const DEBUG_OUTPUT = 0x92E0;
-pub const MAX_LABEL_LENGTH = 0x82E8;
-pub const SAMPLER = 0x82E6;
-pub const PROGRAM_PIPELINE = 0x82E4;
-pub const QUERY = 0x82E3;
-pub const VERTEX_ARRAY = 0x8074;
-pub const PROGRAM = 0x82E2;
-pub const SHADER = 0x82E1;
-pub const BUFFER = 0x82E0;
-pub const DEBUG_GROUP_STACK_DEPTH = 0x826D;
-pub const MAX_DEBUG_GROUP_STACK_DEPTH = 0x826C;
-pub const DEBUG_SEVERITY_NOTIFICATION = 0x826B;
-pub const DEBUG_TYPE_POP_GROUP = 0x826A;
-pub const DEBUG_TYPE_PUSH_GROUP = 0x8269;
-pub const DEBUG_TYPE_MARKER = 0x8268;
-pub const DEBUG_SEVERITY_LOW = 0x9148;
-pub const DEBUG_SEVERITY_MEDIUM = 0x9147;
-pub const DEBUG_SEVERITY_HIGH = 0x9146;
-pub const DEBUG_LOGGED_MESSAGES = 0x9145;
-pub const MAX_DEBUG_LOGGED_MESSAGES = 0x9144;
-pub const MAX_DEBUG_MESSAGE_LENGTH = 0x9143;
-pub const DEBUG_TYPE_OTHER = 0x8251;
-pub const DEBUG_TYPE_PERFORMANCE = 0x8250;
-pub const DEBUG_TYPE_PORTABILITY = 0x824F;
-pub const DEBUG_TYPE_UNDEFINED_BEHAVIOR = 0x824E;
-pub const DEBUG_TYPE_DEPRECATED_BEHAVIOR = 0x824D;
-pub const DEBUG_TYPE_ERROR = 0x824C;
-pub const DEBUG_SOURCE_OTHER = 0x824B;
-pub const DEBUG_SOURCE_APPLICATION = 0x824A;
-pub const DEBUG_SOURCE_THIRD_PARTY = 0x8249;
-pub const DEBUG_SOURCE_SHADER_COMPILER = 0x8248;
-pub const DEBUG_SOURCE_WINDOW_SYSTEM = 0x8247;
-pub const DEBUG_SOURCE_API = 0x8246;
-pub const DEBUG_CALLBACK_USER_PARAM = 0x8245;
-pub const DEBUG_CALLBACK_FUNCTION = 0x8244;
-pub const DEBUG_NEXT_LOGGED_MESSAGE_LENGTH = 0x8243;
-pub const DEBUG_OUTPUT_SYNCHRONOUS = 0x8242;
-pub const COMPUTE_SHADER_BIT = 0x00000020;
-pub const DISPATCH_INDIRECT_BUFFER_BINDING = 0x90EF;
-pub const DISPATCH_INDIRECT_BUFFER = 0x90EE;
-pub const ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER = 0x90ED;
-pub const UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER = 0x90EC;
-pub const COMPUTE_WORK_GROUP_SIZE = 0x8267;
-pub const MAX_COMPUTE_WORK_GROUP_SIZE = 0x91BF;
 pub const COLOR_LOGIC_OP = 0x0BF2;
 pub const POLYGON_OFFSET_UNITS = 0x2A00;
 pub const POLYGON_OFFSET_POINT = 0x2A01;
@@ -674,19 +316,6 @@ pub const RGBA8 = 0x8058;
 pub const RGB10_A2 = 0x8059;
 pub const RGBA12 = 0x805A;
 pub const RGBA16 = 0x805B;
-pub const COMPRESSED_SRGB8_ALPHA8_ETC2_EAC = 0x9279;
-pub const COMPRESSED_RGBA8_ETC2_EAC = 0x9278;
-pub const COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 = 0x9277;
-pub const UNSIGNED_INT_IMAGE_2D = 0x9063;
-pub const UNSIGNED_INT_IMAGE_1D = 0x9062;
-pub const INT_IMAGE_2D_MULTISAMPLE_ARRAY = 0x9061;
-pub const INT_IMAGE_2D_MULTISAMPLE = 0x9060;
-pub const INT_IMAGE_CUBE_MAP_ARRAY = 0x905F;
-pub const INT_IMAGE_2D_ARRAY = 0x905E;
-pub const INT_IMAGE_1D_ARRAY = 0x905D;
-pub const INT_IMAGE_BUFFER = 0x905C;
-pub const MAX_TESS_CONTROL_ATOMIC_COUNTERS = 0x92D3;
-pub const MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS = 0x92CF;
 pub const TRANSFORM_FEEDBACK_BINDING = 0x8E25;
 pub const TRANSFORM_FEEDBACK_BUFFER_ACTIVE = 0x8E24;
 pub const TRANSFORM_FEEDBACK_BUFFER_PAUSED = 0x8E23;
@@ -1372,97 +1001,6 @@ pub const UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER = 0x8A44;
 pub const UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER = 0x8A45;
 pub const UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER = 0x8A46;
 pub const INVALID_INDEX = 0xFFFFFFFF;
-pub const STACK_UNDERFLOW = 0x0504;
-pub const STACK_OVERFLOW = 0x0503;
-pub const MAX_VERTEX_ATTRIB_STRIDE = 0x82E5;
-pub const PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED = 0x8221;
-pub const TEXTURE_BUFFER_BINDING = 0x8C2A;
-pub const MAP_PERSISTENT_BIT = 0x0040;
-pub const MAP_COHERENT_BIT = 0x0080;
-pub const DYNAMIC_STORAGE_BIT = 0x0100;
-pub const CLIENT_STORAGE_BIT = 0x0200;
-pub const CLIENT_MAPPED_BUFFER_BARRIER_BIT = 0x00004000;
-pub const BUFFER_IMMUTABLE_STORAGE = 0x821F;
-pub const BUFFER_STORAGE_FLAGS = 0x8220;
-pub const CLEAR_TEXTURE = 0x9365;
-pub const LOCATION_COMPONENT = 0x934A;
-pub const TRANSFORM_FEEDBACK_BUFFER_INDEX = 0x934B;
-pub const TRANSFORM_FEEDBACK_BUFFER_STRIDE = 0x934C;
-pub const QUERY_BUFFER = 0x9192;
-pub const QUERY_BUFFER_BARRIER_BIT = 0x00008000;
-pub const QUERY_BUFFER_BINDING = 0x9193;
-pub const QUERY_RESULT_NO_WAIT = 0x9194;
-pub const MIRROR_CLAMP_TO_EDGE = 0x8743;
-pub const CONTEXT_LOST = 0x0507;
-pub const NEGATIVE_ONE_TO_ONE = 0x935E;
-pub const ZERO_TO_ONE = 0x935F;
-pub const CLIP_ORIGIN = 0x935C;
-pub const CLIP_DEPTH_MODE = 0x935D;
-pub const QUERY_WAIT_INVERTED = 0x8E17;
-pub const QUERY_NO_WAIT_INVERTED = 0x8E18;
-pub const QUERY_BY_REGION_WAIT_INVERTED = 0x8E19;
-pub const QUERY_BY_REGION_NO_WAIT_INVERTED = 0x8E1A;
-pub const MAX_CULL_DISTANCES = 0x82F9;
-pub const MAX_COMBINED_CLIP_AND_CULL_DISTANCES = 0x82FA;
-pub const TEXTURE_TARGET = 0x1006;
-pub const QUERY_TARGET = 0x82EA;
-pub const GUILTY_CONTEXT_RESET = 0x8253;
-pub const INNOCENT_CONTEXT_RESET = 0x8254;
-pub const UNKNOWN_CONTEXT_RESET = 0x8255;
-pub const RESET_NOTIFICATION_STRATEGY = 0x8256;
-pub const LOSE_CONTEXT_ON_RESET = 0x8252;
-pub const NO_RESET_NOTIFICATION = 0x8261;
-pub const CONTEXT_FLAG_ROBUST_ACCESS_BIT = 0x00000004;
-pub const CONTEXT_RELEASE_BEHAVIOR = 0x82FB;
-pub const CONTEXT_RELEASE_BEHAVIOR_FLUSH = 0x82FC;
-
-pub fn texStorage2D(_target: GLenum, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTexStorage2D, .{ _target, _levels, _internalformat, _width, _height });
-}
-
-pub fn texStorage1D(_target: GLenum, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTexStorage1D, .{ _target, _levels, _internalformat, _width });
-}
-
-pub fn drawTransformFeedbackStreamInstanced(_mode: GLenum, _id: GLuint, _stream: GLuint, _instancecount: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDrawTransformFeedbackStreamInstanced, .{ _mode, _id, _stream, _instancecount });
-}
-
-pub fn drawTransformFeedbackInstanced(_mode: GLenum, _id: GLuint, _instancecount: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDrawTransformFeedbackInstanced, .{ _mode, _id, _instancecount });
-}
-
-pub fn texStorage3D(_target: GLenum, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _depth: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTexStorage3D, .{ _target, _levels, _internalformat, _width, _height, _depth });
-}
-
-pub fn memoryBarrier(_barriers: GLbitfield) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glMemoryBarrier, .{_barriers});
-}
-
-pub fn bindImageTexture(_unit: GLuint, _texture: GLuint, _level: GLint, _layered: GLboolean, _layer: GLint, _access: GLenum, _format: GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindImageTexture, .{ _unit, _texture, _level, _layered, _layer, _access, _format });
-}
-
-pub fn getActiveAtomicCounterBufferiv(_program: GLuint, _bufferIndex: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetActiveAtomicCounterBufferiv, .{ _program, _bufferIndex, _pname, _params });
-}
-
-pub fn getInternalformativ(_target: GLenum, _internalformat: GLenum, _pname: GLenum, _count: GLsizei, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetInternalformativ, .{ _target, _internalformat, _pname, _count, _params });
-}
-
-pub fn drawElementsInstancedBaseVertexBaseInstance(_mode: GLenum, _count: GLsizei, _type: GLenum, _indices: ?*const anyopaque, _instancecount: GLsizei, _basevertex: GLint, _baseinstance: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDrawElementsInstancedBaseVertexBaseInstance, .{ _mode, _count, _type, _indices, _instancecount, _basevertex, _baseinstance });
-}
-
-pub fn drawElementsInstancedBaseInstance(_mode: GLenum, _count: GLsizei, _type: GLenum, _indices: ?*const anyopaque, _instancecount: GLsizei, _baseinstance: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDrawElementsInstancedBaseInstance, .{ _mode, _count, _type, _indices, _instancecount, _baseinstance });
-}
-
-pub fn drawArraysInstancedBaseInstance(_mode: GLenum, _first: GLint, _count: GLsizei, _instancecount: GLsizei, _baseinstance: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDrawArraysInstancedBaseInstance, .{ _mode, _first, _count, _instancecount, _baseinstance });
-}
 
 pub fn getDoublei_v(_target: GLenum, _index: GLuint, _data: [*c]GLdouble) callconv(.C) void {
     return @call(.always_tail, function_pointers.glGetDoublei_v, .{ _target, _index, _data });
@@ -1938,106 +1476,6 @@ pub fn depthRange(_n: GLdouble, _f: GLdouble) callconv(.C) void {
 
 pub fn viewport(_x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void {
     return @call(.always_tail, function_pointers.glViewport, .{ _x, _y, _width, _height });
-}
-
-pub fn texStorage2DMultisample(_target: GLenum, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _fixedsamplelocations: GLboolean) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTexStorage2DMultisample, .{ _target, _samples, _internalformat, _width, _height, _fixedsamplelocations });
-}
-
-pub fn texBufferRange(_target: GLenum, _internalformat: GLenum, _buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTexBufferRange, .{ _target, _internalformat, _buffer, _offset, _size });
-}
-
-pub fn shaderStorageBlockBinding(_program: GLuint, _storageBlockIndex: GLuint, _storageBlockBinding: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glShaderStorageBlockBinding, .{ _program, _storageBlockIndex, _storageBlockBinding });
-}
-
-pub fn getProgramResourceLocationIndex(_program: GLuint, _programInterface: GLenum, _name: [*c]const GLchar) callconv(.C) GLint {
-    return @call(.always_tail, function_pointers.glGetProgramResourceLocationIndex, .{ _program, _programInterface, _name });
-}
-
-pub fn getProgramResourceLocation(_program: GLuint, _programInterface: GLenum, _name: [*c]const GLchar) callconv(.C) GLint {
-    return @call(.always_tail, function_pointers.glGetProgramResourceLocation, .{ _program, _programInterface, _name });
-}
-
-pub fn getProgramResourceiv(_program: GLuint, _programInterface: GLenum, _index: GLuint, _propCount: GLsizei, _props: [*c]const GLenum, _count: GLsizei, _length: [*c]GLsizei, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetProgramResourceiv, .{ _program, _programInterface, _index, _propCount, _props, _count, _length, _params });
-}
-
-pub fn getProgramResourceName(_program: GLuint, _programInterface: GLenum, _index: GLuint, _bufSize: GLsizei, _length: [*c]GLsizei, _name: [*c]GLchar) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetProgramResourceName, .{ _program, _programInterface, _index, _bufSize, _length, _name });
-}
-
-pub fn getProgramResourceIndex(_program: GLuint, _programInterface: GLenum, _name: [*c]const GLchar) callconv(.C) GLuint {
-    return @call(.always_tail, function_pointers.glGetProgramResourceIndex, .{ _program, _programInterface, _name });
-}
-
-pub fn getProgramInterfaceiv(_program: GLuint, _programInterface: GLenum, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetProgramInterfaceiv, .{ _program, _programInterface, _pname, _params });
-}
-
-pub fn multiDrawElementsIndirect(_mode: GLenum, _type: GLenum, _indirect: ?*const anyopaque, _drawcount: GLsizei, _stride: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glMultiDrawElementsIndirect, .{ _mode, _type, _indirect, _drawcount, _stride });
-}
-
-pub fn multiDrawArraysIndirect(_mode: GLenum, _indirect: ?*const anyopaque, _drawcount: GLsizei, _stride: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glMultiDrawArraysIndirect, .{ _mode, _indirect, _drawcount, _stride });
-}
-
-pub fn invalidateSubFramebuffer(_target: GLenum, _numAttachments: GLsizei, _attachments: [*c]const GLenum, _x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glInvalidateSubFramebuffer, .{ _target, _numAttachments, _attachments, _x, _y, _width, _height });
-}
-
-pub fn invalidateFramebuffer(_target: GLenum, _numAttachments: GLsizei, _attachments: [*c]const GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glInvalidateFramebuffer, .{ _target, _numAttachments, _attachments });
-}
-
-pub fn invalidateBufferData(_buffer: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glInvalidateBufferData, .{_buffer});
-}
-
-pub fn invalidateBufferSubData(_buffer: GLuint, _offset: GLintptr, _length: GLsizeiptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glInvalidateBufferSubData, .{ _buffer, _offset, _length });
-}
-
-pub fn invalidateTexImage(_texture: GLuint, _level: GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glInvalidateTexImage, .{ _texture, _level });
-}
-
-pub fn invalidateTexSubImage(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glInvalidateTexSubImage, .{ _texture, _level, _xoffset, _yoffset, _zoffset, _width, _height, _depth });
-}
-
-pub fn getInternalformati64v(_target: GLenum, _internalformat: GLenum, _pname: GLenum, _count: GLsizei, _params: [*c]GLint64) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetInternalformati64v, .{ _target, _internalformat, _pname, _count, _params });
-}
-
-pub fn getFramebufferParameteriv(_target: GLenum, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetFramebufferParameteriv, .{ _target, _pname, _params });
-}
-
-pub fn framebufferParameteri(_target: GLenum, _pname: GLenum, _param: GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glFramebufferParameteri, .{ _target, _pname, _param });
-}
-
-pub fn copyImageSubData(_srcName: GLuint, _srcTarget: GLenum, _srcLevel: GLint, _srcX: GLint, _srcY: GLint, _srcZ: GLint, _dstName: GLuint, _dstTarget: GLenum, _dstLevel: GLint, _dstX: GLint, _dstY: GLint, _dstZ: GLint, _srcWidth: GLsizei, _srcHeight: GLsizei, _srcDepth: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCopyImageSubData, .{ _srcName, _srcTarget, _srcLevel, _srcX, _srcY, _srcZ, _dstName, _dstTarget, _dstLevel, _dstX, _dstY, _dstZ, _srcWidth, _srcHeight, _srcDepth });
-}
-
-pub fn dispatchComputeIndirect(_indirect: GLintptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDispatchComputeIndirect, .{_indirect});
-}
-
-pub fn dispatchCompute(_num_groups_x: GLuint, _num_groups_y: GLuint, _num_groups_z: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDispatchCompute, .{ _num_groups_x, _num_groups_y, _num_groups_z });
-}
-
-pub fn clearBufferSubData(_target: GLenum, _internalformat: GLenum, _offset: GLintptr, _size: GLsizeiptr, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearBufferSubData, .{ _target, _internalformat, _offset, _size, _format, _type, _data });
-}
-
-pub fn clearBufferData(_target: GLenum, _internalformat: GLenum, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearBufferData, .{ _target, _internalformat, _format, _type, _data });
 }
 
 pub fn getProgramPipelineInfoLog(_pipeline: GLuint, _bufSize: GLsizei, _length: [*c]GLsizei, _infoLog: [*c]GLchar) callconv(.C) void {
@@ -3475,4479 +2913,2877 @@ pub fn getActiveUniformBlockName(_program: GLuint, _uniformBlockIndex: GLuint, _
 pub fn uniformBlockBinding(_program: GLuint, _uniformBlockIndex: GLuint, _uniformBlockBinding: GLuint) callconv(.C) void {
     return @call(.always_tail, function_pointers.glUniformBlockBinding, .{ _program, _uniformBlockIndex, _uniformBlockBinding });
 }
-
-pub fn texStorage3DMultisample(_target: GLenum, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _fixedsamplelocations: GLboolean) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTexStorage3DMultisample, .{ _target, _samples, _internalformat, _width, _height, _depth, _fixedsamplelocations });
-}
-
-pub fn textureView(_texture: GLuint, _target: GLenum, _origtexture: GLuint, _internalformat: GLenum, _minlevel: GLuint, _numlevels: GLuint, _minlayer: GLuint, _numlayers: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureView, .{ _texture, _target, _origtexture, _internalformat, _minlevel, _numlevels, _minlayer, _numlayers });
-}
-
-pub fn bindVertexBuffer(_bindingindex: GLuint, _buffer: GLuint, _offset: GLintptr, _stride: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindVertexBuffer, .{ _bindingindex, _buffer, _offset, _stride });
-}
-
-pub fn vertexAttribFormat(_attribindex: GLuint, _size: GLint, _type: GLenum, _normalized: GLboolean, _relativeoffset: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexAttribFormat, .{ _attribindex, _size, _type, _normalized, _relativeoffset });
-}
-
-pub fn vertexAttribIFormat(_attribindex: GLuint, _size: GLint, _type: GLenum, _relativeoffset: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexAttribIFormat, .{ _attribindex, _size, _type, _relativeoffset });
-}
-
-pub fn vertexAttribLFormat(_attribindex: GLuint, _size: GLint, _type: GLenum, _relativeoffset: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexAttribLFormat, .{ _attribindex, _size, _type, _relativeoffset });
-}
-
-pub fn vertexAttribBinding(_attribindex: GLuint, _bindingindex: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexAttribBinding, .{ _attribindex, _bindingindex });
-}
-
-pub fn vertexBindingDivisor(_bindingindex: GLuint, _divisor: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexBindingDivisor, .{ _bindingindex, _divisor });
-}
-
-pub fn debugMessageControl(_source: GLenum, _type: GLenum, _severity: GLenum, _count: GLsizei, _ids: [*c]const GLuint, _enabled: GLboolean) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDebugMessageControl, .{ _source, _type, _severity, _count, _ids, _enabled });
-}
-
-pub fn debugMessageInsert(_source: GLenum, _type: GLenum, _id: GLuint, _severity: GLenum, _length: GLsizei, _buf: [*c]const GLchar) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDebugMessageInsert, .{ _source, _type, _id, _severity, _length, _buf });
-}
-
-pub fn debugMessageCallback(_callback: GLDEBUGPROC, _userParam: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDebugMessageCallback, .{ _callback, _userParam });
-}
-
-pub fn getDebugMessageLog(_count: GLuint, _bufSize: GLsizei, _sources: [*c]GLenum, _types: [*c]GLenum, _ids: [*c]GLuint, _severities: [*c]GLenum, _lengths: [*c]GLsizei, _messageLog: [*c]GLchar) callconv(.C) GLuint {
-    return @call(.always_tail, function_pointers.glGetDebugMessageLog, .{ _count, _bufSize, _sources, _types, _ids, _severities, _lengths, _messageLog });
-}
-
-pub fn pushDebugGroup(_source: GLenum, _id: GLuint, _length: GLsizei, _message: [*c]const GLchar) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glPushDebugGroup, .{ _source, _id, _length, _message });
-}
-
-pub fn popDebugGroup() callconv(.C) void {
-    return @call(.always_tail, function_pointers.glPopDebugGroup, .{});
-}
-
-pub fn objectLabel(_identifier: GLenum, _name: GLuint, _length: GLsizei, _label: [*c]const GLchar) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glObjectLabel, .{ _identifier, _name, _length, _label });
-}
-
-pub fn getObjectLabel(_identifier: GLenum, _name: GLuint, _bufSize: GLsizei, _length: [*c]GLsizei, _label: [*c]GLchar) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetObjectLabel, .{ _identifier, _name, _bufSize, _length, _label });
-}
-
-pub fn objectPtrLabel(_ptr: ?*const anyopaque, _length: GLsizei, _label: [*c]const GLchar) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glObjectPtrLabel, .{ _ptr, _length, _label });
-}
-
-pub fn getObjectPtrLabel(_ptr: ?*const anyopaque, _bufSize: GLsizei, _length: [*c]GLsizei, _label: [*c]GLchar) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetObjectPtrLabel, .{ _ptr, _bufSize, _length, _label });
-}
-
-pub fn getPointerv(_pname: GLenum, _params: ?*?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetPointerv, .{ _pname, _params });
-}
-
-pub fn bufferStorage(_target: GLenum, _size: GLsizeiptr, _data: ?*const anyopaque, _flags: GLbitfield) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBufferStorage, .{ _target, _size, _data, _flags });
-}
-
-pub fn clearTexImage(_texture: GLuint, _level: GLint, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearTexImage, .{ _texture, _level, _format, _type, _data });
-}
-
-pub fn clearTexSubImage(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearTexSubImage, .{ _texture, _level, _xoffset, _yoffset, _zoffset, _width, _height, _depth, _format, _type, _data });
-}
-
-pub fn bindBuffersBase(_target: GLenum, _first: GLuint, _count: GLsizei, _buffers: [*c]const GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindBuffersBase, .{ _target, _first, _count, _buffers });
-}
-
-pub fn bindBuffersRange(_target: GLenum, _first: GLuint, _count: GLsizei, _buffers: [*c]const GLuint, _offsets: [*c]const GLintptr, _sizes: [*c]const GLsizeiptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindBuffersRange, .{ _target, _first, _count, _buffers, _offsets, _sizes });
-}
-
-pub fn bindTextures(_first: GLuint, _count: GLsizei, _textures: [*c]const GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindTextures, .{ _first, _count, _textures });
-}
-
-pub fn bindSamplers(_first: GLuint, _count: GLsizei, _samplers: [*c]const GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindSamplers, .{ _first, _count, _samplers });
-}
-
-pub fn bindImageTextures(_first: GLuint, _count: GLsizei, _textures: [*c]const GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindImageTextures, .{ _first, _count, _textures });
-}
-
-pub fn bindVertexBuffers(_first: GLuint, _count: GLsizei, _buffers: [*c]const GLuint, _offsets: [*c]const GLintptr, _strides: [*c]const GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindVertexBuffers, .{ _first, _count, _buffers, _offsets, _strides });
-}
-
-pub fn clipControl(_origin: GLenum, _depth: GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClipControl, .{ _origin, _depth });
-}
-
-pub fn createTransformFeedbacks(_n: GLsizei, _ids: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateTransformFeedbacks, .{ _n, _ids });
-}
-
-pub fn transformFeedbackBufferBase(_xfb: GLuint, _index: GLuint, _buffer: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTransformFeedbackBufferBase, .{ _xfb, _index, _buffer });
-}
-
-pub fn transformFeedbackBufferRange(_xfb: GLuint, _index: GLuint, _buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTransformFeedbackBufferRange, .{ _xfb, _index, _buffer, _offset, _size });
-}
-
-pub fn getTransformFeedbackiv(_xfb: GLuint, _pname: GLenum, _param: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTransformFeedbackiv, .{ _xfb, _pname, _param });
-}
-
-pub fn getTransformFeedbacki_v(_xfb: GLuint, _pname: GLenum, _index: GLuint, _param: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTransformFeedbacki_v, .{ _xfb, _pname, _index, _param });
-}
-
-pub fn getTransformFeedbacki64_v(_xfb: GLuint, _pname: GLenum, _index: GLuint, _param: [*c]GLint64) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTransformFeedbacki64_v, .{ _xfb, _pname, _index, _param });
-}
-
-pub fn createBuffers(_n: GLsizei, _buffers: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateBuffers, .{ _n, _buffers });
-}
-
-pub fn namedBufferStorage(_buffer: GLuint, _size: GLsizeiptr, _data: ?*const anyopaque, _flags: GLbitfield) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedBufferStorage, .{ _buffer, _size, _data, _flags });
-}
-
-pub fn namedBufferData(_buffer: GLuint, _size: GLsizeiptr, _data: ?*const anyopaque, _usage: GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedBufferData, .{ _buffer, _size, _data, _usage });
-}
-
-pub fn namedBufferSubData(_buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedBufferSubData, .{ _buffer, _offset, _size, _data });
-}
-
-pub fn copyNamedBufferSubData(_readBuffer: GLuint, _writeBuffer: GLuint, _readOffset: GLintptr, _writeOffset: GLintptr, _size: GLsizeiptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCopyNamedBufferSubData, .{ _readBuffer, _writeBuffer, _readOffset, _writeOffset, _size });
-}
-
-pub fn clearNamedBufferData(_buffer: GLuint, _internalformat: GLenum, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearNamedBufferData, .{ _buffer, _internalformat, _format, _type, _data });
-}
-
-pub fn clearNamedBufferSubData(_buffer: GLuint, _internalformat: GLenum, _offset: GLintptr, _size: GLsizeiptr, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearNamedBufferSubData, .{ _buffer, _internalformat, _offset, _size, _format, _type, _data });
-}
-
-pub fn mapNamedBuffer(_buffer: GLuint, _access: GLenum) callconv(.C) ?*anyopaque {
-    return @call(.always_tail, function_pointers.glMapNamedBuffer, .{ _buffer, _access });
-}
-
-pub fn mapNamedBufferRange(_buffer: GLuint, _offset: GLintptr, _length: GLsizeiptr, _access: GLbitfield) callconv(.C) ?*anyopaque {
-    return @call(.always_tail, function_pointers.glMapNamedBufferRange, .{ _buffer, _offset, _length, _access });
-}
-
-pub fn unmapNamedBuffer(_buffer: GLuint) callconv(.C) GLboolean {
-    return @call(.always_tail, function_pointers.glUnmapNamedBuffer, .{_buffer});
-}
-
-pub fn flushMappedNamedBufferRange(_buffer: GLuint, _offset: GLintptr, _length: GLsizeiptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glFlushMappedNamedBufferRange, .{ _buffer, _offset, _length });
-}
-
-pub fn getNamedBufferParameteriv(_buffer: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetNamedBufferParameteriv, .{ _buffer, _pname, _params });
-}
-
-pub fn getNamedBufferParameteri64v(_buffer: GLuint, _pname: GLenum, _params: [*c]GLint64) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetNamedBufferParameteri64v, .{ _buffer, _pname, _params });
-}
-
-pub fn getNamedBufferPointerv(_buffer: GLuint, _pname: GLenum, _params: ?*?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetNamedBufferPointerv, .{ _buffer, _pname, _params });
-}
-
-pub fn getNamedBufferSubData(_buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr, _data: ?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetNamedBufferSubData, .{ _buffer, _offset, _size, _data });
-}
-
-pub fn createFramebuffers(_n: GLsizei, _framebuffers: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateFramebuffers, .{ _n, _framebuffers });
-}
-
-pub fn namedFramebufferRenderbuffer(_framebuffer: GLuint, _attachment: GLenum, _renderbuffertarget: GLenum, _renderbuffer: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedFramebufferRenderbuffer, .{ _framebuffer, _attachment, _renderbuffertarget, _renderbuffer });
-}
-
-pub fn namedFramebufferParameteri(_framebuffer: GLuint, _pname: GLenum, _param: GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedFramebufferParameteri, .{ _framebuffer, _pname, _param });
-}
-
-pub fn namedFramebufferTexture(_framebuffer: GLuint, _attachment: GLenum, _texture: GLuint, _level: GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedFramebufferTexture, .{ _framebuffer, _attachment, _texture, _level });
-}
-
-pub fn namedFramebufferTextureLayer(_framebuffer: GLuint, _attachment: GLenum, _texture: GLuint, _level: GLint, _layer: GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedFramebufferTextureLayer, .{ _framebuffer, _attachment, _texture, _level, _layer });
-}
-
-pub fn namedFramebufferDrawBuffer(_framebuffer: GLuint, _buf: GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedFramebufferDrawBuffer, .{ _framebuffer, _buf });
-}
-
-pub fn namedFramebufferDrawBuffers(_framebuffer: GLuint, _n: GLsizei, _bufs: [*c]const GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedFramebufferDrawBuffers, .{ _framebuffer, _n, _bufs });
-}
-
-pub fn namedFramebufferReadBuffer(_framebuffer: GLuint, _src: GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedFramebufferReadBuffer, .{ _framebuffer, _src });
-}
-
-pub fn invalidateNamedFramebufferData(_framebuffer: GLuint, _numAttachments: GLsizei, _attachments: [*c]const GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glInvalidateNamedFramebufferData, .{ _framebuffer, _numAttachments, _attachments });
-}
-
-pub fn invalidateNamedFramebufferSubData(_framebuffer: GLuint, _numAttachments: GLsizei, _attachments: [*c]const GLenum, _x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glInvalidateNamedFramebufferSubData, .{ _framebuffer, _numAttachments, _attachments, _x, _y, _width, _height });
-}
-
-pub fn clearNamedFramebufferiv(_framebuffer: GLuint, _buffer: GLenum, _drawbuffer: GLint, _value: [*c]const GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearNamedFramebufferiv, .{ _framebuffer, _buffer, _drawbuffer, _value });
-}
-
-pub fn clearNamedFramebufferuiv(_framebuffer: GLuint, _buffer: GLenum, _drawbuffer: GLint, _value: [*c]const GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearNamedFramebufferuiv, .{ _framebuffer, _buffer, _drawbuffer, _value });
-}
-
-pub fn clearNamedFramebufferfv(_framebuffer: GLuint, _buffer: GLenum, _drawbuffer: GLint, _value: [*c]const GLfloat) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearNamedFramebufferfv, .{ _framebuffer, _buffer, _drawbuffer, _value });
-}
-
-pub fn clearNamedFramebufferfi(_framebuffer: GLuint, _buffer: GLenum, _drawbuffer: GLint, _depth: GLfloat, _stencil: GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glClearNamedFramebufferfi, .{ _framebuffer, _buffer, _drawbuffer, _depth, _stencil });
-}
-
-pub fn blitNamedFramebuffer(_readFramebuffer: GLuint, _drawFramebuffer: GLuint, _srcX0: GLint, _srcY0: GLint, _srcX1: GLint, _srcY1: GLint, _dstX0: GLint, _dstY0: GLint, _dstX1: GLint, _dstY1: GLint, _mask: GLbitfield, _filter: GLenum) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBlitNamedFramebuffer, .{ _readFramebuffer, _drawFramebuffer, _srcX0, _srcY0, _srcX1, _srcY1, _dstX0, _dstY0, _dstX1, _dstY1, _mask, _filter });
-}
-
-pub fn checkNamedFramebufferStatus(_framebuffer: GLuint, _target: GLenum) callconv(.C) GLenum {
-    return @call(.always_tail, function_pointers.glCheckNamedFramebufferStatus, .{ _framebuffer, _target });
-}
-
-pub fn getNamedFramebufferParameteriv(_framebuffer: GLuint, _pname: GLenum, _param: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetNamedFramebufferParameteriv, .{ _framebuffer, _pname, _param });
-}
-
-pub fn getNamedFramebufferAttachmentParameteriv(_framebuffer: GLuint, _attachment: GLenum, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetNamedFramebufferAttachmentParameteriv, .{ _framebuffer, _attachment, _pname, _params });
-}
-
-pub fn createRenderbuffers(_n: GLsizei, _renderbuffers: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateRenderbuffers, .{ _n, _renderbuffers });
-}
-
-pub fn namedRenderbufferStorage(_renderbuffer: GLuint, _internalformat: GLenum, _width: GLsizei, _height: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedRenderbufferStorage, .{ _renderbuffer, _internalformat, _width, _height });
-}
-
-pub fn namedRenderbufferStorageMultisample(_renderbuffer: GLuint, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glNamedRenderbufferStorageMultisample, .{ _renderbuffer, _samples, _internalformat, _width, _height });
-}
-
-pub fn getNamedRenderbufferParameteriv(_renderbuffer: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetNamedRenderbufferParameteriv, .{ _renderbuffer, _pname, _params });
-}
-
-pub fn createTextures(_target: GLenum, _n: GLsizei, _textures: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateTextures, .{ _target, _n, _textures });
-}
-
-pub fn textureBuffer(_texture: GLuint, _internalformat: GLenum, _buffer: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureBuffer, .{ _texture, _internalformat, _buffer });
-}
-
-pub fn textureBufferRange(_texture: GLuint, _internalformat: GLenum, _buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureBufferRange, .{ _texture, _internalformat, _buffer, _offset, _size });
-}
-
-pub fn textureStorage1D(_texture: GLuint, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureStorage1D, .{ _texture, _levels, _internalformat, _width });
-}
-
-pub fn textureStorage2D(_texture: GLuint, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureStorage2D, .{ _texture, _levels, _internalformat, _width, _height });
-}
-
-pub fn textureStorage3D(_texture: GLuint, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _depth: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureStorage3D, .{ _texture, _levels, _internalformat, _width, _height, _depth });
-}
-
-pub fn textureStorage2DMultisample(_texture: GLuint, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _fixedsamplelocations: GLboolean) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureStorage2DMultisample, .{ _texture, _samples, _internalformat, _width, _height, _fixedsamplelocations });
-}
-
-pub fn textureStorage3DMultisample(_texture: GLuint, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _fixedsamplelocations: GLboolean) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureStorage3DMultisample, .{ _texture, _samples, _internalformat, _width, _height, _depth, _fixedsamplelocations });
-}
-
-pub fn textureSubImage1D(_texture: GLuint, _level: GLint, _xoffset: GLint, _width: GLsizei, _format: GLenum, _type: GLenum, _pixels: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureSubImage1D, .{ _texture, _level, _xoffset, _width, _format, _type, _pixels });
-}
-
-pub fn textureSubImage2D(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _width: GLsizei, _height: GLsizei, _format: GLenum, _type: GLenum, _pixels: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureSubImage2D, .{ _texture, _level, _xoffset, _yoffset, _width, _height, _format, _type, _pixels });
-}
-
-pub fn textureSubImage3D(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _format: GLenum, _type: GLenum, _pixels: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureSubImage3D, .{ _texture, _level, _xoffset, _yoffset, _zoffset, _width, _height, _depth, _format, _type, _pixels });
-}
-
-pub fn compressedTextureSubImage1D(_texture: GLuint, _level: GLint, _xoffset: GLint, _width: GLsizei, _format: GLenum, _imageSize: GLsizei, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCompressedTextureSubImage1D, .{ _texture, _level, _xoffset, _width, _format, _imageSize, _data });
-}
-
-pub fn compressedTextureSubImage2D(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _width: GLsizei, _height: GLsizei, _format: GLenum, _imageSize: GLsizei, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCompressedTextureSubImage2D, .{ _texture, _level, _xoffset, _yoffset, _width, _height, _format, _imageSize, _data });
-}
-
-pub fn compressedTextureSubImage3D(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _format: GLenum, _imageSize: GLsizei, _data: ?*const anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCompressedTextureSubImage3D, .{ _texture, _level, _xoffset, _yoffset, _zoffset, _width, _height, _depth, _format, _imageSize, _data });
-}
-
-pub fn copyTextureSubImage1D(_texture: GLuint, _level: GLint, _xoffset: GLint, _x: GLint, _y: GLint, _width: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCopyTextureSubImage1D, .{ _texture, _level, _xoffset, _x, _y, _width });
-}
-
-pub fn copyTextureSubImage2D(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCopyTextureSubImage2D, .{ _texture, _level, _xoffset, _yoffset, _x, _y, _width, _height });
-}
-
-pub fn copyTextureSubImage3D(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCopyTextureSubImage3D, .{ _texture, _level, _xoffset, _yoffset, _zoffset, _x, _y, _width, _height });
-}
-
-pub fn textureParameterf(_texture: GLuint, _pname: GLenum, _param: GLfloat) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureParameterf, .{ _texture, _pname, _param });
-}
-
-pub fn textureParameterfv(_texture: GLuint, _pname: GLenum, _param: [*c]const GLfloat) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureParameterfv, .{ _texture, _pname, _param });
-}
-
-pub fn textureParameteri(_texture: GLuint, _pname: GLenum, _param: GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureParameteri, .{ _texture, _pname, _param });
-}
-
-pub fn textureParameterIiv(_texture: GLuint, _pname: GLenum, _params: [*c]const GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureParameterIiv, .{ _texture, _pname, _params });
-}
-
-pub fn textureParameterIuiv(_texture: GLuint, _pname: GLenum, _params: [*c]const GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureParameterIuiv, .{ _texture, _pname, _params });
-}
-
-pub fn textureParameteriv(_texture: GLuint, _pname: GLenum, _param: [*c]const GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureParameteriv, .{ _texture, _pname, _param });
-}
-
-pub fn generateTextureMipmap(_texture: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGenerateTextureMipmap, .{_texture});
-}
-
-pub fn bindTextureUnit(_unit: GLuint, _texture: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glBindTextureUnit, .{ _unit, _texture });
-}
-
-pub fn getTextureImage(_texture: GLuint, _level: GLint, _format: GLenum, _type: GLenum, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTextureImage, .{ _texture, _level, _format, _type, _bufSize, _pixels });
-}
-
-pub fn getCompressedTextureImage(_texture: GLuint, _level: GLint, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetCompressedTextureImage, .{ _texture, _level, _bufSize, _pixels });
-}
-
-pub fn getTextureLevelParameterfv(_texture: GLuint, _level: GLint, _pname: GLenum, _params: [*c]GLfloat) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTextureLevelParameterfv, .{ _texture, _level, _pname, _params });
-}
-
-pub fn getTextureLevelParameteriv(_texture: GLuint, _level: GLint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTextureLevelParameteriv, .{ _texture, _level, _pname, _params });
-}
-
-pub fn getTextureParameterfv(_texture: GLuint, _pname: GLenum, _params: [*c]GLfloat) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTextureParameterfv, .{ _texture, _pname, _params });
-}
-
-pub fn getTextureParameterIiv(_texture: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTextureParameterIiv, .{ _texture, _pname, _params });
-}
-
-pub fn getTextureParameterIuiv(_texture: GLuint, _pname: GLenum, _params: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTextureParameterIuiv, .{ _texture, _pname, _params });
-}
-
-pub fn getTextureParameteriv(_texture: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTextureParameteriv, .{ _texture, _pname, _params });
-}
-
-pub fn createVertexArrays(_n: GLsizei, _arrays: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateVertexArrays, .{ _n, _arrays });
-}
-
-pub fn disableVertexArrayAttrib(_vaobj: GLuint, _index: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glDisableVertexArrayAttrib, .{ _vaobj, _index });
-}
-
-pub fn enableVertexArrayAttrib(_vaobj: GLuint, _index: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glEnableVertexArrayAttrib, .{ _vaobj, _index });
-}
-
-pub fn vertexArrayElementBuffer(_vaobj: GLuint, _buffer: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexArrayElementBuffer, .{ _vaobj, _buffer });
-}
-
-pub fn vertexArrayVertexBuffer(_vaobj: GLuint, _bindingindex: GLuint, _buffer: GLuint, _offset: GLintptr, _stride: GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexArrayVertexBuffer, .{ _vaobj, _bindingindex, _buffer, _offset, _stride });
-}
-
-pub fn vertexArrayVertexBuffers(_vaobj: GLuint, _first: GLuint, _count: GLsizei, _buffers: [*c]const GLuint, _offsets: [*c]const GLintptr, _strides: [*c]const GLsizei) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexArrayVertexBuffers, .{ _vaobj, _first, _count, _buffers, _offsets, _strides });
-}
-
-pub fn vertexArrayAttribBinding(_vaobj: GLuint, _attribindex: GLuint, _bindingindex: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexArrayAttribBinding, .{ _vaobj, _attribindex, _bindingindex });
-}
-
-pub fn vertexArrayAttribFormat(_vaobj: GLuint, _attribindex: GLuint, _size: GLint, _type: GLenum, _normalized: GLboolean, _relativeoffset: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexArrayAttribFormat, .{ _vaobj, _attribindex, _size, _type, _normalized, _relativeoffset });
-}
-
-pub fn vertexArrayAttribIFormat(_vaobj: GLuint, _attribindex: GLuint, _size: GLint, _type: GLenum, _relativeoffset: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexArrayAttribIFormat, .{ _vaobj, _attribindex, _size, _type, _relativeoffset });
-}
-
-pub fn vertexArrayAttribLFormat(_vaobj: GLuint, _attribindex: GLuint, _size: GLint, _type: GLenum, _relativeoffset: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexArrayAttribLFormat, .{ _vaobj, _attribindex, _size, _type, _relativeoffset });
-}
-
-pub fn vertexArrayBindingDivisor(_vaobj: GLuint, _bindingindex: GLuint, _divisor: GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glVertexArrayBindingDivisor, .{ _vaobj, _bindingindex, _divisor });
-}
-
-pub fn getVertexArrayiv(_vaobj: GLuint, _pname: GLenum, _param: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetVertexArrayiv, .{ _vaobj, _pname, _param });
-}
-
-pub fn getVertexArrayIndexediv(_vaobj: GLuint, _index: GLuint, _pname: GLenum, _param: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetVertexArrayIndexediv, .{ _vaobj, _index, _pname, _param });
-}
-
-pub fn getVertexArrayIndexed64iv(_vaobj: GLuint, _index: GLuint, _pname: GLenum, _param: [*c]GLint64) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetVertexArrayIndexed64iv, .{ _vaobj, _index, _pname, _param });
-}
-
-pub fn createSamplers(_n: GLsizei, _samplers: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateSamplers, .{ _n, _samplers });
-}
-
-pub fn createProgramPipelines(_n: GLsizei, _pipelines: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateProgramPipelines, .{ _n, _pipelines });
-}
-
-pub fn createQueries(_target: GLenum, _n: GLsizei, _ids: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glCreateQueries, .{ _target, _n, _ids });
-}
-
-pub fn getQueryBufferObjecti64v(_id: GLuint, _buffer: GLuint, _pname: GLenum, _offset: GLintptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetQueryBufferObjecti64v, .{ _id, _buffer, _pname, _offset });
-}
-
-pub fn getQueryBufferObjectiv(_id: GLuint, _buffer: GLuint, _pname: GLenum, _offset: GLintptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetQueryBufferObjectiv, .{ _id, _buffer, _pname, _offset });
-}
-
-pub fn getQueryBufferObjectui64v(_id: GLuint, _buffer: GLuint, _pname: GLenum, _offset: GLintptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetQueryBufferObjectui64v, .{ _id, _buffer, _pname, _offset });
-}
-
-pub fn getQueryBufferObjectuiv(_id: GLuint, _buffer: GLuint, _pname: GLenum, _offset: GLintptr) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetQueryBufferObjectuiv, .{ _id, _buffer, _pname, _offset });
-}
-
-pub fn memoryBarrierByRegion(_barriers: GLbitfield) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glMemoryBarrierByRegion, .{_barriers});
-}
-
-pub fn getTextureSubImage(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _format: GLenum, _type: GLenum, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetTextureSubImage, .{ _texture, _level, _xoffset, _yoffset, _zoffset, _width, _height, _depth, _format, _type, _bufSize, _pixels });
-}
-
-pub fn getCompressedTextureSubImage(_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetCompressedTextureSubImage, .{ _texture, _level, _xoffset, _yoffset, _zoffset, _width, _height, _depth, _bufSize, _pixels });
-}
-
-pub fn getGraphicsResetStatus() callconv(.C) GLenum {
-    return @call(.always_tail, function_pointers.glGetGraphicsResetStatus, .{});
-}
-
-pub fn getnCompressedTexImage(_target: GLenum, _lod: GLint, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetnCompressedTexImage, .{ _target, _lod, _bufSize, _pixels });
-}
-
-pub fn getnTexImage(_target: GLenum, _level: GLint, _format: GLenum, _type: GLenum, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetnTexImage, .{ _target, _level, _format, _type, _bufSize, _pixels });
-}
-
-pub fn getnUniformdv(_program: GLuint, _location: GLint, _bufSize: GLsizei, _params: [*c]GLdouble) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetnUniformdv, .{ _program, _location, _bufSize, _params });
-}
-
-pub fn getnUniformfv(_program: GLuint, _location: GLint, _bufSize: GLsizei, _params: [*c]GLfloat) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetnUniformfv, .{ _program, _location, _bufSize, _params });
-}
-
-pub fn getnUniformiv(_program: GLuint, _location: GLint, _bufSize: GLsizei, _params: [*c]GLint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetnUniformiv, .{ _program, _location, _bufSize, _params });
-}
-
-pub fn getnUniformuiv(_program: GLuint, _location: GLint, _bufSize: GLsizei, _params: [*c]GLuint) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glGetnUniformuiv, .{ _program, _location, _bufSize, _params });
-}
-
-pub fn readnPixels(_x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei, _format: GLenum, _type: GLenum, _bufSize: GLsizei, _data: ?*anyopaque) callconv(.C) void {
-    return @call(.always_tail, function_pointers.glReadnPixels, .{ _x, _y, _width, _height, _format, _type, _bufSize, _data });
-}
-
-pub fn textureBarrier() callconv(.C) void {
-    return @call(.always_tail, function_pointers.glTextureBarrier, .{});
-}
 // Extensions:
 
 // Loader API:
 pub fn load(load_ctx: anytype, get_proc_address: fn (@TypeOf(load_ctx), [:0]const u8) ?FunctionPointer) !void {
     var success = true;
-    if (get_proc_address(load_ctx, "glTexStorage2D")) |proc| {
-        function_pointers.glTexStorage2D = @as(@TypeOf(function_pointers.glTexStorage2D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTexStorage2D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTexStorage1D")) |proc| {
-        function_pointers.glTexStorage1D = @as(@TypeOf(function_pointers.glTexStorage1D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTexStorage1D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDrawTransformFeedbackStreamInstanced")) |proc| {
-        function_pointers.glDrawTransformFeedbackStreamInstanced = @as(@TypeOf(function_pointers.glDrawTransformFeedbackStreamInstanced), @ptrCast(proc));
-    } else {
-        log.err("entry point glDrawTransformFeedbackStreamInstanced not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDrawTransformFeedbackInstanced")) |proc| {
-        function_pointers.glDrawTransformFeedbackInstanced = @as(@TypeOf(function_pointers.glDrawTransformFeedbackInstanced), @ptrCast(proc));
-    } else {
-        log.err("entry point glDrawTransformFeedbackInstanced not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTexStorage3D")) |proc| {
-        function_pointers.glTexStorage3D = @as(@TypeOf(function_pointers.glTexStorage3D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTexStorage3D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glMemoryBarrier")) |proc| {
-        function_pointers.glMemoryBarrier = @as(@TypeOf(function_pointers.glMemoryBarrier), @ptrCast(proc));
-    } else {
-        log.err("entry point glMemoryBarrier not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindImageTexture")) |proc| {
-        function_pointers.glBindImageTexture = @as(@TypeOf(function_pointers.glBindImageTexture), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindImageTexture not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetActiveAtomicCounterBufferiv")) |proc| {
-        function_pointers.glGetActiveAtomicCounterBufferiv = @as(@TypeOf(function_pointers.glGetActiveAtomicCounterBufferiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetActiveAtomicCounterBufferiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetInternalformativ")) |proc| {
-        function_pointers.glGetInternalformativ = @as(@TypeOf(function_pointers.glGetInternalformativ), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetInternalformativ not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDrawElementsInstancedBaseVertexBaseInstance")) |proc| {
-        function_pointers.glDrawElementsInstancedBaseVertexBaseInstance = @as(@TypeOf(function_pointers.glDrawElementsInstancedBaseVertexBaseInstance), @ptrCast(proc));
-    } else {
-        log.err("entry point glDrawElementsInstancedBaseVertexBaseInstance not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDrawElementsInstancedBaseInstance")) |proc| {
-        function_pointers.glDrawElementsInstancedBaseInstance = @as(@TypeOf(function_pointers.glDrawElementsInstancedBaseInstance), @ptrCast(proc));
-    } else {
-        log.err("entry point glDrawElementsInstancedBaseInstance not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDrawArraysInstancedBaseInstance")) |proc| {
-        function_pointers.glDrawArraysInstancedBaseInstance = @as(@TypeOf(function_pointers.glDrawArraysInstancedBaseInstance), @ptrCast(proc));
-    } else {
-        log.err("entry point glDrawArraysInstancedBaseInstance not found!", .{});
-        success = false;
-    }
     if (get_proc_address(load_ctx, "glGetDoublei_v")) |proc| {
-        function_pointers.glGetDoublei_v = @as(@TypeOf(function_pointers.glGetDoublei_v), @ptrCast(proc));
+        function_pointers.glGetDoublei_v = @ptrCast(proc);
     } else {
         log.err("entry point glGetDoublei_v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetFloati_v")) |proc| {
-        function_pointers.glGetFloati_v = @as(@TypeOf(function_pointers.glGetFloati_v), @ptrCast(proc));
+        function_pointers.glGetFloati_v = @ptrCast(proc);
     } else {
         log.err("entry point glGetFloati_v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDepthRangeIndexed")) |proc| {
-        function_pointers.glDepthRangeIndexed = @as(@TypeOf(function_pointers.glDepthRangeIndexed), @ptrCast(proc));
+        function_pointers.glDepthRangeIndexed = @ptrCast(proc);
     } else {
         log.err("entry point glDepthRangeIndexed not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDepthRangeArrayv")) |proc| {
-        function_pointers.glDepthRangeArrayv = @as(@TypeOf(function_pointers.glDepthRangeArrayv), @ptrCast(proc));
+        function_pointers.glDepthRangeArrayv = @ptrCast(proc);
     } else {
         log.err("entry point glDepthRangeArrayv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glScissorIndexedv")) |proc| {
-        function_pointers.glScissorIndexedv = @as(@TypeOf(function_pointers.glScissorIndexedv), @ptrCast(proc));
+        function_pointers.glScissorIndexedv = @ptrCast(proc);
     } else {
         log.err("entry point glScissorIndexedv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glScissorIndexed")) |proc| {
-        function_pointers.glScissorIndexed = @as(@TypeOf(function_pointers.glScissorIndexed), @ptrCast(proc));
+        function_pointers.glScissorIndexed = @ptrCast(proc);
     } else {
         log.err("entry point glScissorIndexed not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glScissorArrayv")) |proc| {
-        function_pointers.glScissorArrayv = @as(@TypeOf(function_pointers.glScissorArrayv), @ptrCast(proc));
+        function_pointers.glScissorArrayv = @ptrCast(proc);
     } else {
         log.err("entry point glScissorArrayv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glViewportIndexedfv")) |proc| {
-        function_pointers.glViewportIndexedfv = @as(@TypeOf(function_pointers.glViewportIndexedfv), @ptrCast(proc));
+        function_pointers.glViewportIndexedfv = @ptrCast(proc);
     } else {
         log.err("entry point glViewportIndexedfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glViewportIndexedf")) |proc| {
-        function_pointers.glViewportIndexedf = @as(@TypeOf(function_pointers.glViewportIndexedf), @ptrCast(proc));
+        function_pointers.glViewportIndexedf = @ptrCast(proc);
     } else {
         log.err("entry point glViewportIndexedf not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glViewportArrayv")) |proc| {
-        function_pointers.glViewportArrayv = @as(@TypeOf(function_pointers.glViewportArrayv), @ptrCast(proc));
+        function_pointers.glViewportArrayv = @ptrCast(proc);
     } else {
         log.err("entry point glViewportArrayv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetVertexAttribLdv")) |proc| {
-        function_pointers.glGetVertexAttribLdv = @as(@TypeOf(function_pointers.glGetVertexAttribLdv), @ptrCast(proc));
+        function_pointers.glGetVertexAttribLdv = @ptrCast(proc);
     } else {
         log.err("entry point glGetVertexAttribLdv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribLPointer")) |proc| {
-        function_pointers.glVertexAttribLPointer = @as(@TypeOf(function_pointers.glVertexAttribLPointer), @ptrCast(proc));
+        function_pointers.glVertexAttribLPointer = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribLPointer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribL4dv")) |proc| {
-        function_pointers.glVertexAttribL4dv = @as(@TypeOf(function_pointers.glVertexAttribL4dv), @ptrCast(proc));
+        function_pointers.glVertexAttribL4dv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribL4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribL3dv")) |proc| {
-        function_pointers.glVertexAttribL3dv = @as(@TypeOf(function_pointers.glVertexAttribL3dv), @ptrCast(proc));
+        function_pointers.glVertexAttribL3dv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribL3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribL2dv")) |proc| {
-        function_pointers.glVertexAttribL2dv = @as(@TypeOf(function_pointers.glVertexAttribL2dv), @ptrCast(proc));
+        function_pointers.glVertexAttribL2dv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribL2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribL1dv")) |proc| {
-        function_pointers.glVertexAttribL1dv = @as(@TypeOf(function_pointers.glVertexAttribL1dv), @ptrCast(proc));
+        function_pointers.glVertexAttribL1dv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribL1dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribL4d")) |proc| {
-        function_pointers.glVertexAttribL4d = @as(@TypeOf(function_pointers.glVertexAttribL4d), @ptrCast(proc));
+        function_pointers.glVertexAttribL4d = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribL4d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribL3d")) |proc| {
-        function_pointers.glVertexAttribL3d = @as(@TypeOf(function_pointers.glVertexAttribL3d), @ptrCast(proc));
+        function_pointers.glVertexAttribL3d = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribL3d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribL2d")) |proc| {
-        function_pointers.glVertexAttribL2d = @as(@TypeOf(function_pointers.glVertexAttribL2d), @ptrCast(proc));
+        function_pointers.glVertexAttribL2d = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribL2d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribL1d")) |proc| {
-        function_pointers.glVertexAttribL1d = @as(@TypeOf(function_pointers.glVertexAttribL1d), @ptrCast(proc));
+        function_pointers.glVertexAttribL1d = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribL1d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glValidateProgramPipeline")) |proc| {
-        function_pointers.glValidateProgramPipeline = @as(@TypeOf(function_pointers.glValidateProgramPipeline), @ptrCast(proc));
+        function_pointers.glValidateProgramPipeline = @ptrCast(proc);
     } else {
         log.err("entry point glValidateProgramPipeline not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix4x3dv")) |proc| {
-        function_pointers.glProgramUniformMatrix4x3dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix4x3dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix4x3dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix4x3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix3x4dv")) |proc| {
-        function_pointers.glProgramUniformMatrix3x4dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix3x4dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix3x4dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix3x4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix4x2dv")) |proc| {
-        function_pointers.glProgramUniformMatrix4x2dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix4x2dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix4x2dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix4x2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix2x4dv")) |proc| {
-        function_pointers.glProgramUniformMatrix2x4dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix2x4dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix2x4dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix2x4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix3x2dv")) |proc| {
-        function_pointers.glProgramUniformMatrix3x2dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix3x2dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix3x2dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix3x2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix2x3dv")) |proc| {
-        function_pointers.glProgramUniformMatrix2x3dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix2x3dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix2x3dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix2x3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix4x3fv")) |proc| {
-        function_pointers.glProgramUniformMatrix4x3fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix4x3fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix4x3fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix4x3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix3x4fv")) |proc| {
-        function_pointers.glProgramUniformMatrix3x4fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix3x4fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix3x4fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix3x4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix4x2fv")) |proc| {
-        function_pointers.glProgramUniformMatrix4x2fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix4x2fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix4x2fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix4x2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix2x4fv")) |proc| {
-        function_pointers.glProgramUniformMatrix2x4fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix2x4fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix2x4fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix2x4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix3x2fv")) |proc| {
-        function_pointers.glProgramUniformMatrix3x2fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix3x2fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix3x2fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix3x2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix2x3fv")) |proc| {
-        function_pointers.glProgramUniformMatrix2x3fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix2x3fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix2x3fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix2x3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix4dv")) |proc| {
-        function_pointers.glProgramUniformMatrix4dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix4dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix4dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix3dv")) |proc| {
-        function_pointers.glProgramUniformMatrix3dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix3dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix3dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix2dv")) |proc| {
-        function_pointers.glProgramUniformMatrix2dv = @as(@TypeOf(function_pointers.glProgramUniformMatrix2dv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix2dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix4fv")) |proc| {
-        function_pointers.glProgramUniformMatrix4fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix4fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix4fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix3fv")) |proc| {
-        function_pointers.glProgramUniformMatrix3fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix3fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix3fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniformMatrix2fv")) |proc| {
-        function_pointers.glProgramUniformMatrix2fv = @as(@TypeOf(function_pointers.glProgramUniformMatrix2fv), @ptrCast(proc));
+        function_pointers.glProgramUniformMatrix2fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniformMatrix2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform4uiv")) |proc| {
-        function_pointers.glProgramUniform4uiv = @as(@TypeOf(function_pointers.glProgramUniform4uiv), @ptrCast(proc));
+        function_pointers.glProgramUniform4uiv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform4uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform4ui")) |proc| {
-        function_pointers.glProgramUniform4ui = @as(@TypeOf(function_pointers.glProgramUniform4ui), @ptrCast(proc));
+        function_pointers.glProgramUniform4ui = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform4ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform4dv")) |proc| {
-        function_pointers.glProgramUniform4dv = @as(@TypeOf(function_pointers.glProgramUniform4dv), @ptrCast(proc));
+        function_pointers.glProgramUniform4dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform4d")) |proc| {
-        function_pointers.glProgramUniform4d = @as(@TypeOf(function_pointers.glProgramUniform4d), @ptrCast(proc));
+        function_pointers.glProgramUniform4d = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform4d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform4fv")) |proc| {
-        function_pointers.glProgramUniform4fv = @as(@TypeOf(function_pointers.glProgramUniform4fv), @ptrCast(proc));
+        function_pointers.glProgramUniform4fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform4f")) |proc| {
-        function_pointers.glProgramUniform4f = @as(@TypeOf(function_pointers.glProgramUniform4f), @ptrCast(proc));
+        function_pointers.glProgramUniform4f = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform4f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform4iv")) |proc| {
-        function_pointers.glProgramUniform4iv = @as(@TypeOf(function_pointers.glProgramUniform4iv), @ptrCast(proc));
+        function_pointers.glProgramUniform4iv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform4iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform4i")) |proc| {
-        function_pointers.glProgramUniform4i = @as(@TypeOf(function_pointers.glProgramUniform4i), @ptrCast(proc));
+        function_pointers.glProgramUniform4i = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform4i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform3uiv")) |proc| {
-        function_pointers.glProgramUniform3uiv = @as(@TypeOf(function_pointers.glProgramUniform3uiv), @ptrCast(proc));
+        function_pointers.glProgramUniform3uiv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform3uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform3ui")) |proc| {
-        function_pointers.glProgramUniform3ui = @as(@TypeOf(function_pointers.glProgramUniform3ui), @ptrCast(proc));
+        function_pointers.glProgramUniform3ui = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform3ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform3dv")) |proc| {
-        function_pointers.glProgramUniform3dv = @as(@TypeOf(function_pointers.glProgramUniform3dv), @ptrCast(proc));
+        function_pointers.glProgramUniform3dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform3d")) |proc| {
-        function_pointers.glProgramUniform3d = @as(@TypeOf(function_pointers.glProgramUniform3d), @ptrCast(proc));
+        function_pointers.glProgramUniform3d = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform3d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform3fv")) |proc| {
-        function_pointers.glProgramUniform3fv = @as(@TypeOf(function_pointers.glProgramUniform3fv), @ptrCast(proc));
+        function_pointers.glProgramUniform3fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform3f")) |proc| {
-        function_pointers.glProgramUniform3f = @as(@TypeOf(function_pointers.glProgramUniform3f), @ptrCast(proc));
+        function_pointers.glProgramUniform3f = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform3f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform3iv")) |proc| {
-        function_pointers.glProgramUniform3iv = @as(@TypeOf(function_pointers.glProgramUniform3iv), @ptrCast(proc));
+        function_pointers.glProgramUniform3iv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform3iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform3i")) |proc| {
-        function_pointers.glProgramUniform3i = @as(@TypeOf(function_pointers.glProgramUniform3i), @ptrCast(proc));
+        function_pointers.glProgramUniform3i = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform3i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUseProgramStages")) |proc| {
-        function_pointers.glUseProgramStages = @as(@TypeOf(function_pointers.glUseProgramStages), @ptrCast(proc));
+        function_pointers.glUseProgramStages = @ptrCast(proc);
     } else {
         log.err("entry point glUseProgramStages not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramParameteri")) |proc| {
-        function_pointers.glProgramParameteri = @as(@TypeOf(function_pointers.glProgramParameteri), @ptrCast(proc));
+        function_pointers.glProgramParameteri = @ptrCast(proc);
     } else {
         log.err("entry point glProgramParameteri not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetShaderPrecisionFormat")) |proc| {
-        function_pointers.glGetShaderPrecisionFormat = @as(@TypeOf(function_pointers.glGetShaderPrecisionFormat), @ptrCast(proc));
+        function_pointers.glGetShaderPrecisionFormat = @ptrCast(proc);
     } else {
         log.err("entry point glGetShaderPrecisionFormat not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glShaderBinary")) |proc| {
-        function_pointers.glShaderBinary = @as(@TypeOf(function_pointers.glShaderBinary), @ptrCast(proc));
+        function_pointers.glShaderBinary = @ptrCast(proc);
     } else {
         log.err("entry point glShaderBinary not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glReleaseShaderCompiler")) |proc| {
-        function_pointers.glReleaseShaderCompiler = @as(@TypeOf(function_pointers.glReleaseShaderCompiler), @ptrCast(proc));
+        function_pointers.glReleaseShaderCompiler = @ptrCast(proc);
     } else {
         log.err("entry point glReleaseShaderCompiler not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetQueryIndexediv")) |proc| {
-        function_pointers.glGetQueryIndexediv = @as(@TypeOf(function_pointers.glGetQueryIndexediv), @ptrCast(proc));
+        function_pointers.glGetQueryIndexediv = @ptrCast(proc);
     } else {
         log.err("entry point glGetQueryIndexediv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glEndQueryIndexed")) |proc| {
-        function_pointers.glEndQueryIndexed = @as(@TypeOf(function_pointers.glEndQueryIndexed), @ptrCast(proc));
+        function_pointers.glEndQueryIndexed = @ptrCast(proc);
     } else {
         log.err("entry point glEndQueryIndexed not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBeginQueryIndexed")) |proc| {
-        function_pointers.glBeginQueryIndexed = @as(@TypeOf(function_pointers.glBeginQueryIndexed), @ptrCast(proc));
+        function_pointers.glBeginQueryIndexed = @ptrCast(proc);
     } else {
         log.err("entry point glBeginQueryIndexed not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawTransformFeedbackStream")) |proc| {
-        function_pointers.glDrawTransformFeedbackStream = @as(@TypeOf(function_pointers.glDrawTransformFeedbackStream), @ptrCast(proc));
+        function_pointers.glDrawTransformFeedbackStream = @ptrCast(proc);
     } else {
         log.err("entry point glDrawTransformFeedbackStream not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawTransformFeedback")) |proc| {
-        function_pointers.glDrawTransformFeedback = @as(@TypeOf(function_pointers.glDrawTransformFeedback), @ptrCast(proc));
+        function_pointers.glDrawTransformFeedback = @ptrCast(proc);
     } else {
         log.err("entry point glDrawTransformFeedback not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glResumeTransformFeedback")) |proc| {
-        function_pointers.glResumeTransformFeedback = @as(@TypeOf(function_pointers.glResumeTransformFeedback), @ptrCast(proc));
+        function_pointers.glResumeTransformFeedback = @ptrCast(proc);
     } else {
         log.err("entry point glResumeTransformFeedback not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPauseTransformFeedback")) |proc| {
-        function_pointers.glPauseTransformFeedback = @as(@TypeOf(function_pointers.glPauseTransformFeedback), @ptrCast(proc));
+        function_pointers.glPauseTransformFeedback = @ptrCast(proc);
     } else {
         log.err("entry point glPauseTransformFeedback not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetProgramStageiv")) |proc| {
-        function_pointers.glGetProgramStageiv = @as(@TypeOf(function_pointers.glGetProgramStageiv), @ptrCast(proc));
+        function_pointers.glGetProgramStageiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetProgramStageiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetUniformSubroutineuiv")) |proc| {
-        function_pointers.glGetUniformSubroutineuiv = @as(@TypeOf(function_pointers.glGetUniformSubroutineuiv), @ptrCast(proc));
+        function_pointers.glGetUniformSubroutineuiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetUniformSubroutineuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformSubroutinesuiv")) |proc| {
-        function_pointers.glUniformSubroutinesuiv = @as(@TypeOf(function_pointers.glUniformSubroutinesuiv), @ptrCast(proc));
+        function_pointers.glUniformSubroutinesuiv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformSubroutinesuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveSubroutineName")) |proc| {
-        function_pointers.glGetActiveSubroutineName = @as(@TypeOf(function_pointers.glGetActiveSubroutineName), @ptrCast(proc));
+        function_pointers.glGetActiveSubroutineName = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveSubroutineName not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCullFace")) |proc| {
-        function_pointers.glCullFace = @as(@TypeOf(function_pointers.glCullFace), @ptrCast(proc));
+        function_pointers.glCullFace = @ptrCast(proc);
     } else {
         log.err("entry point glCullFace not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFrontFace")) |proc| {
-        function_pointers.glFrontFace = @as(@TypeOf(function_pointers.glFrontFace), @ptrCast(proc));
+        function_pointers.glFrontFace = @ptrCast(proc);
     } else {
         log.err("entry point glFrontFace not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glHint")) |proc| {
-        function_pointers.glHint = @as(@TypeOf(function_pointers.glHint), @ptrCast(proc));
+        function_pointers.glHint = @ptrCast(proc);
     } else {
         log.err("entry point glHint not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glLineWidth")) |proc| {
-        function_pointers.glLineWidth = @as(@TypeOf(function_pointers.glLineWidth), @ptrCast(proc));
+        function_pointers.glLineWidth = @ptrCast(proc);
     } else {
         log.err("entry point glLineWidth not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPointSize")) |proc| {
-        function_pointers.glPointSize = @as(@TypeOf(function_pointers.glPointSize), @ptrCast(proc));
+        function_pointers.glPointSize = @ptrCast(proc);
     } else {
         log.err("entry point glPointSize not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPolygonMode")) |proc| {
-        function_pointers.glPolygonMode = @as(@TypeOf(function_pointers.glPolygonMode), @ptrCast(proc));
+        function_pointers.glPolygonMode = @ptrCast(proc);
     } else {
         log.err("entry point glPolygonMode not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glScissor")) |proc| {
-        function_pointers.glScissor = @as(@TypeOf(function_pointers.glScissor), @ptrCast(proc));
+        function_pointers.glScissor = @ptrCast(proc);
     } else {
         log.err("entry point glScissor not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexParameterf")) |proc| {
-        function_pointers.glTexParameterf = @as(@TypeOf(function_pointers.glTexParameterf), @ptrCast(proc));
+        function_pointers.glTexParameterf = @ptrCast(proc);
     } else {
         log.err("entry point glTexParameterf not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexParameterfv")) |proc| {
-        function_pointers.glTexParameterfv = @as(@TypeOf(function_pointers.glTexParameterfv), @ptrCast(proc));
+        function_pointers.glTexParameterfv = @ptrCast(proc);
     } else {
         log.err("entry point glTexParameterfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexParameteri")) |proc| {
-        function_pointers.glTexParameteri = @as(@TypeOf(function_pointers.glTexParameteri), @ptrCast(proc));
+        function_pointers.glTexParameteri = @ptrCast(proc);
     } else {
         log.err("entry point glTexParameteri not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexParameteriv")) |proc| {
-        function_pointers.glTexParameteriv = @as(@TypeOf(function_pointers.glTexParameteriv), @ptrCast(proc));
+        function_pointers.glTexParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glTexParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexImage1D")) |proc| {
-        function_pointers.glTexImage1D = @as(@TypeOf(function_pointers.glTexImage1D), @ptrCast(proc));
+        function_pointers.glTexImage1D = @ptrCast(proc);
     } else {
         log.err("entry point glTexImage1D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexImage2D")) |proc| {
-        function_pointers.glTexImage2D = @as(@TypeOf(function_pointers.glTexImage2D), @ptrCast(proc));
+        function_pointers.glTexImage2D = @ptrCast(proc);
     } else {
         log.err("entry point glTexImage2D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawBuffer")) |proc| {
-        function_pointers.glDrawBuffer = @as(@TypeOf(function_pointers.glDrawBuffer), @ptrCast(proc));
+        function_pointers.glDrawBuffer = @ptrCast(proc);
     } else {
         log.err("entry point glDrawBuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClear")) |proc| {
-        function_pointers.glClear = @as(@TypeOf(function_pointers.glClear), @ptrCast(proc));
+        function_pointers.glClear = @ptrCast(proc);
     } else {
         log.err("entry point glClear not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClearColor")) |proc| {
-        function_pointers.glClearColor = @as(@TypeOf(function_pointers.glClearColor), @ptrCast(proc));
+        function_pointers.glClearColor = @ptrCast(proc);
     } else {
         log.err("entry point glClearColor not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClearStencil")) |proc| {
-        function_pointers.glClearStencil = @as(@TypeOf(function_pointers.glClearStencil), @ptrCast(proc));
+        function_pointers.glClearStencil = @ptrCast(proc);
     } else {
         log.err("entry point glClearStencil not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClearDepth")) |proc| {
-        function_pointers.glClearDepth = @as(@TypeOf(function_pointers.glClearDepth), @ptrCast(proc));
+        function_pointers.glClearDepth = @ptrCast(proc);
     } else {
         log.err("entry point glClearDepth not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glStencilMask")) |proc| {
-        function_pointers.glStencilMask = @as(@TypeOf(function_pointers.glStencilMask), @ptrCast(proc));
+        function_pointers.glStencilMask = @ptrCast(proc);
     } else {
         log.err("entry point glStencilMask not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glColorMask")) |proc| {
-        function_pointers.glColorMask = @as(@TypeOf(function_pointers.glColorMask), @ptrCast(proc));
+        function_pointers.glColorMask = @ptrCast(proc);
     } else {
         log.err("entry point glColorMask not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDepthMask")) |proc| {
-        function_pointers.glDepthMask = @as(@TypeOf(function_pointers.glDepthMask), @ptrCast(proc));
+        function_pointers.glDepthMask = @ptrCast(proc);
     } else {
         log.err("entry point glDepthMask not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDisable")) |proc| {
-        function_pointers.glDisable = @as(@TypeOf(function_pointers.glDisable), @ptrCast(proc));
+        function_pointers.glDisable = @ptrCast(proc);
     } else {
         log.err("entry point glDisable not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glEnable")) |proc| {
-        function_pointers.glEnable = @as(@TypeOf(function_pointers.glEnable), @ptrCast(proc));
+        function_pointers.glEnable = @ptrCast(proc);
     } else {
         log.err("entry point glEnable not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFinish")) |proc| {
-        function_pointers.glFinish = @as(@TypeOf(function_pointers.glFinish), @ptrCast(proc));
+        function_pointers.glFinish = @ptrCast(proc);
     } else {
         log.err("entry point glFinish not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFlush")) |proc| {
-        function_pointers.glFlush = @as(@TypeOf(function_pointers.glFlush), @ptrCast(proc));
+        function_pointers.glFlush = @ptrCast(proc);
     } else {
         log.err("entry point glFlush not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendFunc")) |proc| {
-        function_pointers.glBlendFunc = @as(@TypeOf(function_pointers.glBlendFunc), @ptrCast(proc));
+        function_pointers.glBlendFunc = @ptrCast(proc);
     } else {
         log.err("entry point glBlendFunc not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glLogicOp")) |proc| {
-        function_pointers.glLogicOp = @as(@TypeOf(function_pointers.glLogicOp), @ptrCast(proc));
+        function_pointers.glLogicOp = @ptrCast(proc);
     } else {
         log.err("entry point glLogicOp not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glStencilFunc")) |proc| {
-        function_pointers.glStencilFunc = @as(@TypeOf(function_pointers.glStencilFunc), @ptrCast(proc));
+        function_pointers.glStencilFunc = @ptrCast(proc);
     } else {
         log.err("entry point glStencilFunc not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glStencilOp")) |proc| {
-        function_pointers.glStencilOp = @as(@TypeOf(function_pointers.glStencilOp), @ptrCast(proc));
+        function_pointers.glStencilOp = @ptrCast(proc);
     } else {
         log.err("entry point glStencilOp not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDepthFunc")) |proc| {
-        function_pointers.glDepthFunc = @as(@TypeOf(function_pointers.glDepthFunc), @ptrCast(proc));
+        function_pointers.glDepthFunc = @ptrCast(proc);
     } else {
         log.err("entry point glDepthFunc not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPixelStoref")) |proc| {
-        function_pointers.glPixelStoref = @as(@TypeOf(function_pointers.glPixelStoref), @ptrCast(proc));
+        function_pointers.glPixelStoref = @ptrCast(proc);
     } else {
         log.err("entry point glPixelStoref not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPixelStorei")) |proc| {
-        function_pointers.glPixelStorei = @as(@TypeOf(function_pointers.glPixelStorei), @ptrCast(proc));
+        function_pointers.glPixelStorei = @ptrCast(proc);
     } else {
         log.err("entry point glPixelStorei not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glReadBuffer")) |proc| {
-        function_pointers.glReadBuffer = @as(@TypeOf(function_pointers.glReadBuffer), @ptrCast(proc));
+        function_pointers.glReadBuffer = @ptrCast(proc);
     } else {
         log.err("entry point glReadBuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glReadPixels")) |proc| {
-        function_pointers.glReadPixels = @as(@TypeOf(function_pointers.glReadPixels), @ptrCast(proc));
+        function_pointers.glReadPixels = @ptrCast(proc);
     } else {
         log.err("entry point glReadPixels not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetBooleanv")) |proc| {
-        function_pointers.glGetBooleanv = @as(@TypeOf(function_pointers.glGetBooleanv), @ptrCast(proc));
+        function_pointers.glGetBooleanv = @ptrCast(proc);
     } else {
         log.err("entry point glGetBooleanv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetDoublev")) |proc| {
-        function_pointers.glGetDoublev = @as(@TypeOf(function_pointers.glGetDoublev), @ptrCast(proc));
+        function_pointers.glGetDoublev = @ptrCast(proc);
     } else {
         log.err("entry point glGetDoublev not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetError")) |proc| {
-        function_pointers.glGetError = @as(@TypeOf(function_pointers.glGetError), @ptrCast(proc));
+        function_pointers.glGetError = @ptrCast(proc);
     } else {
         log.err("entry point glGetError not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetFloatv")) |proc| {
-        function_pointers.glGetFloatv = @as(@TypeOf(function_pointers.glGetFloatv), @ptrCast(proc));
+        function_pointers.glGetFloatv = @ptrCast(proc);
     } else {
         log.err("entry point glGetFloatv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetIntegerv")) |proc| {
-        function_pointers.glGetIntegerv = @as(@TypeOf(function_pointers.glGetIntegerv), @ptrCast(proc));
+        function_pointers.glGetIntegerv = @ptrCast(proc);
     } else {
         log.err("entry point glGetIntegerv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetString")) |proc| {
-        function_pointers.glGetString = @as(@TypeOf(function_pointers.glGetString), @ptrCast(proc));
+        function_pointers.glGetString = @ptrCast(proc);
     } else {
         log.err("entry point glGetString not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetTexImage")) |proc| {
-        function_pointers.glGetTexImage = @as(@TypeOf(function_pointers.glGetTexImage), @ptrCast(proc));
+        function_pointers.glGetTexImage = @ptrCast(proc);
     } else {
         log.err("entry point glGetTexImage not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetTexParameterfv")) |proc| {
-        function_pointers.glGetTexParameterfv = @as(@TypeOf(function_pointers.glGetTexParameterfv), @ptrCast(proc));
+        function_pointers.glGetTexParameterfv = @ptrCast(proc);
     } else {
         log.err("entry point glGetTexParameterfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetTexParameteriv")) |proc| {
-        function_pointers.glGetTexParameteriv = @as(@TypeOf(function_pointers.glGetTexParameteriv), @ptrCast(proc));
+        function_pointers.glGetTexParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glGetTexParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetTexLevelParameterfv")) |proc| {
-        function_pointers.glGetTexLevelParameterfv = @as(@TypeOf(function_pointers.glGetTexLevelParameterfv), @ptrCast(proc));
+        function_pointers.glGetTexLevelParameterfv = @ptrCast(proc);
     } else {
         log.err("entry point glGetTexLevelParameterfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetTexLevelParameteriv")) |proc| {
-        function_pointers.glGetTexLevelParameteriv = @as(@TypeOf(function_pointers.glGetTexLevelParameteriv), @ptrCast(proc));
+        function_pointers.glGetTexLevelParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glGetTexLevelParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsEnabled")) |proc| {
-        function_pointers.glIsEnabled = @as(@TypeOf(function_pointers.glIsEnabled), @ptrCast(proc));
+        function_pointers.glIsEnabled = @ptrCast(proc);
     } else {
         log.err("entry point glIsEnabled not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDepthRange")) |proc| {
-        function_pointers.glDepthRange = @as(@TypeOf(function_pointers.glDepthRange), @ptrCast(proc));
+        function_pointers.glDepthRange = @ptrCast(proc);
     } else {
         log.err("entry point glDepthRange not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glViewport")) |proc| {
-        function_pointers.glViewport = @as(@TypeOf(function_pointers.glViewport), @ptrCast(proc));
+        function_pointers.glViewport = @ptrCast(proc);
     } else {
         log.err("entry point glViewport not found!", .{});
         success = false;
     }
-    if (get_proc_address(load_ctx, "glTexStorage2DMultisample")) |proc| {
-        function_pointers.glTexStorage2DMultisample = @as(@TypeOf(function_pointers.glTexStorage2DMultisample), @ptrCast(proc));
-    } else {
-        log.err("entry point glTexStorage2DMultisample not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTexBufferRange")) |proc| {
-        function_pointers.glTexBufferRange = @as(@TypeOf(function_pointers.glTexBufferRange), @ptrCast(proc));
-    } else {
-        log.err("entry point glTexBufferRange not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glShaderStorageBlockBinding")) |proc| {
-        function_pointers.glShaderStorageBlockBinding = @as(@TypeOf(function_pointers.glShaderStorageBlockBinding), @ptrCast(proc));
-    } else {
-        log.err("entry point glShaderStorageBlockBinding not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetProgramResourceLocationIndex")) |proc| {
-        function_pointers.glGetProgramResourceLocationIndex = @as(@TypeOf(function_pointers.glGetProgramResourceLocationIndex), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetProgramResourceLocationIndex not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetProgramResourceLocation")) |proc| {
-        function_pointers.glGetProgramResourceLocation = @as(@TypeOf(function_pointers.glGetProgramResourceLocation), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetProgramResourceLocation not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetProgramResourceiv")) |proc| {
-        function_pointers.glGetProgramResourceiv = @as(@TypeOf(function_pointers.glGetProgramResourceiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetProgramResourceiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetProgramResourceName")) |proc| {
-        function_pointers.glGetProgramResourceName = @as(@TypeOf(function_pointers.glGetProgramResourceName), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetProgramResourceName not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetProgramResourceIndex")) |proc| {
-        function_pointers.glGetProgramResourceIndex = @as(@TypeOf(function_pointers.glGetProgramResourceIndex), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetProgramResourceIndex not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetProgramInterfaceiv")) |proc| {
-        function_pointers.glGetProgramInterfaceiv = @as(@TypeOf(function_pointers.glGetProgramInterfaceiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetProgramInterfaceiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glMultiDrawElementsIndirect")) |proc| {
-        function_pointers.glMultiDrawElementsIndirect = @as(@TypeOf(function_pointers.glMultiDrawElementsIndirect), @ptrCast(proc));
-    } else {
-        log.err("entry point glMultiDrawElementsIndirect not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glMultiDrawArraysIndirect")) |proc| {
-        function_pointers.glMultiDrawArraysIndirect = @as(@TypeOf(function_pointers.glMultiDrawArraysIndirect), @ptrCast(proc));
-    } else {
-        log.err("entry point glMultiDrawArraysIndirect not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glInvalidateSubFramebuffer")) |proc| {
-        function_pointers.glInvalidateSubFramebuffer = @as(@TypeOf(function_pointers.glInvalidateSubFramebuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glInvalidateSubFramebuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glInvalidateFramebuffer")) |proc| {
-        function_pointers.glInvalidateFramebuffer = @as(@TypeOf(function_pointers.glInvalidateFramebuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glInvalidateFramebuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glInvalidateBufferData")) |proc| {
-        function_pointers.glInvalidateBufferData = @as(@TypeOf(function_pointers.glInvalidateBufferData), @ptrCast(proc));
-    } else {
-        log.err("entry point glInvalidateBufferData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glInvalidateBufferSubData")) |proc| {
-        function_pointers.glInvalidateBufferSubData = @as(@TypeOf(function_pointers.glInvalidateBufferSubData), @ptrCast(proc));
-    } else {
-        log.err("entry point glInvalidateBufferSubData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glInvalidateTexImage")) |proc| {
-        function_pointers.glInvalidateTexImage = @as(@TypeOf(function_pointers.glInvalidateTexImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glInvalidateTexImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glInvalidateTexSubImage")) |proc| {
-        function_pointers.glInvalidateTexSubImage = @as(@TypeOf(function_pointers.glInvalidateTexSubImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glInvalidateTexSubImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetInternalformati64v")) |proc| {
-        function_pointers.glGetInternalformati64v = @as(@TypeOf(function_pointers.glGetInternalformati64v), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetInternalformati64v not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetFramebufferParameteriv")) |proc| {
-        function_pointers.glGetFramebufferParameteriv = @as(@TypeOf(function_pointers.glGetFramebufferParameteriv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetFramebufferParameteriv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glFramebufferParameteri")) |proc| {
-        function_pointers.glFramebufferParameteri = @as(@TypeOf(function_pointers.glFramebufferParameteri), @ptrCast(proc));
-    } else {
-        log.err("entry point glFramebufferParameteri not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCopyImageSubData")) |proc| {
-        function_pointers.glCopyImageSubData = @as(@TypeOf(function_pointers.glCopyImageSubData), @ptrCast(proc));
-    } else {
-        log.err("entry point glCopyImageSubData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDispatchComputeIndirect")) |proc| {
-        function_pointers.glDispatchComputeIndirect = @as(@TypeOf(function_pointers.glDispatchComputeIndirect), @ptrCast(proc));
-    } else {
-        log.err("entry point glDispatchComputeIndirect not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDispatchCompute")) |proc| {
-        function_pointers.glDispatchCompute = @as(@TypeOf(function_pointers.glDispatchCompute), @ptrCast(proc));
-    } else {
-        log.err("entry point glDispatchCompute not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearBufferSubData")) |proc| {
-        function_pointers.glClearBufferSubData = @as(@TypeOf(function_pointers.glClearBufferSubData), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearBufferSubData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearBufferData")) |proc| {
-        function_pointers.glClearBufferData = @as(@TypeOf(function_pointers.glClearBufferData), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearBufferData not found!", .{});
-        success = false;
-    }
     if (get_proc_address(load_ctx, "glGetProgramPipelineInfoLog")) |proc| {
-        function_pointers.glGetProgramPipelineInfoLog = @as(@TypeOf(function_pointers.glGetProgramPipelineInfoLog), @ptrCast(proc));
+        function_pointers.glGetProgramPipelineInfoLog = @ptrCast(proc);
     } else {
         log.err("entry point glGetProgramPipelineInfoLog not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform2uiv")) |proc| {
-        function_pointers.glProgramUniform2uiv = @as(@TypeOf(function_pointers.glProgramUniform2uiv), @ptrCast(proc));
+        function_pointers.glProgramUniform2uiv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform2uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform2ui")) |proc| {
-        function_pointers.glProgramUniform2ui = @as(@TypeOf(function_pointers.glProgramUniform2ui), @ptrCast(proc));
+        function_pointers.glProgramUniform2ui = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform2ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform2dv")) |proc| {
-        function_pointers.glProgramUniform2dv = @as(@TypeOf(function_pointers.glProgramUniform2dv), @ptrCast(proc));
+        function_pointers.glProgramUniform2dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform2d")) |proc| {
-        function_pointers.glProgramUniform2d = @as(@TypeOf(function_pointers.glProgramUniform2d), @ptrCast(proc));
+        function_pointers.glProgramUniform2d = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform2d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform2fv")) |proc| {
-        function_pointers.glProgramUniform2fv = @as(@TypeOf(function_pointers.glProgramUniform2fv), @ptrCast(proc));
+        function_pointers.glProgramUniform2fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform2f")) |proc| {
-        function_pointers.glProgramUniform2f = @as(@TypeOf(function_pointers.glProgramUniform2f), @ptrCast(proc));
+        function_pointers.glProgramUniform2f = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform2f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform2iv")) |proc| {
-        function_pointers.glProgramUniform2iv = @as(@TypeOf(function_pointers.glProgramUniform2iv), @ptrCast(proc));
+        function_pointers.glProgramUniform2iv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform2iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform2i")) |proc| {
-        function_pointers.glProgramUniform2i = @as(@TypeOf(function_pointers.glProgramUniform2i), @ptrCast(proc));
+        function_pointers.glProgramUniform2i = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform2i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform1uiv")) |proc| {
-        function_pointers.glProgramUniform1uiv = @as(@TypeOf(function_pointers.glProgramUniform1uiv), @ptrCast(proc));
+        function_pointers.glProgramUniform1uiv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform1uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform1ui")) |proc| {
-        function_pointers.glProgramUniform1ui = @as(@TypeOf(function_pointers.glProgramUniform1ui), @ptrCast(proc));
+        function_pointers.glProgramUniform1ui = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform1ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform1dv")) |proc| {
-        function_pointers.glProgramUniform1dv = @as(@TypeOf(function_pointers.glProgramUniform1dv), @ptrCast(proc));
+        function_pointers.glProgramUniform1dv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform1dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform1d")) |proc| {
-        function_pointers.glProgramUniform1d = @as(@TypeOf(function_pointers.glProgramUniform1d), @ptrCast(proc));
+        function_pointers.glProgramUniform1d = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform1d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform1fv")) |proc| {
-        function_pointers.glProgramUniform1fv = @as(@TypeOf(function_pointers.glProgramUniform1fv), @ptrCast(proc));
+        function_pointers.glProgramUniform1fv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform1fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform1f")) |proc| {
-        function_pointers.glProgramUniform1f = @as(@TypeOf(function_pointers.glProgramUniform1f), @ptrCast(proc));
+        function_pointers.glProgramUniform1f = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform1f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform1iv")) |proc| {
-        function_pointers.glProgramUniform1iv = @as(@TypeOf(function_pointers.glProgramUniform1iv), @ptrCast(proc));
+        function_pointers.glProgramUniform1iv = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform1iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramUniform1i")) |proc| {
-        function_pointers.glProgramUniform1i = @as(@TypeOf(function_pointers.glProgramUniform1i), @ptrCast(proc));
+        function_pointers.glProgramUniform1i = @ptrCast(proc);
     } else {
         log.err("entry point glProgramUniform1i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetProgramPipelineiv")) |proc| {
-        function_pointers.glGetProgramPipelineiv = @as(@TypeOf(function_pointers.glGetProgramPipelineiv), @ptrCast(proc));
+        function_pointers.glGetProgramPipelineiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetProgramPipelineiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsProgramPipeline")) |proc| {
-        function_pointers.glIsProgramPipeline = @as(@TypeOf(function_pointers.glIsProgramPipeline), @ptrCast(proc));
+        function_pointers.glIsProgramPipeline = @ptrCast(proc);
     } else {
         log.err("entry point glIsProgramPipeline not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenProgramPipelines")) |proc| {
-        function_pointers.glGenProgramPipelines = @as(@TypeOf(function_pointers.glGenProgramPipelines), @ptrCast(proc));
+        function_pointers.glGenProgramPipelines = @ptrCast(proc);
     } else {
         log.err("entry point glGenProgramPipelines not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteProgramPipelines")) |proc| {
-        function_pointers.glDeleteProgramPipelines = @as(@TypeOf(function_pointers.glDeleteProgramPipelines), @ptrCast(proc));
+        function_pointers.glDeleteProgramPipelines = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteProgramPipelines not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindProgramPipeline")) |proc| {
-        function_pointers.glBindProgramPipeline = @as(@TypeOf(function_pointers.glBindProgramPipeline), @ptrCast(proc));
+        function_pointers.glBindProgramPipeline = @ptrCast(proc);
     } else {
         log.err("entry point glBindProgramPipeline not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCreateShaderProgramv")) |proc| {
-        function_pointers.glCreateShaderProgramv = @as(@TypeOf(function_pointers.glCreateShaderProgramv), @ptrCast(proc));
+        function_pointers.glCreateShaderProgramv = @ptrCast(proc);
     } else {
         log.err("entry point glCreateShaderProgramv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glActiveShaderProgram")) |proc| {
-        function_pointers.glActiveShaderProgram = @as(@TypeOf(function_pointers.glActiveShaderProgram), @ptrCast(proc));
+        function_pointers.glActiveShaderProgram = @ptrCast(proc);
     } else {
         log.err("entry point glActiveShaderProgram not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProgramBinary")) |proc| {
-        function_pointers.glProgramBinary = @as(@TypeOf(function_pointers.glProgramBinary), @ptrCast(proc));
+        function_pointers.glProgramBinary = @ptrCast(proc);
     } else {
         log.err("entry point glProgramBinary not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetProgramBinary")) |proc| {
-        function_pointers.glGetProgramBinary = @as(@TypeOf(function_pointers.glGetProgramBinary), @ptrCast(proc));
+        function_pointers.glGetProgramBinary = @ptrCast(proc);
     } else {
         log.err("entry point glGetProgramBinary not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClearDepthf")) |proc| {
-        function_pointers.glClearDepthf = @as(@TypeOf(function_pointers.glClearDepthf), @ptrCast(proc));
+        function_pointers.glClearDepthf = @ptrCast(proc);
     } else {
         log.err("entry point glClearDepthf not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDepthRangef")) |proc| {
-        function_pointers.glDepthRangef = @as(@TypeOf(function_pointers.glDepthRangef), @ptrCast(proc));
+        function_pointers.glDepthRangef = @ptrCast(proc);
     } else {
         log.err("entry point glDepthRangef not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsTransformFeedback")) |proc| {
-        function_pointers.glIsTransformFeedback = @as(@TypeOf(function_pointers.glIsTransformFeedback), @ptrCast(proc));
+        function_pointers.glIsTransformFeedback = @ptrCast(proc);
     } else {
         log.err("entry point glIsTransformFeedback not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenTransformFeedbacks")) |proc| {
-        function_pointers.glGenTransformFeedbacks = @as(@TypeOf(function_pointers.glGenTransformFeedbacks), @ptrCast(proc));
+        function_pointers.glGenTransformFeedbacks = @ptrCast(proc);
     } else {
         log.err("entry point glGenTransformFeedbacks not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteTransformFeedbacks")) |proc| {
-        function_pointers.glDeleteTransformFeedbacks = @as(@TypeOf(function_pointers.glDeleteTransformFeedbacks), @ptrCast(proc));
+        function_pointers.glDeleteTransformFeedbacks = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteTransformFeedbacks not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindTransformFeedback")) |proc| {
-        function_pointers.glBindTransformFeedback = @as(@TypeOf(function_pointers.glBindTransformFeedback), @ptrCast(proc));
+        function_pointers.glBindTransformFeedback = @ptrCast(proc);
     } else {
         log.err("entry point glBindTransformFeedback not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPatchParameterfv")) |proc| {
-        function_pointers.glPatchParameterfv = @as(@TypeOf(function_pointers.glPatchParameterfv), @ptrCast(proc));
+        function_pointers.glPatchParameterfv = @ptrCast(proc);
     } else {
         log.err("entry point glPatchParameterfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPatchParameteri")) |proc| {
-        function_pointers.glPatchParameteri = @as(@TypeOf(function_pointers.glPatchParameteri), @ptrCast(proc));
+        function_pointers.glPatchParameteri = @ptrCast(proc);
     } else {
         log.err("entry point glPatchParameteri not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawArrays")) |proc| {
-        function_pointers.glDrawArrays = @as(@TypeOf(function_pointers.glDrawArrays), @ptrCast(proc));
+        function_pointers.glDrawArrays = @ptrCast(proc);
     } else {
         log.err("entry point glDrawArrays not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawElements")) |proc| {
-        function_pointers.glDrawElements = @as(@TypeOf(function_pointers.glDrawElements), @ptrCast(proc));
+        function_pointers.glDrawElements = @ptrCast(proc);
     } else {
         log.err("entry point glDrawElements not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPolygonOffset")) |proc| {
-        function_pointers.glPolygonOffset = @as(@TypeOf(function_pointers.glPolygonOffset), @ptrCast(proc));
+        function_pointers.glPolygonOffset = @ptrCast(proc);
     } else {
         log.err("entry point glPolygonOffset not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCopyTexImage1D")) |proc| {
-        function_pointers.glCopyTexImage1D = @as(@TypeOf(function_pointers.glCopyTexImage1D), @ptrCast(proc));
+        function_pointers.glCopyTexImage1D = @ptrCast(proc);
     } else {
         log.err("entry point glCopyTexImage1D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCopyTexImage2D")) |proc| {
-        function_pointers.glCopyTexImage2D = @as(@TypeOf(function_pointers.glCopyTexImage2D), @ptrCast(proc));
+        function_pointers.glCopyTexImage2D = @ptrCast(proc);
     } else {
         log.err("entry point glCopyTexImage2D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCopyTexSubImage1D")) |proc| {
-        function_pointers.glCopyTexSubImage1D = @as(@TypeOf(function_pointers.glCopyTexSubImage1D), @ptrCast(proc));
+        function_pointers.glCopyTexSubImage1D = @ptrCast(proc);
     } else {
         log.err("entry point glCopyTexSubImage1D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCopyTexSubImage2D")) |proc| {
-        function_pointers.glCopyTexSubImage2D = @as(@TypeOf(function_pointers.glCopyTexSubImage2D), @ptrCast(proc));
+        function_pointers.glCopyTexSubImage2D = @ptrCast(proc);
     } else {
         log.err("entry point glCopyTexSubImage2D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexSubImage1D")) |proc| {
-        function_pointers.glTexSubImage1D = @as(@TypeOf(function_pointers.glTexSubImage1D), @ptrCast(proc));
+        function_pointers.glTexSubImage1D = @ptrCast(proc);
     } else {
         log.err("entry point glTexSubImage1D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexSubImage2D")) |proc| {
-        function_pointers.glTexSubImage2D = @as(@TypeOf(function_pointers.glTexSubImage2D), @ptrCast(proc));
+        function_pointers.glTexSubImage2D = @ptrCast(proc);
     } else {
         log.err("entry point glTexSubImage2D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindTexture")) |proc| {
-        function_pointers.glBindTexture = @as(@TypeOf(function_pointers.glBindTexture), @ptrCast(proc));
+        function_pointers.glBindTexture = @ptrCast(proc);
     } else {
         log.err("entry point glBindTexture not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteTextures")) |proc| {
-        function_pointers.glDeleteTextures = @as(@TypeOf(function_pointers.glDeleteTextures), @ptrCast(proc));
+        function_pointers.glDeleteTextures = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteTextures not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenTextures")) |proc| {
-        function_pointers.glGenTextures = @as(@TypeOf(function_pointers.glGenTextures), @ptrCast(proc));
+        function_pointers.glGenTextures = @ptrCast(proc);
     } else {
         log.err("entry point glGenTextures not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsTexture")) |proc| {
-        function_pointers.glIsTexture = @as(@TypeOf(function_pointers.glIsTexture), @ptrCast(proc));
+        function_pointers.glIsTexture = @ptrCast(proc);
     } else {
         log.err("entry point glIsTexture not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveSubroutineUniformName")) |proc| {
-        function_pointers.glGetActiveSubroutineUniformName = @as(@TypeOf(function_pointers.glGetActiveSubroutineUniformName), @ptrCast(proc));
+        function_pointers.glGetActiveSubroutineUniformName = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveSubroutineUniformName not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveSubroutineUniformiv")) |proc| {
-        function_pointers.glGetActiveSubroutineUniformiv = @as(@TypeOf(function_pointers.glGetActiveSubroutineUniformiv), @ptrCast(proc));
+        function_pointers.glGetActiveSubroutineUniformiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveSubroutineUniformiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetSubroutineIndex")) |proc| {
-        function_pointers.glGetSubroutineIndex = @as(@TypeOf(function_pointers.glGetSubroutineIndex), @ptrCast(proc));
+        function_pointers.glGetSubroutineIndex = @ptrCast(proc);
     } else {
         log.err("entry point glGetSubroutineIndex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetSubroutineUniformLocation")) |proc| {
-        function_pointers.glGetSubroutineUniformLocation = @as(@TypeOf(function_pointers.glGetSubroutineUniformLocation), @ptrCast(proc));
+        function_pointers.glGetSubroutineUniformLocation = @ptrCast(proc);
     } else {
         log.err("entry point glGetSubroutineUniformLocation not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetUniformdv")) |proc| {
-        function_pointers.glGetUniformdv = @as(@TypeOf(function_pointers.glGetUniformdv), @ptrCast(proc));
+        function_pointers.glGetUniformdv = @ptrCast(proc);
     } else {
         log.err("entry point glGetUniformdv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix4x3dv")) |proc| {
-        function_pointers.glUniformMatrix4x3dv = @as(@TypeOf(function_pointers.glUniformMatrix4x3dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix4x3dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix4x3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix4x2dv")) |proc| {
-        function_pointers.glUniformMatrix4x2dv = @as(@TypeOf(function_pointers.glUniformMatrix4x2dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix4x2dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix4x2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix3x4dv")) |proc| {
-        function_pointers.glUniformMatrix3x4dv = @as(@TypeOf(function_pointers.glUniformMatrix3x4dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix3x4dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix3x4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix3x2dv")) |proc| {
-        function_pointers.glUniformMatrix3x2dv = @as(@TypeOf(function_pointers.glUniformMatrix3x2dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix3x2dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix3x2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix2x4dv")) |proc| {
-        function_pointers.glUniformMatrix2x4dv = @as(@TypeOf(function_pointers.glUniformMatrix2x4dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix2x4dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix2x4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix2x3dv")) |proc| {
-        function_pointers.glUniformMatrix2x3dv = @as(@TypeOf(function_pointers.glUniformMatrix2x3dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix2x3dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix2x3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix4dv")) |proc| {
-        function_pointers.glUniformMatrix4dv = @as(@TypeOf(function_pointers.glUniformMatrix4dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix4dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix3dv")) |proc| {
-        function_pointers.glUniformMatrix3dv = @as(@TypeOf(function_pointers.glUniformMatrix3dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix3dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawRangeElements")) |proc| {
-        function_pointers.glDrawRangeElements = @as(@TypeOf(function_pointers.glDrawRangeElements), @ptrCast(proc));
+        function_pointers.glDrawRangeElements = @ptrCast(proc);
     } else {
         log.err("entry point glDrawRangeElements not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexImage3D")) |proc| {
-        function_pointers.glTexImage3D = @as(@TypeOf(function_pointers.glTexImage3D), @ptrCast(proc));
+        function_pointers.glTexImage3D = @ptrCast(proc);
     } else {
         log.err("entry point glTexImage3D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexSubImage3D")) |proc| {
-        function_pointers.glTexSubImage3D = @as(@TypeOf(function_pointers.glTexSubImage3D), @ptrCast(proc));
+        function_pointers.glTexSubImage3D = @ptrCast(proc);
     } else {
         log.err("entry point glTexSubImage3D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCopyTexSubImage3D")) |proc| {
-        function_pointers.glCopyTexSubImage3D = @as(@TypeOf(function_pointers.glCopyTexSubImage3D), @ptrCast(proc));
+        function_pointers.glCopyTexSubImage3D = @ptrCast(proc);
     } else {
         log.err("entry point glCopyTexSubImage3D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix2dv")) |proc| {
-        function_pointers.glUniformMatrix2dv = @as(@TypeOf(function_pointers.glUniformMatrix2dv), @ptrCast(proc));
+        function_pointers.glUniformMatrix2dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform4dv")) |proc| {
-        function_pointers.glUniform4dv = @as(@TypeOf(function_pointers.glUniform4dv), @ptrCast(proc));
+        function_pointers.glUniform4dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform3dv")) |proc| {
-        function_pointers.glUniform3dv = @as(@TypeOf(function_pointers.glUniform3dv), @ptrCast(proc));
+        function_pointers.glUniform3dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform2dv")) |proc| {
-        function_pointers.glUniform2dv = @as(@TypeOf(function_pointers.glUniform2dv), @ptrCast(proc));
+        function_pointers.glUniform2dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform1dv")) |proc| {
-        function_pointers.glUniform1dv = @as(@TypeOf(function_pointers.glUniform1dv), @ptrCast(proc));
+        function_pointers.glUniform1dv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform1dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform4d")) |proc| {
-        function_pointers.glUniform4d = @as(@TypeOf(function_pointers.glUniform4d), @ptrCast(proc));
+        function_pointers.glUniform4d = @ptrCast(proc);
     } else {
         log.err("entry point glUniform4d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform3d")) |proc| {
-        function_pointers.glUniform3d = @as(@TypeOf(function_pointers.glUniform3d), @ptrCast(proc));
+        function_pointers.glUniform3d = @ptrCast(proc);
     } else {
         log.err("entry point glUniform3d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform2d")) |proc| {
-        function_pointers.glUniform2d = @as(@TypeOf(function_pointers.glUniform2d), @ptrCast(proc));
+        function_pointers.glUniform2d = @ptrCast(proc);
     } else {
         log.err("entry point glUniform2d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform1d")) |proc| {
-        function_pointers.glUniform1d = @as(@TypeOf(function_pointers.glUniform1d), @ptrCast(proc));
+        function_pointers.glUniform1d = @ptrCast(proc);
     } else {
         log.err("entry point glUniform1d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawElementsIndirect")) |proc| {
-        function_pointers.glDrawElementsIndirect = @as(@TypeOf(function_pointers.glDrawElementsIndirect), @ptrCast(proc));
+        function_pointers.glDrawElementsIndirect = @ptrCast(proc);
     } else {
         log.err("entry point glDrawElementsIndirect not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawArraysIndirect")) |proc| {
-        function_pointers.glDrawArraysIndirect = @as(@TypeOf(function_pointers.glDrawArraysIndirect), @ptrCast(proc));
+        function_pointers.glDrawArraysIndirect = @ptrCast(proc);
     } else {
         log.err("entry point glDrawArraysIndirect not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendFuncSeparatei")) |proc| {
-        function_pointers.glBlendFuncSeparatei = @as(@TypeOf(function_pointers.glBlendFuncSeparatei), @ptrCast(proc));
+        function_pointers.glBlendFuncSeparatei = @ptrCast(proc);
     } else {
         log.err("entry point glBlendFuncSeparatei not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendFunci")) |proc| {
-        function_pointers.glBlendFunci = @as(@TypeOf(function_pointers.glBlendFunci), @ptrCast(proc));
+        function_pointers.glBlendFunci = @ptrCast(proc);
     } else {
         log.err("entry point glBlendFunci not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendEquationSeparatei")) |proc| {
-        function_pointers.glBlendEquationSeparatei = @as(@TypeOf(function_pointers.glBlendEquationSeparatei), @ptrCast(proc));
+        function_pointers.glBlendEquationSeparatei = @ptrCast(proc);
     } else {
         log.err("entry point glBlendEquationSeparatei not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendEquationi")) |proc| {
-        function_pointers.glBlendEquationi = @as(@TypeOf(function_pointers.glBlendEquationi), @ptrCast(proc));
+        function_pointers.glBlendEquationi = @ptrCast(proc);
     } else {
         log.err("entry point glBlendEquationi not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glMinSampleShading")) |proc| {
-        function_pointers.glMinSampleShading = @as(@TypeOf(function_pointers.glMinSampleShading), @ptrCast(proc));
+        function_pointers.glMinSampleShading = @ptrCast(proc);
     } else {
         log.err("entry point glMinSampleShading not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glActiveTexture")) |proc| {
-        function_pointers.glActiveTexture = @as(@TypeOf(function_pointers.glActiveTexture), @ptrCast(proc));
+        function_pointers.glActiveTexture = @ptrCast(proc);
     } else {
         log.err("entry point glActiveTexture not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glSampleCoverage")) |proc| {
-        function_pointers.glSampleCoverage = @as(@TypeOf(function_pointers.glSampleCoverage), @ptrCast(proc));
+        function_pointers.glSampleCoverage = @ptrCast(proc);
     } else {
         log.err("entry point glSampleCoverage not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCompressedTexImage3D")) |proc| {
-        function_pointers.glCompressedTexImage3D = @as(@TypeOf(function_pointers.glCompressedTexImage3D), @ptrCast(proc));
+        function_pointers.glCompressedTexImage3D = @ptrCast(proc);
     } else {
         log.err("entry point glCompressedTexImage3D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCompressedTexImage2D")) |proc| {
-        function_pointers.glCompressedTexImage2D = @as(@TypeOf(function_pointers.glCompressedTexImage2D), @ptrCast(proc));
+        function_pointers.glCompressedTexImage2D = @ptrCast(proc);
     } else {
         log.err("entry point glCompressedTexImage2D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCompressedTexImage1D")) |proc| {
-        function_pointers.glCompressedTexImage1D = @as(@TypeOf(function_pointers.glCompressedTexImage1D), @ptrCast(proc));
+        function_pointers.glCompressedTexImage1D = @ptrCast(proc);
     } else {
         log.err("entry point glCompressedTexImage1D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCompressedTexSubImage3D")) |proc| {
-        function_pointers.glCompressedTexSubImage3D = @as(@TypeOf(function_pointers.glCompressedTexSubImage3D), @ptrCast(proc));
+        function_pointers.glCompressedTexSubImage3D = @ptrCast(proc);
     } else {
         log.err("entry point glCompressedTexSubImage3D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCompressedTexSubImage2D")) |proc| {
-        function_pointers.glCompressedTexSubImage2D = @as(@TypeOf(function_pointers.glCompressedTexSubImage2D), @ptrCast(proc));
+        function_pointers.glCompressedTexSubImage2D = @ptrCast(proc);
     } else {
         log.err("entry point glCompressedTexSubImage2D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCompressedTexSubImage1D")) |proc| {
-        function_pointers.glCompressedTexSubImage1D = @as(@TypeOf(function_pointers.glCompressedTexSubImage1D), @ptrCast(proc));
+        function_pointers.glCompressedTexSubImage1D = @ptrCast(proc);
     } else {
         log.err("entry point glCompressedTexSubImage1D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetCompressedTexImage")) |proc| {
-        function_pointers.glGetCompressedTexImage = @as(@TypeOf(function_pointers.glGetCompressedTexImage), @ptrCast(proc));
+        function_pointers.glGetCompressedTexImage = @ptrCast(proc);
     } else {
         log.err("entry point glGetCompressedTexImage not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribP4uiv")) |proc| {
-        function_pointers.glVertexAttribP4uiv = @as(@TypeOf(function_pointers.glVertexAttribP4uiv), @ptrCast(proc));
+        function_pointers.glVertexAttribP4uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribP4uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribP4ui")) |proc| {
-        function_pointers.glVertexAttribP4ui = @as(@TypeOf(function_pointers.glVertexAttribP4ui), @ptrCast(proc));
+        function_pointers.glVertexAttribP4ui = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribP4ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribP3uiv")) |proc| {
-        function_pointers.glVertexAttribP3uiv = @as(@TypeOf(function_pointers.glVertexAttribP3uiv), @ptrCast(proc));
+        function_pointers.glVertexAttribP3uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribP3uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribP3ui")) |proc| {
-        function_pointers.glVertexAttribP3ui = @as(@TypeOf(function_pointers.glVertexAttribP3ui), @ptrCast(proc));
+        function_pointers.glVertexAttribP3ui = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribP3ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribP2uiv")) |proc| {
-        function_pointers.glVertexAttribP2uiv = @as(@TypeOf(function_pointers.glVertexAttribP2uiv), @ptrCast(proc));
+        function_pointers.glVertexAttribP2uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribP2uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribP2ui")) |proc| {
-        function_pointers.glVertexAttribP2ui = @as(@TypeOf(function_pointers.glVertexAttribP2ui), @ptrCast(proc));
+        function_pointers.glVertexAttribP2ui = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribP2ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribP1uiv")) |proc| {
-        function_pointers.glVertexAttribP1uiv = @as(@TypeOf(function_pointers.glVertexAttribP1uiv), @ptrCast(proc));
+        function_pointers.glVertexAttribP1uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribP1uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribP1ui")) |proc| {
-        function_pointers.glVertexAttribP1ui = @as(@TypeOf(function_pointers.glVertexAttribP1ui), @ptrCast(proc));
+        function_pointers.glVertexAttribP1ui = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribP1ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribDivisor")) |proc| {
-        function_pointers.glVertexAttribDivisor = @as(@TypeOf(function_pointers.glVertexAttribDivisor), @ptrCast(proc));
+        function_pointers.glVertexAttribDivisor = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribDivisor not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetQueryObjectui64v")) |proc| {
-        function_pointers.glGetQueryObjectui64v = @as(@TypeOf(function_pointers.glGetQueryObjectui64v), @ptrCast(proc));
+        function_pointers.glGetQueryObjectui64v = @ptrCast(proc);
     } else {
         log.err("entry point glGetQueryObjectui64v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetQueryObjecti64v")) |proc| {
-        function_pointers.glGetQueryObjecti64v = @as(@TypeOf(function_pointers.glGetQueryObjecti64v), @ptrCast(proc));
+        function_pointers.glGetQueryObjecti64v = @ptrCast(proc);
     } else {
         log.err("entry point glGetQueryObjecti64v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glQueryCounter")) |proc| {
-        function_pointers.glQueryCounter = @as(@TypeOf(function_pointers.glQueryCounter), @ptrCast(proc));
+        function_pointers.glQueryCounter = @ptrCast(proc);
     } else {
         log.err("entry point glQueryCounter not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetSamplerParameterIuiv")) |proc| {
-        function_pointers.glGetSamplerParameterIuiv = @as(@TypeOf(function_pointers.glGetSamplerParameterIuiv), @ptrCast(proc));
+        function_pointers.glGetSamplerParameterIuiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetSamplerParameterIuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetSamplerParameterfv")) |proc| {
-        function_pointers.glGetSamplerParameterfv = @as(@TypeOf(function_pointers.glGetSamplerParameterfv), @ptrCast(proc));
+        function_pointers.glGetSamplerParameterfv = @ptrCast(proc);
     } else {
         log.err("entry point glGetSamplerParameterfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetSamplerParameterIiv")) |proc| {
-        function_pointers.glGetSamplerParameterIiv = @as(@TypeOf(function_pointers.glGetSamplerParameterIiv), @ptrCast(proc));
+        function_pointers.glGetSamplerParameterIiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetSamplerParameterIiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetSamplerParameteriv")) |proc| {
-        function_pointers.glGetSamplerParameteriv = @as(@TypeOf(function_pointers.glGetSamplerParameteriv), @ptrCast(proc));
+        function_pointers.glGetSamplerParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glGetSamplerParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glSamplerParameterIuiv")) |proc| {
-        function_pointers.glSamplerParameterIuiv = @as(@TypeOf(function_pointers.glSamplerParameterIuiv), @ptrCast(proc));
+        function_pointers.glSamplerParameterIuiv = @ptrCast(proc);
     } else {
         log.err("entry point glSamplerParameterIuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glSamplerParameterIiv")) |proc| {
-        function_pointers.glSamplerParameterIiv = @as(@TypeOf(function_pointers.glSamplerParameterIiv), @ptrCast(proc));
+        function_pointers.glSamplerParameterIiv = @ptrCast(proc);
     } else {
         log.err("entry point glSamplerParameterIiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glSamplerParameterfv")) |proc| {
-        function_pointers.glSamplerParameterfv = @as(@TypeOf(function_pointers.glSamplerParameterfv), @ptrCast(proc));
+        function_pointers.glSamplerParameterfv = @ptrCast(proc);
     } else {
         log.err("entry point glSamplerParameterfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glSamplerParameterf")) |proc| {
-        function_pointers.glSamplerParameterf = @as(@TypeOf(function_pointers.glSamplerParameterf), @ptrCast(proc));
+        function_pointers.glSamplerParameterf = @ptrCast(proc);
     } else {
         log.err("entry point glSamplerParameterf not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glSamplerParameteriv")) |proc| {
-        function_pointers.glSamplerParameteriv = @as(@TypeOf(function_pointers.glSamplerParameteriv), @ptrCast(proc));
+        function_pointers.glSamplerParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glSamplerParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glSamplerParameteri")) |proc| {
-        function_pointers.glSamplerParameteri = @as(@TypeOf(function_pointers.glSamplerParameteri), @ptrCast(proc));
+        function_pointers.glSamplerParameteri = @ptrCast(proc);
     } else {
         log.err("entry point glSamplerParameteri not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindSampler")) |proc| {
-        function_pointers.glBindSampler = @as(@TypeOf(function_pointers.glBindSampler), @ptrCast(proc));
+        function_pointers.glBindSampler = @ptrCast(proc);
     } else {
         log.err("entry point glBindSampler not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsSampler")) |proc| {
-        function_pointers.glIsSampler = @as(@TypeOf(function_pointers.glIsSampler), @ptrCast(proc));
+        function_pointers.glIsSampler = @ptrCast(proc);
     } else {
         log.err("entry point glIsSampler not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteSamplers")) |proc| {
-        function_pointers.glDeleteSamplers = @as(@TypeOf(function_pointers.glDeleteSamplers), @ptrCast(proc));
+        function_pointers.glDeleteSamplers = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteSamplers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenSamplers")) |proc| {
-        function_pointers.glGenSamplers = @as(@TypeOf(function_pointers.glGenSamplers), @ptrCast(proc));
+        function_pointers.glGenSamplers = @ptrCast(proc);
     } else {
         log.err("entry point glGenSamplers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetFragDataIndex")) |proc| {
-        function_pointers.glGetFragDataIndex = @as(@TypeOf(function_pointers.glGetFragDataIndex), @ptrCast(proc));
+        function_pointers.glGetFragDataIndex = @ptrCast(proc);
     } else {
         log.err("entry point glGetFragDataIndex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindFragDataLocationIndexed")) |proc| {
-        function_pointers.glBindFragDataLocationIndexed = @as(@TypeOf(function_pointers.glBindFragDataLocationIndexed), @ptrCast(proc));
+        function_pointers.glBindFragDataLocationIndexed = @ptrCast(proc);
     } else {
         log.err("entry point glBindFragDataLocationIndexed not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glSampleMaski")) |proc| {
-        function_pointers.glSampleMaski = @as(@TypeOf(function_pointers.glSampleMaski), @ptrCast(proc));
+        function_pointers.glSampleMaski = @ptrCast(proc);
     } else {
         log.err("entry point glSampleMaski not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetMultisamplefv")) |proc| {
-        function_pointers.glGetMultisamplefv = @as(@TypeOf(function_pointers.glGetMultisamplefv), @ptrCast(proc));
+        function_pointers.glGetMultisamplefv = @ptrCast(proc);
     } else {
         log.err("entry point glGetMultisamplefv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexImage3DMultisample")) |proc| {
-        function_pointers.glTexImage3DMultisample = @as(@TypeOf(function_pointers.glTexImage3DMultisample), @ptrCast(proc));
+        function_pointers.glTexImage3DMultisample = @ptrCast(proc);
     } else {
         log.err("entry point glTexImage3DMultisample not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexImage2DMultisample")) |proc| {
-        function_pointers.glTexImage2DMultisample = @as(@TypeOf(function_pointers.glTexImage2DMultisample), @ptrCast(proc));
+        function_pointers.glTexImage2DMultisample = @ptrCast(proc);
     } else {
         log.err("entry point glTexImage2DMultisample not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFramebufferTexture")) |proc| {
-        function_pointers.glFramebufferTexture = @as(@TypeOf(function_pointers.glFramebufferTexture), @ptrCast(proc));
+        function_pointers.glFramebufferTexture = @ptrCast(proc);
     } else {
         log.err("entry point glFramebufferTexture not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetBufferParameteri64v")) |proc| {
-        function_pointers.glGetBufferParameteri64v = @as(@TypeOf(function_pointers.glGetBufferParameteri64v), @ptrCast(proc));
+        function_pointers.glGetBufferParameteri64v = @ptrCast(proc);
     } else {
         log.err("entry point glGetBufferParameteri64v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendFuncSeparate")) |proc| {
-        function_pointers.glBlendFuncSeparate = @as(@TypeOf(function_pointers.glBlendFuncSeparate), @ptrCast(proc));
+        function_pointers.glBlendFuncSeparate = @ptrCast(proc);
     } else {
         log.err("entry point glBlendFuncSeparate not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glMultiDrawArrays")) |proc| {
-        function_pointers.glMultiDrawArrays = @as(@TypeOf(function_pointers.glMultiDrawArrays), @ptrCast(proc));
+        function_pointers.glMultiDrawArrays = @ptrCast(proc);
     } else {
         log.err("entry point glMultiDrawArrays not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glMultiDrawElements")) |proc| {
-        function_pointers.glMultiDrawElements = @as(@TypeOf(function_pointers.glMultiDrawElements), @ptrCast(proc));
+        function_pointers.glMultiDrawElements = @ptrCast(proc);
     } else {
         log.err("entry point glMultiDrawElements not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPointParameterf")) |proc| {
-        function_pointers.glPointParameterf = @as(@TypeOf(function_pointers.glPointParameterf), @ptrCast(proc));
+        function_pointers.glPointParameterf = @ptrCast(proc);
     } else {
         log.err("entry point glPointParameterf not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPointParameterfv")) |proc| {
-        function_pointers.glPointParameterfv = @as(@TypeOf(function_pointers.glPointParameterfv), @ptrCast(proc));
+        function_pointers.glPointParameterfv = @ptrCast(proc);
     } else {
         log.err("entry point glPointParameterfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPointParameteri")) |proc| {
-        function_pointers.glPointParameteri = @as(@TypeOf(function_pointers.glPointParameteri), @ptrCast(proc));
+        function_pointers.glPointParameteri = @ptrCast(proc);
     } else {
         log.err("entry point glPointParameteri not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPointParameteriv")) |proc| {
-        function_pointers.glPointParameteriv = @as(@TypeOf(function_pointers.glPointParameteriv), @ptrCast(proc));
+        function_pointers.glPointParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glPointParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetInteger64i_v")) |proc| {
-        function_pointers.glGetInteger64i_v = @as(@TypeOf(function_pointers.glGetInteger64i_v), @ptrCast(proc));
+        function_pointers.glGetInteger64i_v = @ptrCast(proc);
     } else {
         log.err("entry point glGetInteger64i_v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetSynciv")) |proc| {
-        function_pointers.glGetSynciv = @as(@TypeOf(function_pointers.glGetSynciv), @ptrCast(proc));
+        function_pointers.glGetSynciv = @ptrCast(proc);
     } else {
         log.err("entry point glGetSynciv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetInteger64v")) |proc| {
-        function_pointers.glGetInteger64v = @as(@TypeOf(function_pointers.glGetInteger64v), @ptrCast(proc));
+        function_pointers.glGetInteger64v = @ptrCast(proc);
     } else {
         log.err("entry point glGetInteger64v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glWaitSync")) |proc| {
-        function_pointers.glWaitSync = @as(@TypeOf(function_pointers.glWaitSync), @ptrCast(proc));
+        function_pointers.glWaitSync = @ptrCast(proc);
     } else {
         log.err("entry point glWaitSync not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClientWaitSync")) |proc| {
-        function_pointers.glClientWaitSync = @as(@TypeOf(function_pointers.glClientWaitSync), @ptrCast(proc));
+        function_pointers.glClientWaitSync = @ptrCast(proc);
     } else {
         log.err("entry point glClientWaitSync not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteSync")) |proc| {
-        function_pointers.glDeleteSync = @as(@TypeOf(function_pointers.glDeleteSync), @ptrCast(proc));
+        function_pointers.glDeleteSync = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteSync not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsSync")) |proc| {
-        function_pointers.glIsSync = @as(@TypeOf(function_pointers.glIsSync), @ptrCast(proc));
+        function_pointers.glIsSync = @ptrCast(proc);
     } else {
         log.err("entry point glIsSync not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFenceSync")) |proc| {
-        function_pointers.glFenceSync = @as(@TypeOf(function_pointers.glFenceSync), @ptrCast(proc));
+        function_pointers.glFenceSync = @ptrCast(proc);
     } else {
         log.err("entry point glFenceSync not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendColor")) |proc| {
-        function_pointers.glBlendColor = @as(@TypeOf(function_pointers.glBlendColor), @ptrCast(proc));
+        function_pointers.glBlendColor = @ptrCast(proc);
     } else {
         log.err("entry point glBlendColor not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendEquation")) |proc| {
-        function_pointers.glBlendEquation = @as(@TypeOf(function_pointers.glBlendEquation), @ptrCast(proc));
+        function_pointers.glBlendEquation = @ptrCast(proc);
     } else {
         log.err("entry point glBlendEquation not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glProvokingVertex")) |proc| {
-        function_pointers.glProvokingVertex = @as(@TypeOf(function_pointers.glProvokingVertex), @ptrCast(proc));
+        function_pointers.glProvokingVertex = @ptrCast(proc);
     } else {
         log.err("entry point glProvokingVertex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glMultiDrawElementsBaseVertex")) |proc| {
-        function_pointers.glMultiDrawElementsBaseVertex = @as(@TypeOf(function_pointers.glMultiDrawElementsBaseVertex), @ptrCast(proc));
+        function_pointers.glMultiDrawElementsBaseVertex = @ptrCast(proc);
     } else {
         log.err("entry point glMultiDrawElementsBaseVertex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawElementsInstancedBaseVertex")) |proc| {
-        function_pointers.glDrawElementsInstancedBaseVertex = @as(@TypeOf(function_pointers.glDrawElementsInstancedBaseVertex), @ptrCast(proc));
+        function_pointers.glDrawElementsInstancedBaseVertex = @ptrCast(proc);
     } else {
         log.err("entry point glDrawElementsInstancedBaseVertex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawRangeElementsBaseVertex")) |proc| {
-        function_pointers.glDrawRangeElementsBaseVertex = @as(@TypeOf(function_pointers.glDrawRangeElementsBaseVertex), @ptrCast(proc));
+        function_pointers.glDrawRangeElementsBaseVertex = @ptrCast(proc);
     } else {
         log.err("entry point glDrawRangeElementsBaseVertex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawElementsBaseVertex")) |proc| {
-        function_pointers.glDrawElementsBaseVertex = @as(@TypeOf(function_pointers.glDrawElementsBaseVertex), @ptrCast(proc));
+        function_pointers.glDrawElementsBaseVertex = @ptrCast(proc);
     } else {
         log.err("entry point glDrawElementsBaseVertex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenQueries")) |proc| {
-        function_pointers.glGenQueries = @as(@TypeOf(function_pointers.glGenQueries), @ptrCast(proc));
+        function_pointers.glGenQueries = @ptrCast(proc);
     } else {
         log.err("entry point glGenQueries not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteQueries")) |proc| {
-        function_pointers.glDeleteQueries = @as(@TypeOf(function_pointers.glDeleteQueries), @ptrCast(proc));
+        function_pointers.glDeleteQueries = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteQueries not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsQuery")) |proc| {
-        function_pointers.glIsQuery = @as(@TypeOf(function_pointers.glIsQuery), @ptrCast(proc));
+        function_pointers.glIsQuery = @ptrCast(proc);
     } else {
         log.err("entry point glIsQuery not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBeginQuery")) |proc| {
-        function_pointers.glBeginQuery = @as(@TypeOf(function_pointers.glBeginQuery), @ptrCast(proc));
+        function_pointers.glBeginQuery = @ptrCast(proc);
     } else {
         log.err("entry point glBeginQuery not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glEndQuery")) |proc| {
-        function_pointers.glEndQuery = @as(@TypeOf(function_pointers.glEndQuery), @ptrCast(proc));
+        function_pointers.glEndQuery = @ptrCast(proc);
     } else {
         log.err("entry point glEndQuery not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetQueryiv")) |proc| {
-        function_pointers.glGetQueryiv = @as(@TypeOf(function_pointers.glGetQueryiv), @ptrCast(proc));
+        function_pointers.glGetQueryiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetQueryiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetQueryObjectiv")) |proc| {
-        function_pointers.glGetQueryObjectiv = @as(@TypeOf(function_pointers.glGetQueryObjectiv), @ptrCast(proc));
+        function_pointers.glGetQueryObjectiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetQueryObjectiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetQueryObjectuiv")) |proc| {
-        function_pointers.glGetQueryObjectuiv = @as(@TypeOf(function_pointers.glGetQueryObjectuiv), @ptrCast(proc));
+        function_pointers.glGetQueryObjectuiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetQueryObjectuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindBuffer")) |proc| {
-        function_pointers.glBindBuffer = @as(@TypeOf(function_pointers.glBindBuffer), @ptrCast(proc));
+        function_pointers.glBindBuffer = @ptrCast(proc);
     } else {
         log.err("entry point glBindBuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteBuffers")) |proc| {
-        function_pointers.glDeleteBuffers = @as(@TypeOf(function_pointers.glDeleteBuffers), @ptrCast(proc));
+        function_pointers.glDeleteBuffers = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteBuffers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenBuffers")) |proc| {
-        function_pointers.glGenBuffers = @as(@TypeOf(function_pointers.glGenBuffers), @ptrCast(proc));
+        function_pointers.glGenBuffers = @ptrCast(proc);
     } else {
         log.err("entry point glGenBuffers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsBuffer")) |proc| {
-        function_pointers.glIsBuffer = @as(@TypeOf(function_pointers.glIsBuffer), @ptrCast(proc));
+        function_pointers.glIsBuffer = @ptrCast(proc);
     } else {
         log.err("entry point glIsBuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBufferData")) |proc| {
-        function_pointers.glBufferData = @as(@TypeOf(function_pointers.glBufferData), @ptrCast(proc));
+        function_pointers.glBufferData = @ptrCast(proc);
     } else {
         log.err("entry point glBufferData not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBufferSubData")) |proc| {
-        function_pointers.glBufferSubData = @as(@TypeOf(function_pointers.glBufferSubData), @ptrCast(proc));
+        function_pointers.glBufferSubData = @ptrCast(proc);
     } else {
         log.err("entry point glBufferSubData not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetBufferSubData")) |proc| {
-        function_pointers.glGetBufferSubData = @as(@TypeOf(function_pointers.glGetBufferSubData), @ptrCast(proc));
+        function_pointers.glGetBufferSubData = @ptrCast(proc);
     } else {
         log.err("entry point glGetBufferSubData not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glMapBuffer")) |proc| {
-        function_pointers.glMapBuffer = @as(@TypeOf(function_pointers.glMapBuffer), @ptrCast(proc));
+        function_pointers.glMapBuffer = @ptrCast(proc);
     } else {
         log.err("entry point glMapBuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUnmapBuffer")) |proc| {
-        function_pointers.glUnmapBuffer = @as(@TypeOf(function_pointers.glUnmapBuffer), @ptrCast(proc));
+        function_pointers.glUnmapBuffer = @ptrCast(proc);
     } else {
         log.err("entry point glUnmapBuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetBufferParameteriv")) |proc| {
-        function_pointers.glGetBufferParameteriv = @as(@TypeOf(function_pointers.glGetBufferParameteriv), @ptrCast(proc));
+        function_pointers.glGetBufferParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glGetBufferParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetBufferPointerv")) |proc| {
-        function_pointers.glGetBufferPointerv = @as(@TypeOf(function_pointers.glGetBufferPointerv), @ptrCast(proc));
+        function_pointers.glGetBufferPointerv = @ptrCast(proc);
     } else {
         log.err("entry point glGetBufferPointerv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlendEquationSeparate")) |proc| {
-        function_pointers.glBlendEquationSeparate = @as(@TypeOf(function_pointers.glBlendEquationSeparate), @ptrCast(proc));
+        function_pointers.glBlendEquationSeparate = @ptrCast(proc);
     } else {
         log.err("entry point glBlendEquationSeparate not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawBuffers")) |proc| {
-        function_pointers.glDrawBuffers = @as(@TypeOf(function_pointers.glDrawBuffers), @ptrCast(proc));
+        function_pointers.glDrawBuffers = @ptrCast(proc);
     } else {
         log.err("entry point glDrawBuffers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glStencilOpSeparate")) |proc| {
-        function_pointers.glStencilOpSeparate = @as(@TypeOf(function_pointers.glStencilOpSeparate), @ptrCast(proc));
+        function_pointers.glStencilOpSeparate = @ptrCast(proc);
     } else {
         log.err("entry point glStencilOpSeparate not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glStencilFuncSeparate")) |proc| {
-        function_pointers.glStencilFuncSeparate = @as(@TypeOf(function_pointers.glStencilFuncSeparate), @ptrCast(proc));
+        function_pointers.glStencilFuncSeparate = @ptrCast(proc);
     } else {
         log.err("entry point glStencilFuncSeparate not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glStencilMaskSeparate")) |proc| {
-        function_pointers.glStencilMaskSeparate = @as(@TypeOf(function_pointers.glStencilMaskSeparate), @ptrCast(proc));
+        function_pointers.glStencilMaskSeparate = @ptrCast(proc);
     } else {
         log.err("entry point glStencilMaskSeparate not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glAttachShader")) |proc| {
-        function_pointers.glAttachShader = @as(@TypeOf(function_pointers.glAttachShader), @ptrCast(proc));
+        function_pointers.glAttachShader = @ptrCast(proc);
     } else {
         log.err("entry point glAttachShader not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindAttribLocation")) |proc| {
-        function_pointers.glBindAttribLocation = @as(@TypeOf(function_pointers.glBindAttribLocation), @ptrCast(proc));
+        function_pointers.glBindAttribLocation = @ptrCast(proc);
     } else {
         log.err("entry point glBindAttribLocation not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCompileShader")) |proc| {
-        function_pointers.glCompileShader = @as(@TypeOf(function_pointers.glCompileShader), @ptrCast(proc));
+        function_pointers.glCompileShader = @ptrCast(proc);
     } else {
         log.err("entry point glCompileShader not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCreateProgram")) |proc| {
-        function_pointers.glCreateProgram = @as(@TypeOf(function_pointers.glCreateProgram), @ptrCast(proc));
+        function_pointers.glCreateProgram = @ptrCast(proc);
     } else {
         log.err("entry point glCreateProgram not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCreateShader")) |proc| {
-        function_pointers.glCreateShader = @as(@TypeOf(function_pointers.glCreateShader), @ptrCast(proc));
+        function_pointers.glCreateShader = @ptrCast(proc);
     } else {
         log.err("entry point glCreateShader not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteProgram")) |proc| {
-        function_pointers.glDeleteProgram = @as(@TypeOf(function_pointers.glDeleteProgram), @ptrCast(proc));
+        function_pointers.glDeleteProgram = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteProgram not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteShader")) |proc| {
-        function_pointers.glDeleteShader = @as(@TypeOf(function_pointers.glDeleteShader), @ptrCast(proc));
+        function_pointers.glDeleteShader = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteShader not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDetachShader")) |proc| {
-        function_pointers.glDetachShader = @as(@TypeOf(function_pointers.glDetachShader), @ptrCast(proc));
+        function_pointers.glDetachShader = @ptrCast(proc);
     } else {
         log.err("entry point glDetachShader not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDisableVertexAttribArray")) |proc| {
-        function_pointers.glDisableVertexAttribArray = @as(@TypeOf(function_pointers.glDisableVertexAttribArray), @ptrCast(proc));
+        function_pointers.glDisableVertexAttribArray = @ptrCast(proc);
     } else {
         log.err("entry point glDisableVertexAttribArray not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glEnableVertexAttribArray")) |proc| {
-        function_pointers.glEnableVertexAttribArray = @as(@TypeOf(function_pointers.glEnableVertexAttribArray), @ptrCast(proc));
+        function_pointers.glEnableVertexAttribArray = @ptrCast(proc);
     } else {
         log.err("entry point glEnableVertexAttribArray not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveAttrib")) |proc| {
-        function_pointers.glGetActiveAttrib = @as(@TypeOf(function_pointers.glGetActiveAttrib), @ptrCast(proc));
+        function_pointers.glGetActiveAttrib = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveAttrib not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveUniform")) |proc| {
-        function_pointers.glGetActiveUniform = @as(@TypeOf(function_pointers.glGetActiveUniform), @ptrCast(proc));
+        function_pointers.glGetActiveUniform = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveUniform not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetAttachedShaders")) |proc| {
-        function_pointers.glGetAttachedShaders = @as(@TypeOf(function_pointers.glGetAttachedShaders), @ptrCast(proc));
+        function_pointers.glGetAttachedShaders = @ptrCast(proc);
     } else {
         log.err("entry point glGetAttachedShaders not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetAttribLocation")) |proc| {
-        function_pointers.glGetAttribLocation = @as(@TypeOf(function_pointers.glGetAttribLocation), @ptrCast(proc));
+        function_pointers.glGetAttribLocation = @ptrCast(proc);
     } else {
         log.err("entry point glGetAttribLocation not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetProgramiv")) |proc| {
-        function_pointers.glGetProgramiv = @as(@TypeOf(function_pointers.glGetProgramiv), @ptrCast(proc));
+        function_pointers.glGetProgramiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetProgramiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetProgramInfoLog")) |proc| {
-        function_pointers.glGetProgramInfoLog = @as(@TypeOf(function_pointers.glGetProgramInfoLog), @ptrCast(proc));
+        function_pointers.glGetProgramInfoLog = @ptrCast(proc);
     } else {
         log.err("entry point glGetProgramInfoLog not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetShaderiv")) |proc| {
-        function_pointers.glGetShaderiv = @as(@TypeOf(function_pointers.glGetShaderiv), @ptrCast(proc));
+        function_pointers.glGetShaderiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetShaderiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetShaderInfoLog")) |proc| {
-        function_pointers.glGetShaderInfoLog = @as(@TypeOf(function_pointers.glGetShaderInfoLog), @ptrCast(proc));
+        function_pointers.glGetShaderInfoLog = @ptrCast(proc);
     } else {
         log.err("entry point glGetShaderInfoLog not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetShaderSource")) |proc| {
-        function_pointers.glGetShaderSource = @as(@TypeOf(function_pointers.glGetShaderSource), @ptrCast(proc));
+        function_pointers.glGetShaderSource = @ptrCast(proc);
     } else {
         log.err("entry point glGetShaderSource not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetUniformLocation")) |proc| {
-        function_pointers.glGetUniformLocation = @as(@TypeOf(function_pointers.glGetUniformLocation), @ptrCast(proc));
+        function_pointers.glGetUniformLocation = @ptrCast(proc);
     } else {
         log.err("entry point glGetUniformLocation not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetUniformfv")) |proc| {
-        function_pointers.glGetUniformfv = @as(@TypeOf(function_pointers.glGetUniformfv), @ptrCast(proc));
+        function_pointers.glGetUniformfv = @ptrCast(proc);
     } else {
         log.err("entry point glGetUniformfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetUniformiv")) |proc| {
-        function_pointers.glGetUniformiv = @as(@TypeOf(function_pointers.glGetUniformiv), @ptrCast(proc));
+        function_pointers.glGetUniformiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetUniformiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetVertexAttribdv")) |proc| {
-        function_pointers.glGetVertexAttribdv = @as(@TypeOf(function_pointers.glGetVertexAttribdv), @ptrCast(proc));
+        function_pointers.glGetVertexAttribdv = @ptrCast(proc);
     } else {
         log.err("entry point glGetVertexAttribdv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetVertexAttribfv")) |proc| {
-        function_pointers.glGetVertexAttribfv = @as(@TypeOf(function_pointers.glGetVertexAttribfv), @ptrCast(proc));
+        function_pointers.glGetVertexAttribfv = @ptrCast(proc);
     } else {
         log.err("entry point glGetVertexAttribfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetVertexAttribiv")) |proc| {
-        function_pointers.glGetVertexAttribiv = @as(@TypeOf(function_pointers.glGetVertexAttribiv), @ptrCast(proc));
+        function_pointers.glGetVertexAttribiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetVertexAttribiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetVertexAttribPointerv")) |proc| {
-        function_pointers.glGetVertexAttribPointerv = @as(@TypeOf(function_pointers.glGetVertexAttribPointerv), @ptrCast(proc));
+        function_pointers.glGetVertexAttribPointerv = @ptrCast(proc);
     } else {
         log.err("entry point glGetVertexAttribPointerv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsProgram")) |proc| {
-        function_pointers.glIsProgram = @as(@TypeOf(function_pointers.glIsProgram), @ptrCast(proc));
+        function_pointers.glIsProgram = @ptrCast(proc);
     } else {
         log.err("entry point glIsProgram not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsShader")) |proc| {
-        function_pointers.glIsShader = @as(@TypeOf(function_pointers.glIsShader), @ptrCast(proc));
+        function_pointers.glIsShader = @ptrCast(proc);
     } else {
         log.err("entry point glIsShader not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glLinkProgram")) |proc| {
-        function_pointers.glLinkProgram = @as(@TypeOf(function_pointers.glLinkProgram), @ptrCast(proc));
+        function_pointers.glLinkProgram = @ptrCast(proc);
     } else {
         log.err("entry point glLinkProgram not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glShaderSource")) |proc| {
-        function_pointers.glShaderSource = @as(@TypeOf(function_pointers.glShaderSource), @ptrCast(proc));
+        function_pointers.glShaderSource = @ptrCast(proc);
     } else {
         log.err("entry point glShaderSource not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUseProgram")) |proc| {
-        function_pointers.glUseProgram = @as(@TypeOf(function_pointers.glUseProgram), @ptrCast(proc));
+        function_pointers.glUseProgram = @ptrCast(proc);
     } else {
         log.err("entry point glUseProgram not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform1f")) |proc| {
-        function_pointers.glUniform1f = @as(@TypeOf(function_pointers.glUniform1f), @ptrCast(proc));
+        function_pointers.glUniform1f = @ptrCast(proc);
     } else {
         log.err("entry point glUniform1f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform2f")) |proc| {
-        function_pointers.glUniform2f = @as(@TypeOf(function_pointers.glUniform2f), @ptrCast(proc));
+        function_pointers.glUniform2f = @ptrCast(proc);
     } else {
         log.err("entry point glUniform2f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform3f")) |proc| {
-        function_pointers.glUniform3f = @as(@TypeOf(function_pointers.glUniform3f), @ptrCast(proc));
+        function_pointers.glUniform3f = @ptrCast(proc);
     } else {
         log.err("entry point glUniform3f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform4f")) |proc| {
-        function_pointers.glUniform4f = @as(@TypeOf(function_pointers.glUniform4f), @ptrCast(proc));
+        function_pointers.glUniform4f = @ptrCast(proc);
     } else {
         log.err("entry point glUniform4f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform1i")) |proc| {
-        function_pointers.glUniform1i = @as(@TypeOf(function_pointers.glUniform1i), @ptrCast(proc));
+        function_pointers.glUniform1i = @ptrCast(proc);
     } else {
         log.err("entry point glUniform1i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform2i")) |proc| {
-        function_pointers.glUniform2i = @as(@TypeOf(function_pointers.glUniform2i), @ptrCast(proc));
+        function_pointers.glUniform2i = @ptrCast(proc);
     } else {
         log.err("entry point glUniform2i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform3i")) |proc| {
-        function_pointers.glUniform3i = @as(@TypeOf(function_pointers.glUniform3i), @ptrCast(proc));
+        function_pointers.glUniform3i = @ptrCast(proc);
     } else {
         log.err("entry point glUniform3i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform4i")) |proc| {
-        function_pointers.glUniform4i = @as(@TypeOf(function_pointers.glUniform4i), @ptrCast(proc));
+        function_pointers.glUniform4i = @ptrCast(proc);
     } else {
         log.err("entry point glUniform4i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform1fv")) |proc| {
-        function_pointers.glUniform1fv = @as(@TypeOf(function_pointers.glUniform1fv), @ptrCast(proc));
+        function_pointers.glUniform1fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform1fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform2fv")) |proc| {
-        function_pointers.glUniform2fv = @as(@TypeOf(function_pointers.glUniform2fv), @ptrCast(proc));
+        function_pointers.glUniform2fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform3fv")) |proc| {
-        function_pointers.glUniform3fv = @as(@TypeOf(function_pointers.glUniform3fv), @ptrCast(proc));
+        function_pointers.glUniform3fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform4fv")) |proc| {
-        function_pointers.glUniform4fv = @as(@TypeOf(function_pointers.glUniform4fv), @ptrCast(proc));
+        function_pointers.glUniform4fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform1iv")) |proc| {
-        function_pointers.glUniform1iv = @as(@TypeOf(function_pointers.glUniform1iv), @ptrCast(proc));
+        function_pointers.glUniform1iv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform1iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform2iv")) |proc| {
-        function_pointers.glUniform2iv = @as(@TypeOf(function_pointers.glUniform2iv), @ptrCast(proc));
+        function_pointers.glUniform2iv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform2iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform3iv")) |proc| {
-        function_pointers.glUniform3iv = @as(@TypeOf(function_pointers.glUniform3iv), @ptrCast(proc));
+        function_pointers.glUniform3iv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform3iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform4iv")) |proc| {
-        function_pointers.glUniform4iv = @as(@TypeOf(function_pointers.glUniform4iv), @ptrCast(proc));
+        function_pointers.glUniform4iv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform4iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix2fv")) |proc| {
-        function_pointers.glUniformMatrix2fv = @as(@TypeOf(function_pointers.glUniformMatrix2fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix2fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix3fv")) |proc| {
-        function_pointers.glUniformMatrix3fv = @as(@TypeOf(function_pointers.glUniformMatrix3fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix3fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix4fv")) |proc| {
-        function_pointers.glUniformMatrix4fv = @as(@TypeOf(function_pointers.glUniformMatrix4fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix4fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glValidateProgram")) |proc| {
-        function_pointers.glValidateProgram = @as(@TypeOf(function_pointers.glValidateProgram), @ptrCast(proc));
+        function_pointers.glValidateProgram = @ptrCast(proc);
     } else {
         log.err("entry point glValidateProgram not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib1d")) |proc| {
-        function_pointers.glVertexAttrib1d = @as(@TypeOf(function_pointers.glVertexAttrib1d), @ptrCast(proc));
+        function_pointers.glVertexAttrib1d = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib1d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib1dv")) |proc| {
-        function_pointers.glVertexAttrib1dv = @as(@TypeOf(function_pointers.glVertexAttrib1dv), @ptrCast(proc));
+        function_pointers.glVertexAttrib1dv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib1dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib1f")) |proc| {
-        function_pointers.glVertexAttrib1f = @as(@TypeOf(function_pointers.glVertexAttrib1f), @ptrCast(proc));
+        function_pointers.glVertexAttrib1f = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib1f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib1fv")) |proc| {
-        function_pointers.glVertexAttrib1fv = @as(@TypeOf(function_pointers.glVertexAttrib1fv), @ptrCast(proc));
+        function_pointers.glVertexAttrib1fv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib1fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib1s")) |proc| {
-        function_pointers.glVertexAttrib1s = @as(@TypeOf(function_pointers.glVertexAttrib1s), @ptrCast(proc));
+        function_pointers.glVertexAttrib1s = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib1s not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib1sv")) |proc| {
-        function_pointers.glVertexAttrib1sv = @as(@TypeOf(function_pointers.glVertexAttrib1sv), @ptrCast(proc));
+        function_pointers.glVertexAttrib1sv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib1sv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib2d")) |proc| {
-        function_pointers.glVertexAttrib2d = @as(@TypeOf(function_pointers.glVertexAttrib2d), @ptrCast(proc));
+        function_pointers.glVertexAttrib2d = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib2d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib2dv")) |proc| {
-        function_pointers.glVertexAttrib2dv = @as(@TypeOf(function_pointers.glVertexAttrib2dv), @ptrCast(proc));
+        function_pointers.glVertexAttrib2dv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib2dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib2f")) |proc| {
-        function_pointers.glVertexAttrib2f = @as(@TypeOf(function_pointers.glVertexAttrib2f), @ptrCast(proc));
+        function_pointers.glVertexAttrib2f = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib2f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib2fv")) |proc| {
-        function_pointers.glVertexAttrib2fv = @as(@TypeOf(function_pointers.glVertexAttrib2fv), @ptrCast(proc));
+        function_pointers.glVertexAttrib2fv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib2s")) |proc| {
-        function_pointers.glVertexAttrib2s = @as(@TypeOf(function_pointers.glVertexAttrib2s), @ptrCast(proc));
+        function_pointers.glVertexAttrib2s = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib2s not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib2sv")) |proc| {
-        function_pointers.glVertexAttrib2sv = @as(@TypeOf(function_pointers.glVertexAttrib2sv), @ptrCast(proc));
+        function_pointers.glVertexAttrib2sv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib2sv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib3d")) |proc| {
-        function_pointers.glVertexAttrib3d = @as(@TypeOf(function_pointers.glVertexAttrib3d), @ptrCast(proc));
+        function_pointers.glVertexAttrib3d = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib3d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib3dv")) |proc| {
-        function_pointers.glVertexAttrib3dv = @as(@TypeOf(function_pointers.glVertexAttrib3dv), @ptrCast(proc));
+        function_pointers.glVertexAttrib3dv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib3dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib3f")) |proc| {
-        function_pointers.glVertexAttrib3f = @as(@TypeOf(function_pointers.glVertexAttrib3f), @ptrCast(proc));
+        function_pointers.glVertexAttrib3f = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib3f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib3fv")) |proc| {
-        function_pointers.glVertexAttrib3fv = @as(@TypeOf(function_pointers.glVertexAttrib3fv), @ptrCast(proc));
+        function_pointers.glVertexAttrib3fv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib3s")) |proc| {
-        function_pointers.glVertexAttrib3s = @as(@TypeOf(function_pointers.glVertexAttrib3s), @ptrCast(proc));
+        function_pointers.glVertexAttrib3s = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib3s not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib3sv")) |proc| {
-        function_pointers.glVertexAttrib3sv = @as(@TypeOf(function_pointers.glVertexAttrib3sv), @ptrCast(proc));
+        function_pointers.glVertexAttrib3sv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib3sv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4Nbv")) |proc| {
-        function_pointers.glVertexAttrib4Nbv = @as(@TypeOf(function_pointers.glVertexAttrib4Nbv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4Nbv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4Nbv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4Niv")) |proc| {
-        function_pointers.glVertexAttrib4Niv = @as(@TypeOf(function_pointers.glVertexAttrib4Niv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4Niv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4Niv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4Nsv")) |proc| {
-        function_pointers.glVertexAttrib4Nsv = @as(@TypeOf(function_pointers.glVertexAttrib4Nsv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4Nsv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4Nsv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4Nub")) |proc| {
-        function_pointers.glVertexAttrib4Nub = @as(@TypeOf(function_pointers.glVertexAttrib4Nub), @ptrCast(proc));
+        function_pointers.glVertexAttrib4Nub = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4Nub not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4Nubv")) |proc| {
-        function_pointers.glVertexAttrib4Nubv = @as(@TypeOf(function_pointers.glVertexAttrib4Nubv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4Nubv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4Nubv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4Nuiv")) |proc| {
-        function_pointers.glVertexAttrib4Nuiv = @as(@TypeOf(function_pointers.glVertexAttrib4Nuiv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4Nuiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4Nuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4Nusv")) |proc| {
-        function_pointers.glVertexAttrib4Nusv = @as(@TypeOf(function_pointers.glVertexAttrib4Nusv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4Nusv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4Nusv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4bv")) |proc| {
-        function_pointers.glVertexAttrib4bv = @as(@TypeOf(function_pointers.glVertexAttrib4bv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4bv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4bv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4d")) |proc| {
-        function_pointers.glVertexAttrib4d = @as(@TypeOf(function_pointers.glVertexAttrib4d), @ptrCast(proc));
+        function_pointers.glVertexAttrib4d = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4d not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4dv")) |proc| {
-        function_pointers.glVertexAttrib4dv = @as(@TypeOf(function_pointers.glVertexAttrib4dv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4dv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4dv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4f")) |proc| {
-        function_pointers.glVertexAttrib4f = @as(@TypeOf(function_pointers.glVertexAttrib4f), @ptrCast(proc));
+        function_pointers.glVertexAttrib4f = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4f not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4fv")) |proc| {
-        function_pointers.glVertexAttrib4fv = @as(@TypeOf(function_pointers.glVertexAttrib4fv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4fv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4iv")) |proc| {
-        function_pointers.glVertexAttrib4iv = @as(@TypeOf(function_pointers.glVertexAttrib4iv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4iv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4s")) |proc| {
-        function_pointers.glVertexAttrib4s = @as(@TypeOf(function_pointers.glVertexAttrib4s), @ptrCast(proc));
+        function_pointers.glVertexAttrib4s = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4s not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4sv")) |proc| {
-        function_pointers.glVertexAttrib4sv = @as(@TypeOf(function_pointers.glVertexAttrib4sv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4sv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4sv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4ubv")) |proc| {
-        function_pointers.glVertexAttrib4ubv = @as(@TypeOf(function_pointers.glVertexAttrib4ubv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4ubv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4ubv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4uiv")) |proc| {
-        function_pointers.glVertexAttrib4uiv = @as(@TypeOf(function_pointers.glVertexAttrib4uiv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttrib4usv")) |proc| {
-        function_pointers.glVertexAttrib4usv = @as(@TypeOf(function_pointers.glVertexAttrib4usv), @ptrCast(proc));
+        function_pointers.glVertexAttrib4usv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttrib4usv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribPointer")) |proc| {
-        function_pointers.glVertexAttribPointer = @as(@TypeOf(function_pointers.glVertexAttribPointer), @ptrCast(proc));
+        function_pointers.glVertexAttribPointer = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribPointer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix2x3fv")) |proc| {
-        function_pointers.glUniformMatrix2x3fv = @as(@TypeOf(function_pointers.glUniformMatrix2x3fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix2x3fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix2x3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix3x2fv")) |proc| {
-        function_pointers.glUniformMatrix3x2fv = @as(@TypeOf(function_pointers.glUniformMatrix3x2fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix3x2fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix3x2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix2x4fv")) |proc| {
-        function_pointers.glUniformMatrix2x4fv = @as(@TypeOf(function_pointers.glUniformMatrix2x4fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix2x4fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix2x4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix4x2fv")) |proc| {
-        function_pointers.glUniformMatrix4x2fv = @as(@TypeOf(function_pointers.glUniformMatrix4x2fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix4x2fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix4x2fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix3x4fv")) |proc| {
-        function_pointers.glUniformMatrix3x4fv = @as(@TypeOf(function_pointers.glUniformMatrix3x4fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix3x4fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix3x4fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformMatrix4x3fv")) |proc| {
-        function_pointers.glUniformMatrix4x3fv = @as(@TypeOf(function_pointers.glUniformMatrix4x3fv), @ptrCast(proc));
+        function_pointers.glUniformMatrix4x3fv = @ptrCast(proc);
     } else {
         log.err("entry point glUniformMatrix4x3fv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glColorMaski")) |proc| {
-        function_pointers.glColorMaski = @as(@TypeOf(function_pointers.glColorMaski), @ptrCast(proc));
+        function_pointers.glColorMaski = @ptrCast(proc);
     } else {
         log.err("entry point glColorMaski not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetBooleani_v")) |proc| {
-        function_pointers.glGetBooleani_v = @as(@TypeOf(function_pointers.glGetBooleani_v), @ptrCast(proc));
+        function_pointers.glGetBooleani_v = @ptrCast(proc);
     } else {
         log.err("entry point glGetBooleani_v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetIntegeri_v")) |proc| {
-        function_pointers.glGetIntegeri_v = @as(@TypeOf(function_pointers.glGetIntegeri_v), @ptrCast(proc));
+        function_pointers.glGetIntegeri_v = @ptrCast(proc);
     } else {
         log.err("entry point glGetIntegeri_v not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glEnablei")) |proc| {
-        function_pointers.glEnablei = @as(@TypeOf(function_pointers.glEnablei), @ptrCast(proc));
+        function_pointers.glEnablei = @ptrCast(proc);
     } else {
         log.err("entry point glEnablei not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDisablei")) |proc| {
-        function_pointers.glDisablei = @as(@TypeOf(function_pointers.glDisablei), @ptrCast(proc));
+        function_pointers.glDisablei = @ptrCast(proc);
     } else {
         log.err("entry point glDisablei not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsEnabledi")) |proc| {
-        function_pointers.glIsEnabledi = @as(@TypeOf(function_pointers.glIsEnabledi), @ptrCast(proc));
+        function_pointers.glIsEnabledi = @ptrCast(proc);
     } else {
         log.err("entry point glIsEnabledi not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBeginTransformFeedback")) |proc| {
-        function_pointers.glBeginTransformFeedback = @as(@TypeOf(function_pointers.glBeginTransformFeedback), @ptrCast(proc));
+        function_pointers.glBeginTransformFeedback = @ptrCast(proc);
     } else {
         log.err("entry point glBeginTransformFeedback not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glEndTransformFeedback")) |proc| {
-        function_pointers.glEndTransformFeedback = @as(@TypeOf(function_pointers.glEndTransformFeedback), @ptrCast(proc));
+        function_pointers.glEndTransformFeedback = @ptrCast(proc);
     } else {
         log.err("entry point glEndTransformFeedback not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindBufferRange")) |proc| {
-        function_pointers.glBindBufferRange = @as(@TypeOf(function_pointers.glBindBufferRange), @ptrCast(proc));
+        function_pointers.glBindBufferRange = @ptrCast(proc);
     } else {
         log.err("entry point glBindBufferRange not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindBufferBase")) |proc| {
-        function_pointers.glBindBufferBase = @as(@TypeOf(function_pointers.glBindBufferBase), @ptrCast(proc));
+        function_pointers.glBindBufferBase = @ptrCast(proc);
     } else {
         log.err("entry point glBindBufferBase not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTransformFeedbackVaryings")) |proc| {
-        function_pointers.glTransformFeedbackVaryings = @as(@TypeOf(function_pointers.glTransformFeedbackVaryings), @ptrCast(proc));
+        function_pointers.glTransformFeedbackVaryings = @ptrCast(proc);
     } else {
         log.err("entry point glTransformFeedbackVaryings not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetTransformFeedbackVarying")) |proc| {
-        function_pointers.glGetTransformFeedbackVarying = @as(@TypeOf(function_pointers.glGetTransformFeedbackVarying), @ptrCast(proc));
+        function_pointers.glGetTransformFeedbackVarying = @ptrCast(proc);
     } else {
         log.err("entry point glGetTransformFeedbackVarying not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClampColor")) |proc| {
-        function_pointers.glClampColor = @as(@TypeOf(function_pointers.glClampColor), @ptrCast(proc));
+        function_pointers.glClampColor = @ptrCast(proc);
     } else {
         log.err("entry point glClampColor not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBeginConditionalRender")) |proc| {
-        function_pointers.glBeginConditionalRender = @as(@TypeOf(function_pointers.glBeginConditionalRender), @ptrCast(proc));
+        function_pointers.glBeginConditionalRender = @ptrCast(proc);
     } else {
         log.err("entry point glBeginConditionalRender not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glEndConditionalRender")) |proc| {
-        function_pointers.glEndConditionalRender = @as(@TypeOf(function_pointers.glEndConditionalRender), @ptrCast(proc));
+        function_pointers.glEndConditionalRender = @ptrCast(proc);
     } else {
         log.err("entry point glEndConditionalRender not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribIPointer")) |proc| {
-        function_pointers.glVertexAttribIPointer = @as(@TypeOf(function_pointers.glVertexAttribIPointer), @ptrCast(proc));
+        function_pointers.glVertexAttribIPointer = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribIPointer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetVertexAttribIiv")) |proc| {
-        function_pointers.glGetVertexAttribIiv = @as(@TypeOf(function_pointers.glGetVertexAttribIiv), @ptrCast(proc));
+        function_pointers.glGetVertexAttribIiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetVertexAttribIiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetVertexAttribIuiv")) |proc| {
-        function_pointers.glGetVertexAttribIuiv = @as(@TypeOf(function_pointers.glGetVertexAttribIuiv), @ptrCast(proc));
+        function_pointers.glGetVertexAttribIuiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetVertexAttribIuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI1i")) |proc| {
-        function_pointers.glVertexAttribI1i = @as(@TypeOf(function_pointers.glVertexAttribI1i), @ptrCast(proc));
+        function_pointers.glVertexAttribI1i = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI1i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI2i")) |proc| {
-        function_pointers.glVertexAttribI2i = @as(@TypeOf(function_pointers.glVertexAttribI2i), @ptrCast(proc));
+        function_pointers.glVertexAttribI2i = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI2i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI3i")) |proc| {
-        function_pointers.glVertexAttribI3i = @as(@TypeOf(function_pointers.glVertexAttribI3i), @ptrCast(proc));
+        function_pointers.glVertexAttribI3i = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI3i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI4i")) |proc| {
-        function_pointers.glVertexAttribI4i = @as(@TypeOf(function_pointers.glVertexAttribI4i), @ptrCast(proc));
+        function_pointers.glVertexAttribI4i = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI4i not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI1ui")) |proc| {
-        function_pointers.glVertexAttribI1ui = @as(@TypeOf(function_pointers.glVertexAttribI1ui), @ptrCast(proc));
+        function_pointers.glVertexAttribI1ui = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI1ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI2ui")) |proc| {
-        function_pointers.glVertexAttribI2ui = @as(@TypeOf(function_pointers.glVertexAttribI2ui), @ptrCast(proc));
+        function_pointers.glVertexAttribI2ui = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI2ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI3ui")) |proc| {
-        function_pointers.glVertexAttribI3ui = @as(@TypeOf(function_pointers.glVertexAttribI3ui), @ptrCast(proc));
+        function_pointers.glVertexAttribI3ui = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI3ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI4ui")) |proc| {
-        function_pointers.glVertexAttribI4ui = @as(@TypeOf(function_pointers.glVertexAttribI4ui), @ptrCast(proc));
+        function_pointers.glVertexAttribI4ui = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI4ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI1iv")) |proc| {
-        function_pointers.glVertexAttribI1iv = @as(@TypeOf(function_pointers.glVertexAttribI1iv), @ptrCast(proc));
+        function_pointers.glVertexAttribI1iv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI1iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI2iv")) |proc| {
-        function_pointers.glVertexAttribI2iv = @as(@TypeOf(function_pointers.glVertexAttribI2iv), @ptrCast(proc));
+        function_pointers.glVertexAttribI2iv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI2iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI3iv")) |proc| {
-        function_pointers.glVertexAttribI3iv = @as(@TypeOf(function_pointers.glVertexAttribI3iv), @ptrCast(proc));
+        function_pointers.glVertexAttribI3iv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI3iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI4iv")) |proc| {
-        function_pointers.glVertexAttribI4iv = @as(@TypeOf(function_pointers.glVertexAttribI4iv), @ptrCast(proc));
+        function_pointers.glVertexAttribI4iv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI4iv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI1uiv")) |proc| {
-        function_pointers.glVertexAttribI1uiv = @as(@TypeOf(function_pointers.glVertexAttribI1uiv), @ptrCast(proc));
+        function_pointers.glVertexAttribI1uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI1uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI2uiv")) |proc| {
-        function_pointers.glVertexAttribI2uiv = @as(@TypeOf(function_pointers.glVertexAttribI2uiv), @ptrCast(proc));
+        function_pointers.glVertexAttribI2uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI2uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI3uiv")) |proc| {
-        function_pointers.glVertexAttribI3uiv = @as(@TypeOf(function_pointers.glVertexAttribI3uiv), @ptrCast(proc));
+        function_pointers.glVertexAttribI3uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI3uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI4uiv")) |proc| {
-        function_pointers.glVertexAttribI4uiv = @as(@TypeOf(function_pointers.glVertexAttribI4uiv), @ptrCast(proc));
+        function_pointers.glVertexAttribI4uiv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI4uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI4bv")) |proc| {
-        function_pointers.glVertexAttribI4bv = @as(@TypeOf(function_pointers.glVertexAttribI4bv), @ptrCast(proc));
+        function_pointers.glVertexAttribI4bv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI4bv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI4sv")) |proc| {
-        function_pointers.glVertexAttribI4sv = @as(@TypeOf(function_pointers.glVertexAttribI4sv), @ptrCast(proc));
+        function_pointers.glVertexAttribI4sv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI4sv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI4ubv")) |proc| {
-        function_pointers.glVertexAttribI4ubv = @as(@TypeOf(function_pointers.glVertexAttribI4ubv), @ptrCast(proc));
+        function_pointers.glVertexAttribI4ubv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI4ubv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glVertexAttribI4usv")) |proc| {
-        function_pointers.glVertexAttribI4usv = @as(@TypeOf(function_pointers.glVertexAttribI4usv), @ptrCast(proc));
+        function_pointers.glVertexAttribI4usv = @ptrCast(proc);
     } else {
         log.err("entry point glVertexAttribI4usv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetUniformuiv")) |proc| {
-        function_pointers.glGetUniformuiv = @as(@TypeOf(function_pointers.glGetUniformuiv), @ptrCast(proc));
+        function_pointers.glGetUniformuiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetUniformuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindFragDataLocation")) |proc| {
-        function_pointers.glBindFragDataLocation = @as(@TypeOf(function_pointers.glBindFragDataLocation), @ptrCast(proc));
+        function_pointers.glBindFragDataLocation = @ptrCast(proc);
     } else {
         log.err("entry point glBindFragDataLocation not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetFragDataLocation")) |proc| {
-        function_pointers.glGetFragDataLocation = @as(@TypeOf(function_pointers.glGetFragDataLocation), @ptrCast(proc));
+        function_pointers.glGetFragDataLocation = @ptrCast(proc);
     } else {
         log.err("entry point glGetFragDataLocation not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform1ui")) |proc| {
-        function_pointers.glUniform1ui = @as(@TypeOf(function_pointers.glUniform1ui), @ptrCast(proc));
+        function_pointers.glUniform1ui = @ptrCast(proc);
     } else {
         log.err("entry point glUniform1ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform2ui")) |proc| {
-        function_pointers.glUniform2ui = @as(@TypeOf(function_pointers.glUniform2ui), @ptrCast(proc));
+        function_pointers.glUniform2ui = @ptrCast(proc);
     } else {
         log.err("entry point glUniform2ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform3ui")) |proc| {
-        function_pointers.glUniform3ui = @as(@TypeOf(function_pointers.glUniform3ui), @ptrCast(proc));
+        function_pointers.glUniform3ui = @ptrCast(proc);
     } else {
         log.err("entry point glUniform3ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform4ui")) |proc| {
-        function_pointers.glUniform4ui = @as(@TypeOf(function_pointers.glUniform4ui), @ptrCast(proc));
+        function_pointers.glUniform4ui = @ptrCast(proc);
     } else {
         log.err("entry point glUniform4ui not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform1uiv")) |proc| {
-        function_pointers.glUniform1uiv = @as(@TypeOf(function_pointers.glUniform1uiv), @ptrCast(proc));
+        function_pointers.glUniform1uiv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform1uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform2uiv")) |proc| {
-        function_pointers.glUniform2uiv = @as(@TypeOf(function_pointers.glUniform2uiv), @ptrCast(proc));
+        function_pointers.glUniform2uiv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform2uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform3uiv")) |proc| {
-        function_pointers.glUniform3uiv = @as(@TypeOf(function_pointers.glUniform3uiv), @ptrCast(proc));
+        function_pointers.glUniform3uiv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform3uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniform4uiv")) |proc| {
-        function_pointers.glUniform4uiv = @as(@TypeOf(function_pointers.glUniform4uiv), @ptrCast(proc));
+        function_pointers.glUniform4uiv = @ptrCast(proc);
     } else {
         log.err("entry point glUniform4uiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexParameterIiv")) |proc| {
-        function_pointers.glTexParameterIiv = @as(@TypeOf(function_pointers.glTexParameterIiv), @ptrCast(proc));
+        function_pointers.glTexParameterIiv = @ptrCast(proc);
     } else {
         log.err("entry point glTexParameterIiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexParameterIuiv")) |proc| {
-        function_pointers.glTexParameterIuiv = @as(@TypeOf(function_pointers.glTexParameterIuiv), @ptrCast(proc));
+        function_pointers.glTexParameterIuiv = @ptrCast(proc);
     } else {
         log.err("entry point glTexParameterIuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetTexParameterIiv")) |proc| {
-        function_pointers.glGetTexParameterIiv = @as(@TypeOf(function_pointers.glGetTexParameterIiv), @ptrCast(proc));
+        function_pointers.glGetTexParameterIiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetTexParameterIiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetTexParameterIuiv")) |proc| {
-        function_pointers.glGetTexParameterIuiv = @as(@TypeOf(function_pointers.glGetTexParameterIuiv), @ptrCast(proc));
+        function_pointers.glGetTexParameterIuiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetTexParameterIuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClearBufferiv")) |proc| {
-        function_pointers.glClearBufferiv = @as(@TypeOf(function_pointers.glClearBufferiv), @ptrCast(proc));
+        function_pointers.glClearBufferiv = @ptrCast(proc);
     } else {
         log.err("entry point glClearBufferiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClearBufferuiv")) |proc| {
-        function_pointers.glClearBufferuiv = @as(@TypeOf(function_pointers.glClearBufferuiv), @ptrCast(proc));
+        function_pointers.glClearBufferuiv = @ptrCast(proc);
     } else {
         log.err("entry point glClearBufferuiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClearBufferfv")) |proc| {
-        function_pointers.glClearBufferfv = @as(@TypeOf(function_pointers.glClearBufferfv), @ptrCast(proc));
+        function_pointers.glClearBufferfv = @ptrCast(proc);
     } else {
         log.err("entry point glClearBufferfv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glClearBufferfi")) |proc| {
-        function_pointers.glClearBufferfi = @as(@TypeOf(function_pointers.glClearBufferfi), @ptrCast(proc));
+        function_pointers.glClearBufferfi = @ptrCast(proc);
     } else {
         log.err("entry point glClearBufferfi not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetStringi")) |proc| {
-        function_pointers.glGetStringi = @as(@TypeOf(function_pointers.glGetStringi), @ptrCast(proc));
+        function_pointers.glGetStringi = @ptrCast(proc);
     } else {
         log.err("entry point glGetStringi not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsRenderbuffer")) |proc| {
-        function_pointers.glIsRenderbuffer = @as(@TypeOf(function_pointers.glIsRenderbuffer), @ptrCast(proc));
+        function_pointers.glIsRenderbuffer = @ptrCast(proc);
     } else {
         log.err("entry point glIsRenderbuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindRenderbuffer")) |proc| {
-        function_pointers.glBindRenderbuffer = @as(@TypeOf(function_pointers.glBindRenderbuffer), @ptrCast(proc));
+        function_pointers.glBindRenderbuffer = @ptrCast(proc);
     } else {
         log.err("entry point glBindRenderbuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteRenderbuffers")) |proc| {
-        function_pointers.glDeleteRenderbuffers = @as(@TypeOf(function_pointers.glDeleteRenderbuffers), @ptrCast(proc));
+        function_pointers.glDeleteRenderbuffers = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteRenderbuffers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenRenderbuffers")) |proc| {
-        function_pointers.glGenRenderbuffers = @as(@TypeOf(function_pointers.glGenRenderbuffers), @ptrCast(proc));
+        function_pointers.glGenRenderbuffers = @ptrCast(proc);
     } else {
         log.err("entry point glGenRenderbuffers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glRenderbufferStorage")) |proc| {
-        function_pointers.glRenderbufferStorage = @as(@TypeOf(function_pointers.glRenderbufferStorage), @ptrCast(proc));
+        function_pointers.glRenderbufferStorage = @ptrCast(proc);
     } else {
         log.err("entry point glRenderbufferStorage not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetRenderbufferParameteriv")) |proc| {
-        function_pointers.glGetRenderbufferParameteriv = @as(@TypeOf(function_pointers.glGetRenderbufferParameteriv), @ptrCast(proc));
+        function_pointers.glGetRenderbufferParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glGetRenderbufferParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsFramebuffer")) |proc| {
-        function_pointers.glIsFramebuffer = @as(@TypeOf(function_pointers.glIsFramebuffer), @ptrCast(proc));
+        function_pointers.glIsFramebuffer = @ptrCast(proc);
     } else {
         log.err("entry point glIsFramebuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindFramebuffer")) |proc| {
-        function_pointers.glBindFramebuffer = @as(@TypeOf(function_pointers.glBindFramebuffer), @ptrCast(proc));
+        function_pointers.glBindFramebuffer = @ptrCast(proc);
     } else {
         log.err("entry point glBindFramebuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteFramebuffers")) |proc| {
-        function_pointers.glDeleteFramebuffers = @as(@TypeOf(function_pointers.glDeleteFramebuffers), @ptrCast(proc));
+        function_pointers.glDeleteFramebuffers = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteFramebuffers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenFramebuffers")) |proc| {
-        function_pointers.glGenFramebuffers = @as(@TypeOf(function_pointers.glGenFramebuffers), @ptrCast(proc));
+        function_pointers.glGenFramebuffers = @ptrCast(proc);
     } else {
         log.err("entry point glGenFramebuffers not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCheckFramebufferStatus")) |proc| {
-        function_pointers.glCheckFramebufferStatus = @as(@TypeOf(function_pointers.glCheckFramebufferStatus), @ptrCast(proc));
+        function_pointers.glCheckFramebufferStatus = @ptrCast(proc);
     } else {
         log.err("entry point glCheckFramebufferStatus not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFramebufferTexture1D")) |proc| {
-        function_pointers.glFramebufferTexture1D = @as(@TypeOf(function_pointers.glFramebufferTexture1D), @ptrCast(proc));
+        function_pointers.glFramebufferTexture1D = @ptrCast(proc);
     } else {
         log.err("entry point glFramebufferTexture1D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFramebufferTexture2D")) |proc| {
-        function_pointers.glFramebufferTexture2D = @as(@TypeOf(function_pointers.glFramebufferTexture2D), @ptrCast(proc));
+        function_pointers.glFramebufferTexture2D = @ptrCast(proc);
     } else {
         log.err("entry point glFramebufferTexture2D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFramebufferTexture3D")) |proc| {
-        function_pointers.glFramebufferTexture3D = @as(@TypeOf(function_pointers.glFramebufferTexture3D), @ptrCast(proc));
+        function_pointers.glFramebufferTexture3D = @ptrCast(proc);
     } else {
         log.err("entry point glFramebufferTexture3D not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFramebufferRenderbuffer")) |proc| {
-        function_pointers.glFramebufferRenderbuffer = @as(@TypeOf(function_pointers.glFramebufferRenderbuffer), @ptrCast(proc));
+        function_pointers.glFramebufferRenderbuffer = @ptrCast(proc);
     } else {
         log.err("entry point glFramebufferRenderbuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetFramebufferAttachmentParameteriv")) |proc| {
-        function_pointers.glGetFramebufferAttachmentParameteriv = @as(@TypeOf(function_pointers.glGetFramebufferAttachmentParameteriv), @ptrCast(proc));
+        function_pointers.glGetFramebufferAttachmentParameteriv = @ptrCast(proc);
     } else {
         log.err("entry point glGetFramebufferAttachmentParameteriv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenerateMipmap")) |proc| {
-        function_pointers.glGenerateMipmap = @as(@TypeOf(function_pointers.glGenerateMipmap), @ptrCast(proc));
+        function_pointers.glGenerateMipmap = @ptrCast(proc);
     } else {
         log.err("entry point glGenerateMipmap not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBlitFramebuffer")) |proc| {
-        function_pointers.glBlitFramebuffer = @as(@TypeOf(function_pointers.glBlitFramebuffer), @ptrCast(proc));
+        function_pointers.glBlitFramebuffer = @ptrCast(proc);
     } else {
         log.err("entry point glBlitFramebuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glRenderbufferStorageMultisample")) |proc| {
-        function_pointers.glRenderbufferStorageMultisample = @as(@TypeOf(function_pointers.glRenderbufferStorageMultisample), @ptrCast(proc));
+        function_pointers.glRenderbufferStorageMultisample = @ptrCast(proc);
     } else {
         log.err("entry point glRenderbufferStorageMultisample not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFramebufferTextureLayer")) |proc| {
-        function_pointers.glFramebufferTextureLayer = @as(@TypeOf(function_pointers.glFramebufferTextureLayer), @ptrCast(proc));
+        function_pointers.glFramebufferTextureLayer = @ptrCast(proc);
     } else {
         log.err("entry point glFramebufferTextureLayer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glMapBufferRange")) |proc| {
-        function_pointers.glMapBufferRange = @as(@TypeOf(function_pointers.glMapBufferRange), @ptrCast(proc));
+        function_pointers.glMapBufferRange = @ptrCast(proc);
     } else {
         log.err("entry point glMapBufferRange not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glFlushMappedBufferRange")) |proc| {
-        function_pointers.glFlushMappedBufferRange = @as(@TypeOf(function_pointers.glFlushMappedBufferRange), @ptrCast(proc));
+        function_pointers.glFlushMappedBufferRange = @ptrCast(proc);
     } else {
         log.err("entry point glFlushMappedBufferRange not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glBindVertexArray")) |proc| {
-        function_pointers.glBindVertexArray = @as(@TypeOf(function_pointers.glBindVertexArray), @ptrCast(proc));
+        function_pointers.glBindVertexArray = @ptrCast(proc);
     } else {
         log.err("entry point glBindVertexArray not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDeleteVertexArrays")) |proc| {
-        function_pointers.glDeleteVertexArrays = @as(@TypeOf(function_pointers.glDeleteVertexArrays), @ptrCast(proc));
+        function_pointers.glDeleteVertexArrays = @ptrCast(proc);
     } else {
         log.err("entry point glDeleteVertexArrays not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGenVertexArrays")) |proc| {
-        function_pointers.glGenVertexArrays = @as(@TypeOf(function_pointers.glGenVertexArrays), @ptrCast(proc));
+        function_pointers.glGenVertexArrays = @ptrCast(proc);
     } else {
         log.err("entry point glGenVertexArrays not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glIsVertexArray")) |proc| {
-        function_pointers.glIsVertexArray = @as(@TypeOf(function_pointers.glIsVertexArray), @ptrCast(proc));
+        function_pointers.glIsVertexArray = @ptrCast(proc);
     } else {
         log.err("entry point glIsVertexArray not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawArraysInstanced")) |proc| {
-        function_pointers.glDrawArraysInstanced = @as(@TypeOf(function_pointers.glDrawArraysInstanced), @ptrCast(proc));
+        function_pointers.glDrawArraysInstanced = @ptrCast(proc);
     } else {
         log.err("entry point glDrawArraysInstanced not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glDrawElementsInstanced")) |proc| {
-        function_pointers.glDrawElementsInstanced = @as(@TypeOf(function_pointers.glDrawElementsInstanced), @ptrCast(proc));
+        function_pointers.glDrawElementsInstanced = @ptrCast(proc);
     } else {
         log.err("entry point glDrawElementsInstanced not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glTexBuffer")) |proc| {
-        function_pointers.glTexBuffer = @as(@TypeOf(function_pointers.glTexBuffer), @ptrCast(proc));
+        function_pointers.glTexBuffer = @ptrCast(proc);
     } else {
         log.err("entry point glTexBuffer not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glPrimitiveRestartIndex")) |proc| {
-        function_pointers.glPrimitiveRestartIndex = @as(@TypeOf(function_pointers.glPrimitiveRestartIndex), @ptrCast(proc));
+        function_pointers.glPrimitiveRestartIndex = @ptrCast(proc);
     } else {
         log.err("entry point glPrimitiveRestartIndex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glCopyBufferSubData")) |proc| {
-        function_pointers.glCopyBufferSubData = @as(@TypeOf(function_pointers.glCopyBufferSubData), @ptrCast(proc));
+        function_pointers.glCopyBufferSubData = @ptrCast(proc);
     } else {
         log.err("entry point glCopyBufferSubData not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetUniformIndices")) |proc| {
-        function_pointers.glGetUniformIndices = @as(@TypeOf(function_pointers.glGetUniformIndices), @ptrCast(proc));
+        function_pointers.glGetUniformIndices = @ptrCast(proc);
     } else {
         log.err("entry point glGetUniformIndices not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveUniformsiv")) |proc| {
-        function_pointers.glGetActiveUniformsiv = @as(@TypeOf(function_pointers.glGetActiveUniformsiv), @ptrCast(proc));
+        function_pointers.glGetActiveUniformsiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveUniformsiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveUniformName")) |proc| {
-        function_pointers.glGetActiveUniformName = @as(@TypeOf(function_pointers.glGetActiveUniformName), @ptrCast(proc));
+        function_pointers.glGetActiveUniformName = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveUniformName not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetUniformBlockIndex")) |proc| {
-        function_pointers.glGetUniformBlockIndex = @as(@TypeOf(function_pointers.glGetUniformBlockIndex), @ptrCast(proc));
+        function_pointers.glGetUniformBlockIndex = @ptrCast(proc);
     } else {
         log.err("entry point glGetUniformBlockIndex not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveUniformBlockiv")) |proc| {
-        function_pointers.glGetActiveUniformBlockiv = @as(@TypeOf(function_pointers.glGetActiveUniformBlockiv), @ptrCast(proc));
+        function_pointers.glGetActiveUniformBlockiv = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveUniformBlockiv not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glGetActiveUniformBlockName")) |proc| {
-        function_pointers.glGetActiveUniformBlockName = @as(@TypeOf(function_pointers.glGetActiveUniformBlockName), @ptrCast(proc));
+        function_pointers.glGetActiveUniformBlockName = @ptrCast(proc);
     } else {
         log.err("entry point glGetActiveUniformBlockName not found!", .{});
         success = false;
     }
     if (get_proc_address(load_ctx, "glUniformBlockBinding")) |proc| {
-        function_pointers.glUniformBlockBinding = @as(@TypeOf(function_pointers.glUniformBlockBinding), @ptrCast(proc));
+        function_pointers.glUniformBlockBinding = @ptrCast(proc);
     } else {
         log.err("entry point glUniformBlockBinding not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTexStorage3DMultisample")) |proc| {
-        function_pointers.glTexStorage3DMultisample = @as(@TypeOf(function_pointers.glTexStorage3DMultisample), @ptrCast(proc));
-    } else {
-        log.err("entry point glTexStorage3DMultisample not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureView")) |proc| {
-        function_pointers.glTextureView = @as(@TypeOf(function_pointers.glTextureView), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureView not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindVertexBuffer")) |proc| {
-        function_pointers.glBindVertexBuffer = @as(@TypeOf(function_pointers.glBindVertexBuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindVertexBuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexAttribFormat")) |proc| {
-        function_pointers.glVertexAttribFormat = @as(@TypeOf(function_pointers.glVertexAttribFormat), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexAttribFormat not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexAttribIFormat")) |proc| {
-        function_pointers.glVertexAttribIFormat = @as(@TypeOf(function_pointers.glVertexAttribIFormat), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexAttribIFormat not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexAttribLFormat")) |proc| {
-        function_pointers.glVertexAttribLFormat = @as(@TypeOf(function_pointers.glVertexAttribLFormat), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexAttribLFormat not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexAttribBinding")) |proc| {
-        function_pointers.glVertexAttribBinding = @as(@TypeOf(function_pointers.glVertexAttribBinding), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexAttribBinding not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexBindingDivisor")) |proc| {
-        function_pointers.glVertexBindingDivisor = @as(@TypeOf(function_pointers.glVertexBindingDivisor), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexBindingDivisor not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDebugMessageControl")) |proc| {
-        function_pointers.glDebugMessageControl = @as(@TypeOf(function_pointers.glDebugMessageControl), @ptrCast(proc));
-    } else {
-        log.err("entry point glDebugMessageControl not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDebugMessageInsert")) |proc| {
-        function_pointers.glDebugMessageInsert = @as(@TypeOf(function_pointers.glDebugMessageInsert), @ptrCast(proc));
-    } else {
-        log.err("entry point glDebugMessageInsert not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDebugMessageCallback")) |proc| {
-        function_pointers.glDebugMessageCallback = @as(@TypeOf(function_pointers.glDebugMessageCallback), @ptrCast(proc));
-    } else {
-        log.err("entry point glDebugMessageCallback not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetDebugMessageLog")) |proc| {
-        function_pointers.glGetDebugMessageLog = @as(@TypeOf(function_pointers.glGetDebugMessageLog), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetDebugMessageLog not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glPushDebugGroup")) |proc| {
-        function_pointers.glPushDebugGroup = @as(@TypeOf(function_pointers.glPushDebugGroup), @ptrCast(proc));
-    } else {
-        log.err("entry point glPushDebugGroup not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glPopDebugGroup")) |proc| {
-        function_pointers.glPopDebugGroup = @as(@TypeOf(function_pointers.glPopDebugGroup), @ptrCast(proc));
-    } else {
-        log.err("entry point glPopDebugGroup not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glObjectLabel")) |proc| {
-        function_pointers.glObjectLabel = @as(@TypeOf(function_pointers.glObjectLabel), @ptrCast(proc));
-    } else {
-        log.err("entry point glObjectLabel not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetObjectLabel")) |proc| {
-        function_pointers.glGetObjectLabel = @as(@TypeOf(function_pointers.glGetObjectLabel), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetObjectLabel not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glObjectPtrLabel")) |proc| {
-        function_pointers.glObjectPtrLabel = @as(@TypeOf(function_pointers.glObjectPtrLabel), @ptrCast(proc));
-    } else {
-        log.err("entry point glObjectPtrLabel not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetObjectPtrLabel")) |proc| {
-        function_pointers.glGetObjectPtrLabel = @as(@TypeOf(function_pointers.glGetObjectPtrLabel), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetObjectPtrLabel not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetPointerv")) |proc| {
-        function_pointers.glGetPointerv = @as(@TypeOf(function_pointers.glGetPointerv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetPointerv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBufferStorage")) |proc| {
-        function_pointers.glBufferStorage = @as(@TypeOf(function_pointers.glBufferStorage), @ptrCast(proc));
-    } else {
-        log.err("entry point glBufferStorage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearTexImage")) |proc| {
-        function_pointers.glClearTexImage = @as(@TypeOf(function_pointers.glClearTexImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearTexImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearTexSubImage")) |proc| {
-        function_pointers.glClearTexSubImage = @as(@TypeOf(function_pointers.glClearTexSubImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearTexSubImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindBuffersBase")) |proc| {
-        function_pointers.glBindBuffersBase = @as(@TypeOf(function_pointers.glBindBuffersBase), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindBuffersBase not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindBuffersRange")) |proc| {
-        function_pointers.glBindBuffersRange = @as(@TypeOf(function_pointers.glBindBuffersRange), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindBuffersRange not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindTextures")) |proc| {
-        function_pointers.glBindTextures = @as(@TypeOf(function_pointers.glBindTextures), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindTextures not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindSamplers")) |proc| {
-        function_pointers.glBindSamplers = @as(@TypeOf(function_pointers.glBindSamplers), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindSamplers not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindImageTextures")) |proc| {
-        function_pointers.glBindImageTextures = @as(@TypeOf(function_pointers.glBindImageTextures), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindImageTextures not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindVertexBuffers")) |proc| {
-        function_pointers.glBindVertexBuffers = @as(@TypeOf(function_pointers.glBindVertexBuffers), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindVertexBuffers not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClipControl")) |proc| {
-        function_pointers.glClipControl = @as(@TypeOf(function_pointers.glClipControl), @ptrCast(proc));
-    } else {
-        log.err("entry point glClipControl not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateTransformFeedbacks")) |proc| {
-        function_pointers.glCreateTransformFeedbacks = @as(@TypeOf(function_pointers.glCreateTransformFeedbacks), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateTransformFeedbacks not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTransformFeedbackBufferBase")) |proc| {
-        function_pointers.glTransformFeedbackBufferBase = @as(@TypeOf(function_pointers.glTransformFeedbackBufferBase), @ptrCast(proc));
-    } else {
-        log.err("entry point glTransformFeedbackBufferBase not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTransformFeedbackBufferRange")) |proc| {
-        function_pointers.glTransformFeedbackBufferRange = @as(@TypeOf(function_pointers.glTransformFeedbackBufferRange), @ptrCast(proc));
-    } else {
-        log.err("entry point glTransformFeedbackBufferRange not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTransformFeedbackiv")) |proc| {
-        function_pointers.glGetTransformFeedbackiv = @as(@TypeOf(function_pointers.glGetTransformFeedbackiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTransformFeedbackiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTransformFeedbacki_v")) |proc| {
-        function_pointers.glGetTransformFeedbacki_v = @as(@TypeOf(function_pointers.glGetTransformFeedbacki_v), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTransformFeedbacki_v not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTransformFeedbacki64_v")) |proc| {
-        function_pointers.glGetTransformFeedbacki64_v = @as(@TypeOf(function_pointers.glGetTransformFeedbacki64_v), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTransformFeedbacki64_v not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateBuffers")) |proc| {
-        function_pointers.glCreateBuffers = @as(@TypeOf(function_pointers.glCreateBuffers), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateBuffers not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedBufferStorage")) |proc| {
-        function_pointers.glNamedBufferStorage = @as(@TypeOf(function_pointers.glNamedBufferStorage), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedBufferStorage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedBufferData")) |proc| {
-        function_pointers.glNamedBufferData = @as(@TypeOf(function_pointers.glNamedBufferData), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedBufferData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedBufferSubData")) |proc| {
-        function_pointers.glNamedBufferSubData = @as(@TypeOf(function_pointers.glNamedBufferSubData), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedBufferSubData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCopyNamedBufferSubData")) |proc| {
-        function_pointers.glCopyNamedBufferSubData = @as(@TypeOf(function_pointers.glCopyNamedBufferSubData), @ptrCast(proc));
-    } else {
-        log.err("entry point glCopyNamedBufferSubData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearNamedBufferData")) |proc| {
-        function_pointers.glClearNamedBufferData = @as(@TypeOf(function_pointers.glClearNamedBufferData), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearNamedBufferData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearNamedBufferSubData")) |proc| {
-        function_pointers.glClearNamedBufferSubData = @as(@TypeOf(function_pointers.glClearNamedBufferSubData), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearNamedBufferSubData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glMapNamedBuffer")) |proc| {
-        function_pointers.glMapNamedBuffer = @as(@TypeOf(function_pointers.glMapNamedBuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glMapNamedBuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glMapNamedBufferRange")) |proc| {
-        function_pointers.glMapNamedBufferRange = @as(@TypeOf(function_pointers.glMapNamedBufferRange), @ptrCast(proc));
-    } else {
-        log.err("entry point glMapNamedBufferRange not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glUnmapNamedBuffer")) |proc| {
-        function_pointers.glUnmapNamedBuffer = @as(@TypeOf(function_pointers.glUnmapNamedBuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glUnmapNamedBuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glFlushMappedNamedBufferRange")) |proc| {
-        function_pointers.glFlushMappedNamedBufferRange = @as(@TypeOf(function_pointers.glFlushMappedNamedBufferRange), @ptrCast(proc));
-    } else {
-        log.err("entry point glFlushMappedNamedBufferRange not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetNamedBufferParameteriv")) |proc| {
-        function_pointers.glGetNamedBufferParameteriv = @as(@TypeOf(function_pointers.glGetNamedBufferParameteriv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetNamedBufferParameteriv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetNamedBufferParameteri64v")) |proc| {
-        function_pointers.glGetNamedBufferParameteri64v = @as(@TypeOf(function_pointers.glGetNamedBufferParameteri64v), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetNamedBufferParameteri64v not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetNamedBufferPointerv")) |proc| {
-        function_pointers.glGetNamedBufferPointerv = @as(@TypeOf(function_pointers.glGetNamedBufferPointerv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetNamedBufferPointerv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetNamedBufferSubData")) |proc| {
-        function_pointers.glGetNamedBufferSubData = @as(@TypeOf(function_pointers.glGetNamedBufferSubData), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetNamedBufferSubData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateFramebuffers")) |proc| {
-        function_pointers.glCreateFramebuffers = @as(@TypeOf(function_pointers.glCreateFramebuffers), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateFramebuffers not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedFramebufferRenderbuffer")) |proc| {
-        function_pointers.glNamedFramebufferRenderbuffer = @as(@TypeOf(function_pointers.glNamedFramebufferRenderbuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedFramebufferRenderbuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedFramebufferParameteri")) |proc| {
-        function_pointers.glNamedFramebufferParameteri = @as(@TypeOf(function_pointers.glNamedFramebufferParameteri), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedFramebufferParameteri not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedFramebufferTexture")) |proc| {
-        function_pointers.glNamedFramebufferTexture = @as(@TypeOf(function_pointers.glNamedFramebufferTexture), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedFramebufferTexture not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedFramebufferTextureLayer")) |proc| {
-        function_pointers.glNamedFramebufferTextureLayer = @as(@TypeOf(function_pointers.glNamedFramebufferTextureLayer), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedFramebufferTextureLayer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedFramebufferDrawBuffer")) |proc| {
-        function_pointers.glNamedFramebufferDrawBuffer = @as(@TypeOf(function_pointers.glNamedFramebufferDrawBuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedFramebufferDrawBuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedFramebufferDrawBuffers")) |proc| {
-        function_pointers.glNamedFramebufferDrawBuffers = @as(@TypeOf(function_pointers.glNamedFramebufferDrawBuffers), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedFramebufferDrawBuffers not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedFramebufferReadBuffer")) |proc| {
-        function_pointers.glNamedFramebufferReadBuffer = @as(@TypeOf(function_pointers.glNamedFramebufferReadBuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedFramebufferReadBuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glInvalidateNamedFramebufferData")) |proc| {
-        function_pointers.glInvalidateNamedFramebufferData = @as(@TypeOf(function_pointers.glInvalidateNamedFramebufferData), @ptrCast(proc));
-    } else {
-        log.err("entry point glInvalidateNamedFramebufferData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glInvalidateNamedFramebufferSubData")) |proc| {
-        function_pointers.glInvalidateNamedFramebufferSubData = @as(@TypeOf(function_pointers.glInvalidateNamedFramebufferSubData), @ptrCast(proc));
-    } else {
-        log.err("entry point glInvalidateNamedFramebufferSubData not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearNamedFramebufferiv")) |proc| {
-        function_pointers.glClearNamedFramebufferiv = @as(@TypeOf(function_pointers.glClearNamedFramebufferiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearNamedFramebufferiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearNamedFramebufferuiv")) |proc| {
-        function_pointers.glClearNamedFramebufferuiv = @as(@TypeOf(function_pointers.glClearNamedFramebufferuiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearNamedFramebufferuiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearNamedFramebufferfv")) |proc| {
-        function_pointers.glClearNamedFramebufferfv = @as(@TypeOf(function_pointers.glClearNamedFramebufferfv), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearNamedFramebufferfv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glClearNamedFramebufferfi")) |proc| {
-        function_pointers.glClearNamedFramebufferfi = @as(@TypeOf(function_pointers.glClearNamedFramebufferfi), @ptrCast(proc));
-    } else {
-        log.err("entry point glClearNamedFramebufferfi not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBlitNamedFramebuffer")) |proc| {
-        function_pointers.glBlitNamedFramebuffer = @as(@TypeOf(function_pointers.glBlitNamedFramebuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glBlitNamedFramebuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCheckNamedFramebufferStatus")) |proc| {
-        function_pointers.glCheckNamedFramebufferStatus = @as(@TypeOf(function_pointers.glCheckNamedFramebufferStatus), @ptrCast(proc));
-    } else {
-        log.err("entry point glCheckNamedFramebufferStatus not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetNamedFramebufferParameteriv")) |proc| {
-        function_pointers.glGetNamedFramebufferParameteriv = @as(@TypeOf(function_pointers.glGetNamedFramebufferParameteriv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetNamedFramebufferParameteriv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetNamedFramebufferAttachmentParameteriv")) |proc| {
-        function_pointers.glGetNamedFramebufferAttachmentParameteriv = @as(@TypeOf(function_pointers.glGetNamedFramebufferAttachmentParameteriv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetNamedFramebufferAttachmentParameteriv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateRenderbuffers")) |proc| {
-        function_pointers.glCreateRenderbuffers = @as(@TypeOf(function_pointers.glCreateRenderbuffers), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateRenderbuffers not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedRenderbufferStorage")) |proc| {
-        function_pointers.glNamedRenderbufferStorage = @as(@TypeOf(function_pointers.glNamedRenderbufferStorage), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedRenderbufferStorage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glNamedRenderbufferStorageMultisample")) |proc| {
-        function_pointers.glNamedRenderbufferStorageMultisample = @as(@TypeOf(function_pointers.glNamedRenderbufferStorageMultisample), @ptrCast(proc));
-    } else {
-        log.err("entry point glNamedRenderbufferStorageMultisample not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetNamedRenderbufferParameteriv")) |proc| {
-        function_pointers.glGetNamedRenderbufferParameteriv = @as(@TypeOf(function_pointers.glGetNamedRenderbufferParameteriv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetNamedRenderbufferParameteriv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateTextures")) |proc| {
-        function_pointers.glCreateTextures = @as(@TypeOf(function_pointers.glCreateTextures), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateTextures not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureBuffer")) |proc| {
-        function_pointers.glTextureBuffer = @as(@TypeOf(function_pointers.glTextureBuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureBuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureBufferRange")) |proc| {
-        function_pointers.glTextureBufferRange = @as(@TypeOf(function_pointers.glTextureBufferRange), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureBufferRange not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureStorage1D")) |proc| {
-        function_pointers.glTextureStorage1D = @as(@TypeOf(function_pointers.glTextureStorage1D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureStorage1D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureStorage2D")) |proc| {
-        function_pointers.glTextureStorage2D = @as(@TypeOf(function_pointers.glTextureStorage2D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureStorage2D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureStorage3D")) |proc| {
-        function_pointers.glTextureStorage3D = @as(@TypeOf(function_pointers.glTextureStorage3D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureStorage3D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureStorage2DMultisample")) |proc| {
-        function_pointers.glTextureStorage2DMultisample = @as(@TypeOf(function_pointers.glTextureStorage2DMultisample), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureStorage2DMultisample not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureStorage3DMultisample")) |proc| {
-        function_pointers.glTextureStorage3DMultisample = @as(@TypeOf(function_pointers.glTextureStorage3DMultisample), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureStorage3DMultisample not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureSubImage1D")) |proc| {
-        function_pointers.glTextureSubImage1D = @as(@TypeOf(function_pointers.glTextureSubImage1D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureSubImage1D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureSubImage2D")) |proc| {
-        function_pointers.glTextureSubImage2D = @as(@TypeOf(function_pointers.glTextureSubImage2D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureSubImage2D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureSubImage3D")) |proc| {
-        function_pointers.glTextureSubImage3D = @as(@TypeOf(function_pointers.glTextureSubImage3D), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureSubImage3D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCompressedTextureSubImage1D")) |proc| {
-        function_pointers.glCompressedTextureSubImage1D = @as(@TypeOf(function_pointers.glCompressedTextureSubImage1D), @ptrCast(proc));
-    } else {
-        log.err("entry point glCompressedTextureSubImage1D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCompressedTextureSubImage2D")) |proc| {
-        function_pointers.glCompressedTextureSubImage2D = @as(@TypeOf(function_pointers.glCompressedTextureSubImage2D), @ptrCast(proc));
-    } else {
-        log.err("entry point glCompressedTextureSubImage2D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCompressedTextureSubImage3D")) |proc| {
-        function_pointers.glCompressedTextureSubImage3D = @as(@TypeOf(function_pointers.glCompressedTextureSubImage3D), @ptrCast(proc));
-    } else {
-        log.err("entry point glCompressedTextureSubImage3D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCopyTextureSubImage1D")) |proc| {
-        function_pointers.glCopyTextureSubImage1D = @as(@TypeOf(function_pointers.glCopyTextureSubImage1D), @ptrCast(proc));
-    } else {
-        log.err("entry point glCopyTextureSubImage1D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCopyTextureSubImage2D")) |proc| {
-        function_pointers.glCopyTextureSubImage2D = @as(@TypeOf(function_pointers.glCopyTextureSubImage2D), @ptrCast(proc));
-    } else {
-        log.err("entry point glCopyTextureSubImage2D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCopyTextureSubImage3D")) |proc| {
-        function_pointers.glCopyTextureSubImage3D = @as(@TypeOf(function_pointers.glCopyTextureSubImage3D), @ptrCast(proc));
-    } else {
-        log.err("entry point glCopyTextureSubImage3D not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureParameterf")) |proc| {
-        function_pointers.glTextureParameterf = @as(@TypeOf(function_pointers.glTextureParameterf), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureParameterf not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureParameterfv")) |proc| {
-        function_pointers.glTextureParameterfv = @as(@TypeOf(function_pointers.glTextureParameterfv), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureParameterfv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureParameteri")) |proc| {
-        function_pointers.glTextureParameteri = @as(@TypeOf(function_pointers.glTextureParameteri), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureParameteri not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureParameterIiv")) |proc| {
-        function_pointers.glTextureParameterIiv = @as(@TypeOf(function_pointers.glTextureParameterIiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureParameterIiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureParameterIuiv")) |proc| {
-        function_pointers.glTextureParameterIuiv = @as(@TypeOf(function_pointers.glTextureParameterIuiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureParameterIuiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureParameteriv")) |proc| {
-        function_pointers.glTextureParameteriv = @as(@TypeOf(function_pointers.glTextureParameteriv), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureParameteriv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGenerateTextureMipmap")) |proc| {
-        function_pointers.glGenerateTextureMipmap = @as(@TypeOf(function_pointers.glGenerateTextureMipmap), @ptrCast(proc));
-    } else {
-        log.err("entry point glGenerateTextureMipmap not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glBindTextureUnit")) |proc| {
-        function_pointers.glBindTextureUnit = @as(@TypeOf(function_pointers.glBindTextureUnit), @ptrCast(proc));
-    } else {
-        log.err("entry point glBindTextureUnit not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTextureImage")) |proc| {
-        function_pointers.glGetTextureImage = @as(@TypeOf(function_pointers.glGetTextureImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTextureImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetCompressedTextureImage")) |proc| {
-        function_pointers.glGetCompressedTextureImage = @as(@TypeOf(function_pointers.glGetCompressedTextureImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetCompressedTextureImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTextureLevelParameterfv")) |proc| {
-        function_pointers.glGetTextureLevelParameterfv = @as(@TypeOf(function_pointers.glGetTextureLevelParameterfv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTextureLevelParameterfv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTextureLevelParameteriv")) |proc| {
-        function_pointers.glGetTextureLevelParameteriv = @as(@TypeOf(function_pointers.glGetTextureLevelParameteriv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTextureLevelParameteriv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTextureParameterfv")) |proc| {
-        function_pointers.glGetTextureParameterfv = @as(@TypeOf(function_pointers.glGetTextureParameterfv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTextureParameterfv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTextureParameterIiv")) |proc| {
-        function_pointers.glGetTextureParameterIiv = @as(@TypeOf(function_pointers.glGetTextureParameterIiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTextureParameterIiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTextureParameterIuiv")) |proc| {
-        function_pointers.glGetTextureParameterIuiv = @as(@TypeOf(function_pointers.glGetTextureParameterIuiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTextureParameterIuiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTextureParameteriv")) |proc| {
-        function_pointers.glGetTextureParameteriv = @as(@TypeOf(function_pointers.glGetTextureParameteriv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTextureParameteriv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateVertexArrays")) |proc| {
-        function_pointers.glCreateVertexArrays = @as(@TypeOf(function_pointers.glCreateVertexArrays), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateVertexArrays not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glDisableVertexArrayAttrib")) |proc| {
-        function_pointers.glDisableVertexArrayAttrib = @as(@TypeOf(function_pointers.glDisableVertexArrayAttrib), @ptrCast(proc));
-    } else {
-        log.err("entry point glDisableVertexArrayAttrib not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glEnableVertexArrayAttrib")) |proc| {
-        function_pointers.glEnableVertexArrayAttrib = @as(@TypeOf(function_pointers.glEnableVertexArrayAttrib), @ptrCast(proc));
-    } else {
-        log.err("entry point glEnableVertexArrayAttrib not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexArrayElementBuffer")) |proc| {
-        function_pointers.glVertexArrayElementBuffer = @as(@TypeOf(function_pointers.glVertexArrayElementBuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexArrayElementBuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexArrayVertexBuffer")) |proc| {
-        function_pointers.glVertexArrayVertexBuffer = @as(@TypeOf(function_pointers.glVertexArrayVertexBuffer), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexArrayVertexBuffer not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexArrayVertexBuffers")) |proc| {
-        function_pointers.glVertexArrayVertexBuffers = @as(@TypeOf(function_pointers.glVertexArrayVertexBuffers), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexArrayVertexBuffers not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexArrayAttribBinding")) |proc| {
-        function_pointers.glVertexArrayAttribBinding = @as(@TypeOf(function_pointers.glVertexArrayAttribBinding), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexArrayAttribBinding not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexArrayAttribFormat")) |proc| {
-        function_pointers.glVertexArrayAttribFormat = @as(@TypeOf(function_pointers.glVertexArrayAttribFormat), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexArrayAttribFormat not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexArrayAttribIFormat")) |proc| {
-        function_pointers.glVertexArrayAttribIFormat = @as(@TypeOf(function_pointers.glVertexArrayAttribIFormat), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexArrayAttribIFormat not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexArrayAttribLFormat")) |proc| {
-        function_pointers.glVertexArrayAttribLFormat = @as(@TypeOf(function_pointers.glVertexArrayAttribLFormat), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexArrayAttribLFormat not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glVertexArrayBindingDivisor")) |proc| {
-        function_pointers.glVertexArrayBindingDivisor = @as(@TypeOf(function_pointers.glVertexArrayBindingDivisor), @ptrCast(proc));
-    } else {
-        log.err("entry point glVertexArrayBindingDivisor not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetVertexArrayiv")) |proc| {
-        function_pointers.glGetVertexArrayiv = @as(@TypeOf(function_pointers.glGetVertexArrayiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetVertexArrayiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetVertexArrayIndexediv")) |proc| {
-        function_pointers.glGetVertexArrayIndexediv = @as(@TypeOf(function_pointers.glGetVertexArrayIndexediv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetVertexArrayIndexediv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetVertexArrayIndexed64iv")) |proc| {
-        function_pointers.glGetVertexArrayIndexed64iv = @as(@TypeOf(function_pointers.glGetVertexArrayIndexed64iv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetVertexArrayIndexed64iv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateSamplers")) |proc| {
-        function_pointers.glCreateSamplers = @as(@TypeOf(function_pointers.glCreateSamplers), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateSamplers not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateProgramPipelines")) |proc| {
-        function_pointers.glCreateProgramPipelines = @as(@TypeOf(function_pointers.glCreateProgramPipelines), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateProgramPipelines not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glCreateQueries")) |proc| {
-        function_pointers.glCreateQueries = @as(@TypeOf(function_pointers.glCreateQueries), @ptrCast(proc));
-    } else {
-        log.err("entry point glCreateQueries not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetQueryBufferObjecti64v")) |proc| {
-        function_pointers.glGetQueryBufferObjecti64v = @as(@TypeOf(function_pointers.glGetQueryBufferObjecti64v), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetQueryBufferObjecti64v not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetQueryBufferObjectiv")) |proc| {
-        function_pointers.glGetQueryBufferObjectiv = @as(@TypeOf(function_pointers.glGetQueryBufferObjectiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetQueryBufferObjectiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetQueryBufferObjectui64v")) |proc| {
-        function_pointers.glGetQueryBufferObjectui64v = @as(@TypeOf(function_pointers.glGetQueryBufferObjectui64v), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetQueryBufferObjectui64v not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetQueryBufferObjectuiv")) |proc| {
-        function_pointers.glGetQueryBufferObjectuiv = @as(@TypeOf(function_pointers.glGetQueryBufferObjectuiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetQueryBufferObjectuiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glMemoryBarrierByRegion")) |proc| {
-        function_pointers.glMemoryBarrierByRegion = @as(@TypeOf(function_pointers.glMemoryBarrierByRegion), @ptrCast(proc));
-    } else {
-        log.err("entry point glMemoryBarrierByRegion not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetTextureSubImage")) |proc| {
-        function_pointers.glGetTextureSubImage = @as(@TypeOf(function_pointers.glGetTextureSubImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetTextureSubImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetCompressedTextureSubImage")) |proc| {
-        function_pointers.glGetCompressedTextureSubImage = @as(@TypeOf(function_pointers.glGetCompressedTextureSubImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetCompressedTextureSubImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetGraphicsResetStatus")) |proc| {
-        function_pointers.glGetGraphicsResetStatus = @as(@TypeOf(function_pointers.glGetGraphicsResetStatus), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetGraphicsResetStatus not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetnCompressedTexImage")) |proc| {
-        function_pointers.glGetnCompressedTexImage = @as(@TypeOf(function_pointers.glGetnCompressedTexImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetnCompressedTexImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetnTexImage")) |proc| {
-        function_pointers.glGetnTexImage = @as(@TypeOf(function_pointers.glGetnTexImage), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetnTexImage not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetnUniformdv")) |proc| {
-        function_pointers.glGetnUniformdv = @as(@TypeOf(function_pointers.glGetnUniformdv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetnUniformdv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetnUniformfv")) |proc| {
-        function_pointers.glGetnUniformfv = @as(@TypeOf(function_pointers.glGetnUniformfv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetnUniformfv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetnUniformiv")) |proc| {
-        function_pointers.glGetnUniformiv = @as(@TypeOf(function_pointers.glGetnUniformiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetnUniformiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glGetnUniformuiv")) |proc| {
-        function_pointers.glGetnUniformuiv = @as(@TypeOf(function_pointers.glGetnUniformuiv), @ptrCast(proc));
-    } else {
-        log.err("entry point glGetnUniformuiv not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glReadnPixels")) |proc| {
-        function_pointers.glReadnPixels = @as(@TypeOf(function_pointers.glReadnPixels), @ptrCast(proc));
-    } else {
-        log.err("entry point glReadnPixels not found!", .{});
-        success = false;
-    }
-    if (get_proc_address(load_ctx, "glTextureBarrier")) |proc| {
-        function_pointers.glTextureBarrier = @as(@TypeOf(function_pointers.glTextureBarrier), @ptrCast(proc));
-    } else {
-        log.err("entry point glTextureBarrier not found!", .{});
         success = false;
     }
     if (!success)
@@ -7955,18 +5791,6 @@ pub fn load(load_ctx: anytype, get_proc_address: fn (@TypeOf(load_ctx), [:0]cons
 }
 
 const function_signatures = struct {
-    const glTexStorage2D = fn (_target: GLenum, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glTexStorage1D = fn (_target: GLenum, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei) callconv(.C) void;
-    const glDrawTransformFeedbackStreamInstanced = fn (_mode: GLenum, _id: GLuint, _stream: GLuint, _instancecount: GLsizei) callconv(.C) void;
-    const glDrawTransformFeedbackInstanced = fn (_mode: GLenum, _id: GLuint, _instancecount: GLsizei) callconv(.C) void;
-    const glTexStorage3D = fn (_target: GLenum, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _depth: GLsizei) callconv(.C) void;
-    const glMemoryBarrier = fn (_barriers: GLbitfield) callconv(.C) void;
-    const glBindImageTexture = fn (_unit: GLuint, _texture: GLuint, _level: GLint, _layered: GLboolean, _layer: GLint, _access: GLenum, _format: GLenum) callconv(.C) void;
-    const glGetActiveAtomicCounterBufferiv = fn (_program: GLuint, _bufferIndex: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glGetInternalformativ = fn (_target: GLenum, _internalformat: GLenum, _pname: GLenum, _count: GLsizei, _params: [*c]GLint) callconv(.C) void;
-    const glDrawElementsInstancedBaseVertexBaseInstance = fn (_mode: GLenum, _count: GLsizei, _type: GLenum, _indices: ?*const anyopaque, _instancecount: GLsizei, _basevertex: GLint, _baseinstance: GLuint) callconv(.C) void;
-    const glDrawElementsInstancedBaseInstance = fn (_mode: GLenum, _count: GLsizei, _type: GLenum, _indices: ?*const anyopaque, _instancecount: GLsizei, _baseinstance: GLuint) callconv(.C) void;
-    const glDrawArraysInstancedBaseInstance = fn (_mode: GLenum, _first: GLint, _count: GLsizei, _instancecount: GLsizei, _baseinstance: GLuint) callconv(.C) void;
     const glGetDoublei_v = fn (_target: GLenum, _index: GLuint, _data: [*c]GLdouble) callconv(.C) void;
     const glGetFloati_v = fn (_target: GLenum, _index: GLuint, _data: [*c]GLfloat) callconv(.C) void;
     const glDepthRangeIndexed = fn (_index: GLuint, _n: GLdouble, _f: GLdouble) callconv(.C) void;
@@ -8086,31 +5910,6 @@ const function_signatures = struct {
     const glIsEnabled = fn (_cap: GLenum) callconv(.C) GLboolean;
     const glDepthRange = fn (_n: GLdouble, _f: GLdouble) callconv(.C) void;
     const glViewport = fn (_x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glTexStorage2DMultisample = fn (_target: GLenum, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _fixedsamplelocations: GLboolean) callconv(.C) void;
-    const glTexBufferRange = fn (_target: GLenum, _internalformat: GLenum, _buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr) callconv(.C) void;
-    const glShaderStorageBlockBinding = fn (_program: GLuint, _storageBlockIndex: GLuint, _storageBlockBinding: GLuint) callconv(.C) void;
-    const glGetProgramResourceLocationIndex = fn (_program: GLuint, _programInterface: GLenum, _name: [*c]const GLchar) callconv(.C) GLint;
-    const glGetProgramResourceLocation = fn (_program: GLuint, _programInterface: GLenum, _name: [*c]const GLchar) callconv(.C) GLint;
-    const glGetProgramResourceiv = fn (_program: GLuint, _programInterface: GLenum, _index: GLuint, _propCount: GLsizei, _props: [*c]const GLenum, _count: GLsizei, _length: [*c]GLsizei, _params: [*c]GLint) callconv(.C) void;
-    const glGetProgramResourceName = fn (_program: GLuint, _programInterface: GLenum, _index: GLuint, _bufSize: GLsizei, _length: [*c]GLsizei, _name: [*c]GLchar) callconv(.C) void;
-    const glGetProgramResourceIndex = fn (_program: GLuint, _programInterface: GLenum, _name: [*c]const GLchar) callconv(.C) GLuint;
-    const glGetProgramInterfaceiv = fn (_program: GLuint, _programInterface: GLenum, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glMultiDrawElementsIndirect = fn (_mode: GLenum, _type: GLenum, _indirect: ?*const anyopaque, _drawcount: GLsizei, _stride: GLsizei) callconv(.C) void;
-    const glMultiDrawArraysIndirect = fn (_mode: GLenum, _indirect: ?*const anyopaque, _drawcount: GLsizei, _stride: GLsizei) callconv(.C) void;
-    const glInvalidateSubFramebuffer = fn (_target: GLenum, _numAttachments: GLsizei, _attachments: [*c]const GLenum, _x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glInvalidateFramebuffer = fn (_target: GLenum, _numAttachments: GLsizei, _attachments: [*c]const GLenum) callconv(.C) void;
-    const glInvalidateBufferData = fn (_buffer: GLuint) callconv(.C) void;
-    const glInvalidateBufferSubData = fn (_buffer: GLuint, _offset: GLintptr, _length: GLsizeiptr) callconv(.C) void;
-    const glInvalidateTexImage = fn (_texture: GLuint, _level: GLint) callconv(.C) void;
-    const glInvalidateTexSubImage = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei) callconv(.C) void;
-    const glGetInternalformati64v = fn (_target: GLenum, _internalformat: GLenum, _pname: GLenum, _count: GLsizei, _params: [*c]GLint64) callconv(.C) void;
-    const glGetFramebufferParameteriv = fn (_target: GLenum, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glFramebufferParameteri = fn (_target: GLenum, _pname: GLenum, _param: GLint) callconv(.C) void;
-    const glCopyImageSubData = fn (_srcName: GLuint, _srcTarget: GLenum, _srcLevel: GLint, _srcX: GLint, _srcY: GLint, _srcZ: GLint, _dstName: GLuint, _dstTarget: GLenum, _dstLevel: GLint, _dstX: GLint, _dstY: GLint, _dstZ: GLint, _srcWidth: GLsizei, _srcHeight: GLsizei, _srcDepth: GLsizei) callconv(.C) void;
-    const glDispatchComputeIndirect = fn (_indirect: GLintptr) callconv(.C) void;
-    const glDispatchCompute = fn (_num_groups_x: GLuint, _num_groups_y: GLuint, _num_groups_z: GLuint) callconv(.C) void;
-    const glClearBufferSubData = fn (_target: GLenum, _internalformat: GLenum, _offset: GLintptr, _size: GLsizeiptr, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void;
-    const glClearBufferData = fn (_target: GLenum, _internalformat: GLenum, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void;
     const glGetProgramPipelineInfoLog = fn (_pipeline: GLuint, _bufSize: GLsizei, _length: [*c]GLsizei, _infoLog: [*c]GLchar) callconv(.C) void;
     const glProgramUniform2uiv = fn (_program: GLuint, _location: GLint, _count: GLsizei, _value: [*c]const GLuint) callconv(.C) void;
     const glProgramUniform2ui = fn (_program: GLuint, _location: GLint, _v0: GLuint, _v1: GLuint) callconv(.C) void;
@@ -8470,159 +6269,9 @@ const function_signatures = struct {
     const glGetActiveUniformBlockiv = fn (_program: GLuint, _uniformBlockIndex: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
     const glGetActiveUniformBlockName = fn (_program: GLuint, _uniformBlockIndex: GLuint, _bufSize: GLsizei, _length: [*c]GLsizei, _uniformBlockName: [*c]GLchar) callconv(.C) void;
     const glUniformBlockBinding = fn (_program: GLuint, _uniformBlockIndex: GLuint, _uniformBlockBinding: GLuint) callconv(.C) void;
-    const glTexStorage3DMultisample = fn (_target: GLenum, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _fixedsamplelocations: GLboolean) callconv(.C) void;
-    const glTextureView = fn (_texture: GLuint, _target: GLenum, _origtexture: GLuint, _internalformat: GLenum, _minlevel: GLuint, _numlevels: GLuint, _minlayer: GLuint, _numlayers: GLuint) callconv(.C) void;
-    const glBindVertexBuffer = fn (_bindingindex: GLuint, _buffer: GLuint, _offset: GLintptr, _stride: GLsizei) callconv(.C) void;
-    const glVertexAttribFormat = fn (_attribindex: GLuint, _size: GLint, _type: GLenum, _normalized: GLboolean, _relativeoffset: GLuint) callconv(.C) void;
-    const glVertexAttribIFormat = fn (_attribindex: GLuint, _size: GLint, _type: GLenum, _relativeoffset: GLuint) callconv(.C) void;
-    const glVertexAttribLFormat = fn (_attribindex: GLuint, _size: GLint, _type: GLenum, _relativeoffset: GLuint) callconv(.C) void;
-    const glVertexAttribBinding = fn (_attribindex: GLuint, _bindingindex: GLuint) callconv(.C) void;
-    const glVertexBindingDivisor = fn (_bindingindex: GLuint, _divisor: GLuint) callconv(.C) void;
-    const glDebugMessageControl = fn (_source: GLenum, _type: GLenum, _severity: GLenum, _count: GLsizei, _ids: [*c]const GLuint, _enabled: GLboolean) callconv(.C) void;
-    const glDebugMessageInsert = fn (_source: GLenum, _type: GLenum, _id: GLuint, _severity: GLenum, _length: GLsizei, _buf: [*c]const GLchar) callconv(.C) void;
-    const glDebugMessageCallback = fn (_callback: GLDEBUGPROC, _userParam: ?*const anyopaque) callconv(.C) void;
-    const glGetDebugMessageLog = fn (_count: GLuint, _bufSize: GLsizei, _sources: [*c]GLenum, _types: [*c]GLenum, _ids: [*c]GLuint, _severities: [*c]GLenum, _lengths: [*c]GLsizei, _messageLog: [*c]GLchar) callconv(.C) GLuint;
-    const glPushDebugGroup = fn (_source: GLenum, _id: GLuint, _length: GLsizei, _message: [*c]const GLchar) callconv(.C) void;
-    const glPopDebugGroup = fn () callconv(.C) void;
-    const glObjectLabel = fn (_identifier: GLenum, _name: GLuint, _length: GLsizei, _label: [*c]const GLchar) callconv(.C) void;
-    const glGetObjectLabel = fn (_identifier: GLenum, _name: GLuint, _bufSize: GLsizei, _length: [*c]GLsizei, _label: [*c]GLchar) callconv(.C) void;
-    const glObjectPtrLabel = fn (_ptr: ?*const anyopaque, _length: GLsizei, _label: [*c]const GLchar) callconv(.C) void;
-    const glGetObjectPtrLabel = fn (_ptr: ?*const anyopaque, _bufSize: GLsizei, _length: [*c]GLsizei, _label: [*c]GLchar) callconv(.C) void;
-    const glGetPointerv = fn (_pname: GLenum, _params: ?*?*anyopaque) callconv(.C) void;
-    const glBufferStorage = fn (_target: GLenum, _size: GLsizeiptr, _data: ?*const anyopaque, _flags: GLbitfield) callconv(.C) void;
-    const glClearTexImage = fn (_texture: GLuint, _level: GLint, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void;
-    const glClearTexSubImage = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void;
-    const glBindBuffersBase = fn (_target: GLenum, _first: GLuint, _count: GLsizei, _buffers: [*c]const GLuint) callconv(.C) void;
-    const glBindBuffersRange = fn (_target: GLenum, _first: GLuint, _count: GLsizei, _buffers: [*c]const GLuint, _offsets: [*c]const GLintptr, _sizes: [*c]const GLsizeiptr) callconv(.C) void;
-    const glBindTextures = fn (_first: GLuint, _count: GLsizei, _textures: [*c]const GLuint) callconv(.C) void;
-    const glBindSamplers = fn (_first: GLuint, _count: GLsizei, _samplers: [*c]const GLuint) callconv(.C) void;
-    const glBindImageTextures = fn (_first: GLuint, _count: GLsizei, _textures: [*c]const GLuint) callconv(.C) void;
-    const glBindVertexBuffers = fn (_first: GLuint, _count: GLsizei, _buffers: [*c]const GLuint, _offsets: [*c]const GLintptr, _strides: [*c]const GLsizei) callconv(.C) void;
-    const glClipControl = fn (_origin: GLenum, _depth: GLenum) callconv(.C) void;
-    const glCreateTransformFeedbacks = fn (_n: GLsizei, _ids: [*c]GLuint) callconv(.C) void;
-    const glTransformFeedbackBufferBase = fn (_xfb: GLuint, _index: GLuint, _buffer: GLuint) callconv(.C) void;
-    const glTransformFeedbackBufferRange = fn (_xfb: GLuint, _index: GLuint, _buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr) callconv(.C) void;
-    const glGetTransformFeedbackiv = fn (_xfb: GLuint, _pname: GLenum, _param: [*c]GLint) callconv(.C) void;
-    const glGetTransformFeedbacki_v = fn (_xfb: GLuint, _pname: GLenum, _index: GLuint, _param: [*c]GLint) callconv(.C) void;
-    const glGetTransformFeedbacki64_v = fn (_xfb: GLuint, _pname: GLenum, _index: GLuint, _param: [*c]GLint64) callconv(.C) void;
-    const glCreateBuffers = fn (_n: GLsizei, _buffers: [*c]GLuint) callconv(.C) void;
-    const glNamedBufferStorage = fn (_buffer: GLuint, _size: GLsizeiptr, _data: ?*const anyopaque, _flags: GLbitfield) callconv(.C) void;
-    const glNamedBufferData = fn (_buffer: GLuint, _size: GLsizeiptr, _data: ?*const anyopaque, _usage: GLenum) callconv(.C) void;
-    const glNamedBufferSubData = fn (_buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr, _data: ?*const anyopaque) callconv(.C) void;
-    const glCopyNamedBufferSubData = fn (_readBuffer: GLuint, _writeBuffer: GLuint, _readOffset: GLintptr, _writeOffset: GLintptr, _size: GLsizeiptr) callconv(.C) void;
-    const glClearNamedBufferData = fn (_buffer: GLuint, _internalformat: GLenum, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void;
-    const glClearNamedBufferSubData = fn (_buffer: GLuint, _internalformat: GLenum, _offset: GLintptr, _size: GLsizeiptr, _format: GLenum, _type: GLenum, _data: ?*const anyopaque) callconv(.C) void;
-    const glMapNamedBuffer = fn (_buffer: GLuint, _access: GLenum) callconv(.C) ?*anyopaque;
-    const glMapNamedBufferRange = fn (_buffer: GLuint, _offset: GLintptr, _length: GLsizeiptr, _access: GLbitfield) callconv(.C) ?*anyopaque;
-    const glUnmapNamedBuffer = fn (_buffer: GLuint) callconv(.C) GLboolean;
-    const glFlushMappedNamedBufferRange = fn (_buffer: GLuint, _offset: GLintptr, _length: GLsizeiptr) callconv(.C) void;
-    const glGetNamedBufferParameteriv = fn (_buffer: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glGetNamedBufferParameteri64v = fn (_buffer: GLuint, _pname: GLenum, _params: [*c]GLint64) callconv(.C) void;
-    const glGetNamedBufferPointerv = fn (_buffer: GLuint, _pname: GLenum, _params: ?*?*anyopaque) callconv(.C) void;
-    const glGetNamedBufferSubData = fn (_buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr, _data: ?*anyopaque) callconv(.C) void;
-    const glCreateFramebuffers = fn (_n: GLsizei, _framebuffers: [*c]GLuint) callconv(.C) void;
-    const glNamedFramebufferRenderbuffer = fn (_framebuffer: GLuint, _attachment: GLenum, _renderbuffertarget: GLenum, _renderbuffer: GLuint) callconv(.C) void;
-    const glNamedFramebufferParameteri = fn (_framebuffer: GLuint, _pname: GLenum, _param: GLint) callconv(.C) void;
-    const glNamedFramebufferTexture = fn (_framebuffer: GLuint, _attachment: GLenum, _texture: GLuint, _level: GLint) callconv(.C) void;
-    const glNamedFramebufferTextureLayer = fn (_framebuffer: GLuint, _attachment: GLenum, _texture: GLuint, _level: GLint, _layer: GLint) callconv(.C) void;
-    const glNamedFramebufferDrawBuffer = fn (_framebuffer: GLuint, _buf: GLenum) callconv(.C) void;
-    const glNamedFramebufferDrawBuffers = fn (_framebuffer: GLuint, _n: GLsizei, _bufs: [*c]const GLenum) callconv(.C) void;
-    const glNamedFramebufferReadBuffer = fn (_framebuffer: GLuint, _src: GLenum) callconv(.C) void;
-    const glInvalidateNamedFramebufferData = fn (_framebuffer: GLuint, _numAttachments: GLsizei, _attachments: [*c]const GLenum) callconv(.C) void;
-    const glInvalidateNamedFramebufferSubData = fn (_framebuffer: GLuint, _numAttachments: GLsizei, _attachments: [*c]const GLenum, _x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glClearNamedFramebufferiv = fn (_framebuffer: GLuint, _buffer: GLenum, _drawbuffer: GLint, _value: [*c]const GLint) callconv(.C) void;
-    const glClearNamedFramebufferuiv = fn (_framebuffer: GLuint, _buffer: GLenum, _drawbuffer: GLint, _value: [*c]const GLuint) callconv(.C) void;
-    const glClearNamedFramebufferfv = fn (_framebuffer: GLuint, _buffer: GLenum, _drawbuffer: GLint, _value: [*c]const GLfloat) callconv(.C) void;
-    const glClearNamedFramebufferfi = fn (_framebuffer: GLuint, _buffer: GLenum, _drawbuffer: GLint, _depth: GLfloat, _stencil: GLint) callconv(.C) void;
-    const glBlitNamedFramebuffer = fn (_readFramebuffer: GLuint, _drawFramebuffer: GLuint, _srcX0: GLint, _srcY0: GLint, _srcX1: GLint, _srcY1: GLint, _dstX0: GLint, _dstY0: GLint, _dstX1: GLint, _dstY1: GLint, _mask: GLbitfield, _filter: GLenum) callconv(.C) void;
-    const glCheckNamedFramebufferStatus = fn (_framebuffer: GLuint, _target: GLenum) callconv(.C) GLenum;
-    const glGetNamedFramebufferParameteriv = fn (_framebuffer: GLuint, _pname: GLenum, _param: [*c]GLint) callconv(.C) void;
-    const glGetNamedFramebufferAttachmentParameteriv = fn (_framebuffer: GLuint, _attachment: GLenum, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glCreateRenderbuffers = fn (_n: GLsizei, _renderbuffers: [*c]GLuint) callconv(.C) void;
-    const glNamedRenderbufferStorage = fn (_renderbuffer: GLuint, _internalformat: GLenum, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glNamedRenderbufferStorageMultisample = fn (_renderbuffer: GLuint, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glGetNamedRenderbufferParameteriv = fn (_renderbuffer: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glCreateTextures = fn (_target: GLenum, _n: GLsizei, _textures: [*c]GLuint) callconv(.C) void;
-    const glTextureBuffer = fn (_texture: GLuint, _internalformat: GLenum, _buffer: GLuint) callconv(.C) void;
-    const glTextureBufferRange = fn (_texture: GLuint, _internalformat: GLenum, _buffer: GLuint, _offset: GLintptr, _size: GLsizeiptr) callconv(.C) void;
-    const glTextureStorage1D = fn (_texture: GLuint, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei) callconv(.C) void;
-    const glTextureStorage2D = fn (_texture: GLuint, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glTextureStorage3D = fn (_texture: GLuint, _levels: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _depth: GLsizei) callconv(.C) void;
-    const glTextureStorage2DMultisample = fn (_texture: GLuint, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _fixedsamplelocations: GLboolean) callconv(.C) void;
-    const glTextureStorage3DMultisample = fn (_texture: GLuint, _samples: GLsizei, _internalformat: GLenum, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _fixedsamplelocations: GLboolean) callconv(.C) void;
-    const glTextureSubImage1D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _width: GLsizei, _format: GLenum, _type: GLenum, _pixels: ?*const anyopaque) callconv(.C) void;
-    const glTextureSubImage2D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _width: GLsizei, _height: GLsizei, _format: GLenum, _type: GLenum, _pixels: ?*const anyopaque) callconv(.C) void;
-    const glTextureSubImage3D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _format: GLenum, _type: GLenum, _pixels: ?*const anyopaque) callconv(.C) void;
-    const glCompressedTextureSubImage1D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _width: GLsizei, _format: GLenum, _imageSize: GLsizei, _data: ?*const anyopaque) callconv(.C) void;
-    const glCompressedTextureSubImage2D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _width: GLsizei, _height: GLsizei, _format: GLenum, _imageSize: GLsizei, _data: ?*const anyopaque) callconv(.C) void;
-    const glCompressedTextureSubImage3D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _format: GLenum, _imageSize: GLsizei, _data: ?*const anyopaque) callconv(.C) void;
-    const glCopyTextureSubImage1D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _x: GLint, _y: GLint, _width: GLsizei) callconv(.C) void;
-    const glCopyTextureSubImage2D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glCopyTextureSubImage3D = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei) callconv(.C) void;
-    const glTextureParameterf = fn (_texture: GLuint, _pname: GLenum, _param: GLfloat) callconv(.C) void;
-    const glTextureParameterfv = fn (_texture: GLuint, _pname: GLenum, _param: [*c]const GLfloat) callconv(.C) void;
-    const glTextureParameteri = fn (_texture: GLuint, _pname: GLenum, _param: GLint) callconv(.C) void;
-    const glTextureParameterIiv = fn (_texture: GLuint, _pname: GLenum, _params: [*c]const GLint) callconv(.C) void;
-    const glTextureParameterIuiv = fn (_texture: GLuint, _pname: GLenum, _params: [*c]const GLuint) callconv(.C) void;
-    const glTextureParameteriv = fn (_texture: GLuint, _pname: GLenum, _param: [*c]const GLint) callconv(.C) void;
-    const glGenerateTextureMipmap = fn (_texture: GLuint) callconv(.C) void;
-    const glBindTextureUnit = fn (_unit: GLuint, _texture: GLuint) callconv(.C) void;
-    const glGetTextureImage = fn (_texture: GLuint, _level: GLint, _format: GLenum, _type: GLenum, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void;
-    const glGetCompressedTextureImage = fn (_texture: GLuint, _level: GLint, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void;
-    const glGetTextureLevelParameterfv = fn (_texture: GLuint, _level: GLint, _pname: GLenum, _params: [*c]GLfloat) callconv(.C) void;
-    const glGetTextureLevelParameteriv = fn (_texture: GLuint, _level: GLint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glGetTextureParameterfv = fn (_texture: GLuint, _pname: GLenum, _params: [*c]GLfloat) callconv(.C) void;
-    const glGetTextureParameterIiv = fn (_texture: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glGetTextureParameterIuiv = fn (_texture: GLuint, _pname: GLenum, _params: [*c]GLuint) callconv(.C) void;
-    const glGetTextureParameteriv = fn (_texture: GLuint, _pname: GLenum, _params: [*c]GLint) callconv(.C) void;
-    const glCreateVertexArrays = fn (_n: GLsizei, _arrays: [*c]GLuint) callconv(.C) void;
-    const glDisableVertexArrayAttrib = fn (_vaobj: GLuint, _index: GLuint) callconv(.C) void;
-    const glEnableVertexArrayAttrib = fn (_vaobj: GLuint, _index: GLuint) callconv(.C) void;
-    const glVertexArrayElementBuffer = fn (_vaobj: GLuint, _buffer: GLuint) callconv(.C) void;
-    const glVertexArrayVertexBuffer = fn (_vaobj: GLuint, _bindingindex: GLuint, _buffer: GLuint, _offset: GLintptr, _stride: GLsizei) callconv(.C) void;
-    const glVertexArrayVertexBuffers = fn (_vaobj: GLuint, _first: GLuint, _count: GLsizei, _buffers: [*c]const GLuint, _offsets: [*c]const GLintptr, _strides: [*c]const GLsizei) callconv(.C) void;
-    const glVertexArrayAttribBinding = fn (_vaobj: GLuint, _attribindex: GLuint, _bindingindex: GLuint) callconv(.C) void;
-    const glVertexArrayAttribFormat = fn (_vaobj: GLuint, _attribindex: GLuint, _size: GLint, _type: GLenum, _normalized: GLboolean, _relativeoffset: GLuint) callconv(.C) void;
-    const glVertexArrayAttribIFormat = fn (_vaobj: GLuint, _attribindex: GLuint, _size: GLint, _type: GLenum, _relativeoffset: GLuint) callconv(.C) void;
-    const glVertexArrayAttribLFormat = fn (_vaobj: GLuint, _attribindex: GLuint, _size: GLint, _type: GLenum, _relativeoffset: GLuint) callconv(.C) void;
-    const glVertexArrayBindingDivisor = fn (_vaobj: GLuint, _bindingindex: GLuint, _divisor: GLuint) callconv(.C) void;
-    const glGetVertexArrayiv = fn (_vaobj: GLuint, _pname: GLenum, _param: [*c]GLint) callconv(.C) void;
-    const glGetVertexArrayIndexediv = fn (_vaobj: GLuint, _index: GLuint, _pname: GLenum, _param: [*c]GLint) callconv(.C) void;
-    const glGetVertexArrayIndexed64iv = fn (_vaobj: GLuint, _index: GLuint, _pname: GLenum, _param: [*c]GLint64) callconv(.C) void;
-    const glCreateSamplers = fn (_n: GLsizei, _samplers: [*c]GLuint) callconv(.C) void;
-    const glCreateProgramPipelines = fn (_n: GLsizei, _pipelines: [*c]GLuint) callconv(.C) void;
-    const glCreateQueries = fn (_target: GLenum, _n: GLsizei, _ids: [*c]GLuint) callconv(.C) void;
-    const glGetQueryBufferObjecti64v = fn (_id: GLuint, _buffer: GLuint, _pname: GLenum, _offset: GLintptr) callconv(.C) void;
-    const glGetQueryBufferObjectiv = fn (_id: GLuint, _buffer: GLuint, _pname: GLenum, _offset: GLintptr) callconv(.C) void;
-    const glGetQueryBufferObjectui64v = fn (_id: GLuint, _buffer: GLuint, _pname: GLenum, _offset: GLintptr) callconv(.C) void;
-    const glGetQueryBufferObjectuiv = fn (_id: GLuint, _buffer: GLuint, _pname: GLenum, _offset: GLintptr) callconv(.C) void;
-    const glMemoryBarrierByRegion = fn (_barriers: GLbitfield) callconv(.C) void;
-    const glGetTextureSubImage = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _format: GLenum, _type: GLenum, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void;
-    const glGetCompressedTextureSubImage = fn (_texture: GLuint, _level: GLint, _xoffset: GLint, _yoffset: GLint, _zoffset: GLint, _width: GLsizei, _height: GLsizei, _depth: GLsizei, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void;
-    const glGetGraphicsResetStatus = fn () callconv(.C) GLenum;
-    const glGetnCompressedTexImage = fn (_target: GLenum, _lod: GLint, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void;
-    const glGetnTexImage = fn (_target: GLenum, _level: GLint, _format: GLenum, _type: GLenum, _bufSize: GLsizei, _pixels: ?*anyopaque) callconv(.C) void;
-    const glGetnUniformdv = fn (_program: GLuint, _location: GLint, _bufSize: GLsizei, _params: [*c]GLdouble) callconv(.C) void;
-    const glGetnUniformfv = fn (_program: GLuint, _location: GLint, _bufSize: GLsizei, _params: [*c]GLfloat) callconv(.C) void;
-    const glGetnUniformiv = fn (_program: GLuint, _location: GLint, _bufSize: GLsizei, _params: [*c]GLint) callconv(.C) void;
-    const glGetnUniformuiv = fn (_program: GLuint, _location: GLint, _bufSize: GLsizei, _params: [*c]GLuint) callconv(.C) void;
-    const glReadnPixels = fn (_x: GLint, _y: GLint, _width: GLsizei, _height: GLsizei, _format: GLenum, _type: GLenum, _bufSize: GLsizei, _data: ?*anyopaque) callconv(.C) void;
-    const glTextureBarrier = fn () callconv(.C) void;
 };
 
 const function_pointers = struct {
-    var glTexStorage2D: *const function_signatures.glTexStorage2D = undefined;
-    var glTexStorage1D: *const function_signatures.glTexStorage1D = undefined;
-    var glDrawTransformFeedbackStreamInstanced: *const function_signatures.glDrawTransformFeedbackStreamInstanced = undefined;
-    var glDrawTransformFeedbackInstanced: *const function_signatures.glDrawTransformFeedbackInstanced = undefined;
-    var glTexStorage3D: *const function_signatures.glTexStorage3D = undefined;
-    var glMemoryBarrier: *const function_signatures.glMemoryBarrier = undefined;
-    var glBindImageTexture: *const function_signatures.glBindImageTexture = undefined;
-    var glGetActiveAtomicCounterBufferiv: *const function_signatures.glGetActiveAtomicCounterBufferiv = undefined;
-    var glGetInternalformativ: *const function_signatures.glGetInternalformativ = undefined;
-    var glDrawElementsInstancedBaseVertexBaseInstance: *const function_signatures.glDrawElementsInstancedBaseVertexBaseInstance = undefined;
-    var glDrawElementsInstancedBaseInstance: *const function_signatures.glDrawElementsInstancedBaseInstance = undefined;
-    var glDrawArraysInstancedBaseInstance: *const function_signatures.glDrawArraysInstancedBaseInstance = undefined;
     var glGetDoublei_v: *const function_signatures.glGetDoublei_v = undefined;
     var glGetFloati_v: *const function_signatures.glGetFloati_v = undefined;
     var glDepthRangeIndexed: *const function_signatures.glDepthRangeIndexed = undefined;
@@ -8742,31 +6391,6 @@ const function_pointers = struct {
     var glIsEnabled: *const function_signatures.glIsEnabled = undefined;
     var glDepthRange: *const function_signatures.glDepthRange = undefined;
     var glViewport: *const function_signatures.glViewport = undefined;
-    var glTexStorage2DMultisample: *const function_signatures.glTexStorage2DMultisample = undefined;
-    var glTexBufferRange: *const function_signatures.glTexBufferRange = undefined;
-    var glShaderStorageBlockBinding: *const function_signatures.glShaderStorageBlockBinding = undefined;
-    var glGetProgramResourceLocationIndex: *const function_signatures.glGetProgramResourceLocationIndex = undefined;
-    var glGetProgramResourceLocation: *const function_signatures.glGetProgramResourceLocation = undefined;
-    var glGetProgramResourceiv: *const function_signatures.glGetProgramResourceiv = undefined;
-    var glGetProgramResourceName: *const function_signatures.glGetProgramResourceName = undefined;
-    var glGetProgramResourceIndex: *const function_signatures.glGetProgramResourceIndex = undefined;
-    var glGetProgramInterfaceiv: *const function_signatures.glGetProgramInterfaceiv = undefined;
-    var glMultiDrawElementsIndirect: *const function_signatures.glMultiDrawElementsIndirect = undefined;
-    var glMultiDrawArraysIndirect: *const function_signatures.glMultiDrawArraysIndirect = undefined;
-    var glInvalidateSubFramebuffer: *const function_signatures.glInvalidateSubFramebuffer = undefined;
-    var glInvalidateFramebuffer: *const function_signatures.glInvalidateFramebuffer = undefined;
-    var glInvalidateBufferData: *const function_signatures.glInvalidateBufferData = undefined;
-    var glInvalidateBufferSubData: *const function_signatures.glInvalidateBufferSubData = undefined;
-    var glInvalidateTexImage: *const function_signatures.glInvalidateTexImage = undefined;
-    var glInvalidateTexSubImage: *const function_signatures.glInvalidateTexSubImage = undefined;
-    var glGetInternalformati64v: *const function_signatures.glGetInternalformati64v = undefined;
-    var glGetFramebufferParameteriv: *const function_signatures.glGetFramebufferParameteriv = undefined;
-    var glFramebufferParameteri: *const function_signatures.glFramebufferParameteri = undefined;
-    var glCopyImageSubData: *const function_signatures.glCopyImageSubData = undefined;
-    var glDispatchComputeIndirect: *const function_signatures.glDispatchComputeIndirect = undefined;
-    var glDispatchCompute: *const function_signatures.glDispatchCompute = undefined;
-    var glClearBufferSubData: *const function_signatures.glClearBufferSubData = undefined;
-    var glClearBufferData: *const function_signatures.glClearBufferData = undefined;
     var glGetProgramPipelineInfoLog: *const function_signatures.glGetProgramPipelineInfoLog = undefined;
     var glProgramUniform2uiv: *const function_signatures.glProgramUniform2uiv = undefined;
     var glProgramUniform2ui: *const function_signatures.glProgramUniform2ui = undefined;
@@ -9126,144 +6750,6 @@ const function_pointers = struct {
     var glGetActiveUniformBlockiv: *const function_signatures.glGetActiveUniformBlockiv = undefined;
     var glGetActiveUniformBlockName: *const function_signatures.glGetActiveUniformBlockName = undefined;
     var glUniformBlockBinding: *const function_signatures.glUniformBlockBinding = undefined;
-    var glTexStorage3DMultisample: *const function_signatures.glTexStorage3DMultisample = undefined;
-    var glTextureView: *const function_signatures.glTextureView = undefined;
-    var glBindVertexBuffer: *const function_signatures.glBindVertexBuffer = undefined;
-    var glVertexAttribFormat: *const function_signatures.glVertexAttribFormat = undefined;
-    var glVertexAttribIFormat: *const function_signatures.glVertexAttribIFormat = undefined;
-    var glVertexAttribLFormat: *const function_signatures.glVertexAttribLFormat = undefined;
-    var glVertexAttribBinding: *const function_signatures.glVertexAttribBinding = undefined;
-    var glVertexBindingDivisor: *const function_signatures.glVertexBindingDivisor = undefined;
-    var glDebugMessageControl: *const function_signatures.glDebugMessageControl = undefined;
-    var glDebugMessageInsert: *const function_signatures.glDebugMessageInsert = undefined;
-    var glDebugMessageCallback: *const function_signatures.glDebugMessageCallback = undefined;
-    var glGetDebugMessageLog: *const function_signatures.glGetDebugMessageLog = undefined;
-    var glPushDebugGroup: *const function_signatures.glPushDebugGroup = undefined;
-    var glPopDebugGroup: *const function_signatures.glPopDebugGroup = undefined;
-    var glObjectLabel: *const function_signatures.glObjectLabel = undefined;
-    var glGetObjectLabel: *const function_signatures.glGetObjectLabel = undefined;
-    var glObjectPtrLabel: *const function_signatures.glObjectPtrLabel = undefined;
-    var glGetObjectPtrLabel: *const function_signatures.glGetObjectPtrLabel = undefined;
-    var glGetPointerv: *const function_signatures.glGetPointerv = undefined;
-    var glBufferStorage: *const function_signatures.glBufferStorage = undefined;
-    var glClearTexImage: *const function_signatures.glClearTexImage = undefined;
-    var glClearTexSubImage: *const function_signatures.glClearTexSubImage = undefined;
-    var glBindBuffersBase: *const function_signatures.glBindBuffersBase = undefined;
-    var glBindBuffersRange: *const function_signatures.glBindBuffersRange = undefined;
-    var glBindTextures: *const function_signatures.glBindTextures = undefined;
-    var glBindSamplers: *const function_signatures.glBindSamplers = undefined;
-    var glBindImageTextures: *const function_signatures.glBindImageTextures = undefined;
-    var glBindVertexBuffers: *const function_signatures.glBindVertexBuffers = undefined;
-    var glClipControl: *const function_signatures.glClipControl = undefined;
-    var glCreateTransformFeedbacks: *const function_signatures.glCreateTransformFeedbacks = undefined;
-    var glTransformFeedbackBufferBase: *const function_signatures.glTransformFeedbackBufferBase = undefined;
-    var glTransformFeedbackBufferRange: *const function_signatures.glTransformFeedbackBufferRange = undefined;
-    var glGetTransformFeedbackiv: *const function_signatures.glGetTransformFeedbackiv = undefined;
-    var glGetTransformFeedbacki_v: *const function_signatures.glGetTransformFeedbacki_v = undefined;
-    var glGetTransformFeedbacki64_v: *const function_signatures.glGetTransformFeedbacki64_v = undefined;
-    var glCreateBuffers: *const function_signatures.glCreateBuffers = undefined;
-    var glNamedBufferStorage: *const function_signatures.glNamedBufferStorage = undefined;
-    var glNamedBufferData: *const function_signatures.glNamedBufferData = undefined;
-    var glNamedBufferSubData: *const function_signatures.glNamedBufferSubData = undefined;
-    var glCopyNamedBufferSubData: *const function_signatures.glCopyNamedBufferSubData = undefined;
-    var glClearNamedBufferData: *const function_signatures.glClearNamedBufferData = undefined;
-    var glClearNamedBufferSubData: *const function_signatures.glClearNamedBufferSubData = undefined;
-    var glMapNamedBuffer: *const function_signatures.glMapNamedBuffer = undefined;
-    var glMapNamedBufferRange: *const function_signatures.glMapNamedBufferRange = undefined;
-    var glUnmapNamedBuffer: *const function_signatures.glUnmapNamedBuffer = undefined;
-    var glFlushMappedNamedBufferRange: *const function_signatures.glFlushMappedNamedBufferRange = undefined;
-    var glGetNamedBufferParameteriv: *const function_signatures.glGetNamedBufferParameteriv = undefined;
-    var glGetNamedBufferParameteri64v: *const function_signatures.glGetNamedBufferParameteri64v = undefined;
-    var glGetNamedBufferPointerv: *const function_signatures.glGetNamedBufferPointerv = undefined;
-    var glGetNamedBufferSubData: *const function_signatures.glGetNamedBufferSubData = undefined;
-    var glCreateFramebuffers: *const function_signatures.glCreateFramebuffers = undefined;
-    var glNamedFramebufferRenderbuffer: *const function_signatures.glNamedFramebufferRenderbuffer = undefined;
-    var glNamedFramebufferParameteri: *const function_signatures.glNamedFramebufferParameteri = undefined;
-    var glNamedFramebufferTexture: *const function_signatures.glNamedFramebufferTexture = undefined;
-    var glNamedFramebufferTextureLayer: *const function_signatures.glNamedFramebufferTextureLayer = undefined;
-    var glNamedFramebufferDrawBuffer: *const function_signatures.glNamedFramebufferDrawBuffer = undefined;
-    var glNamedFramebufferDrawBuffers: *const function_signatures.glNamedFramebufferDrawBuffers = undefined;
-    var glNamedFramebufferReadBuffer: *const function_signatures.glNamedFramebufferReadBuffer = undefined;
-    var glInvalidateNamedFramebufferData: *const function_signatures.glInvalidateNamedFramebufferData = undefined;
-    var glInvalidateNamedFramebufferSubData: *const function_signatures.glInvalidateNamedFramebufferSubData = undefined;
-    var glClearNamedFramebufferiv: *const function_signatures.glClearNamedFramebufferiv = undefined;
-    var glClearNamedFramebufferuiv: *const function_signatures.glClearNamedFramebufferuiv = undefined;
-    var glClearNamedFramebufferfv: *const function_signatures.glClearNamedFramebufferfv = undefined;
-    var glClearNamedFramebufferfi: *const function_signatures.glClearNamedFramebufferfi = undefined;
-    var glBlitNamedFramebuffer: *const function_signatures.glBlitNamedFramebuffer = undefined;
-    var glCheckNamedFramebufferStatus: *const function_signatures.glCheckNamedFramebufferStatus = undefined;
-    var glGetNamedFramebufferParameteriv: *const function_signatures.glGetNamedFramebufferParameteriv = undefined;
-    var glGetNamedFramebufferAttachmentParameteriv: *const function_signatures.glGetNamedFramebufferAttachmentParameteriv = undefined;
-    var glCreateRenderbuffers: *const function_signatures.glCreateRenderbuffers = undefined;
-    var glNamedRenderbufferStorage: *const function_signatures.glNamedRenderbufferStorage = undefined;
-    var glNamedRenderbufferStorageMultisample: *const function_signatures.glNamedRenderbufferStorageMultisample = undefined;
-    var glGetNamedRenderbufferParameteriv: *const function_signatures.glGetNamedRenderbufferParameteriv = undefined;
-    var glCreateTextures: *const function_signatures.glCreateTextures = undefined;
-    var glTextureBuffer: *const function_signatures.glTextureBuffer = undefined;
-    var glTextureBufferRange: *const function_signatures.glTextureBufferRange = undefined;
-    var glTextureStorage1D: *const function_signatures.glTextureStorage1D = undefined;
-    var glTextureStorage2D: *const function_signatures.glTextureStorage2D = undefined;
-    var glTextureStorage3D: *const function_signatures.glTextureStorage3D = undefined;
-    var glTextureStorage2DMultisample: *const function_signatures.glTextureStorage2DMultisample = undefined;
-    var glTextureStorage3DMultisample: *const function_signatures.glTextureStorage3DMultisample = undefined;
-    var glTextureSubImage1D: *const function_signatures.glTextureSubImage1D = undefined;
-    var glTextureSubImage2D: *const function_signatures.glTextureSubImage2D = undefined;
-    var glTextureSubImage3D: *const function_signatures.glTextureSubImage3D = undefined;
-    var glCompressedTextureSubImage1D: *const function_signatures.glCompressedTextureSubImage1D = undefined;
-    var glCompressedTextureSubImage2D: *const function_signatures.glCompressedTextureSubImage2D = undefined;
-    var glCompressedTextureSubImage3D: *const function_signatures.glCompressedTextureSubImage3D = undefined;
-    var glCopyTextureSubImage1D: *const function_signatures.glCopyTextureSubImage1D = undefined;
-    var glCopyTextureSubImage2D: *const function_signatures.glCopyTextureSubImage2D = undefined;
-    var glCopyTextureSubImage3D: *const function_signatures.glCopyTextureSubImage3D = undefined;
-    var glTextureParameterf: *const function_signatures.glTextureParameterf = undefined;
-    var glTextureParameterfv: *const function_signatures.glTextureParameterfv = undefined;
-    var glTextureParameteri: *const function_signatures.glTextureParameteri = undefined;
-    var glTextureParameterIiv: *const function_signatures.glTextureParameterIiv = undefined;
-    var glTextureParameterIuiv: *const function_signatures.glTextureParameterIuiv = undefined;
-    var glTextureParameteriv: *const function_signatures.glTextureParameteriv = undefined;
-    var glGenerateTextureMipmap: *const function_signatures.glGenerateTextureMipmap = undefined;
-    var glBindTextureUnit: *const function_signatures.glBindTextureUnit = undefined;
-    var glGetTextureImage: *const function_signatures.glGetTextureImage = undefined;
-    var glGetCompressedTextureImage: *const function_signatures.glGetCompressedTextureImage = undefined;
-    var glGetTextureLevelParameterfv: *const function_signatures.glGetTextureLevelParameterfv = undefined;
-    var glGetTextureLevelParameteriv: *const function_signatures.glGetTextureLevelParameteriv = undefined;
-    var glGetTextureParameterfv: *const function_signatures.glGetTextureParameterfv = undefined;
-    var glGetTextureParameterIiv: *const function_signatures.glGetTextureParameterIiv = undefined;
-    var glGetTextureParameterIuiv: *const function_signatures.glGetTextureParameterIuiv = undefined;
-    var glGetTextureParameteriv: *const function_signatures.glGetTextureParameteriv = undefined;
-    var glCreateVertexArrays: *const function_signatures.glCreateVertexArrays = undefined;
-    var glDisableVertexArrayAttrib: *const function_signatures.glDisableVertexArrayAttrib = undefined;
-    var glEnableVertexArrayAttrib: *const function_signatures.glEnableVertexArrayAttrib = undefined;
-    var glVertexArrayElementBuffer: *const function_signatures.glVertexArrayElementBuffer = undefined;
-    var glVertexArrayVertexBuffer: *const function_signatures.glVertexArrayVertexBuffer = undefined;
-    var glVertexArrayVertexBuffers: *const function_signatures.glVertexArrayVertexBuffers = undefined;
-    var glVertexArrayAttribBinding: *const function_signatures.glVertexArrayAttribBinding = undefined;
-    var glVertexArrayAttribFormat: *const function_signatures.glVertexArrayAttribFormat = undefined;
-    var glVertexArrayAttribIFormat: *const function_signatures.glVertexArrayAttribIFormat = undefined;
-    var glVertexArrayAttribLFormat: *const function_signatures.glVertexArrayAttribLFormat = undefined;
-    var glVertexArrayBindingDivisor: *const function_signatures.glVertexArrayBindingDivisor = undefined;
-    var glGetVertexArrayiv: *const function_signatures.glGetVertexArrayiv = undefined;
-    var glGetVertexArrayIndexediv: *const function_signatures.glGetVertexArrayIndexediv = undefined;
-    var glGetVertexArrayIndexed64iv: *const function_signatures.glGetVertexArrayIndexed64iv = undefined;
-    var glCreateSamplers: *const function_signatures.glCreateSamplers = undefined;
-    var glCreateProgramPipelines: *const function_signatures.glCreateProgramPipelines = undefined;
-    var glCreateQueries: *const function_signatures.glCreateQueries = undefined;
-    var glGetQueryBufferObjecti64v: *const function_signatures.glGetQueryBufferObjecti64v = undefined;
-    var glGetQueryBufferObjectiv: *const function_signatures.glGetQueryBufferObjectiv = undefined;
-    var glGetQueryBufferObjectui64v: *const function_signatures.glGetQueryBufferObjectui64v = undefined;
-    var glGetQueryBufferObjectuiv: *const function_signatures.glGetQueryBufferObjectuiv = undefined;
-    var glMemoryBarrierByRegion: *const function_signatures.glMemoryBarrierByRegion = undefined;
-    var glGetTextureSubImage: *const function_signatures.glGetTextureSubImage = undefined;
-    var glGetCompressedTextureSubImage: *const function_signatures.glGetCompressedTextureSubImage = undefined;
-    var glGetGraphicsResetStatus: *const function_signatures.glGetGraphicsResetStatus = undefined;
-    var glGetnCompressedTexImage: *const function_signatures.glGetnCompressedTexImage = undefined;
-    var glGetnTexImage: *const function_signatures.glGetnTexImage = undefined;
-    var glGetnUniformdv: *const function_signatures.glGetnUniformdv = undefined;
-    var glGetnUniformfv: *const function_signatures.glGetnUniformfv = undefined;
-    var glGetnUniformiv: *const function_signatures.glGetnUniformiv = undefined;
-    var glGetnUniformuiv: *const function_signatures.glGetnUniformuiv = undefined;
-    var glReadnPixels: *const function_signatures.glReadnPixels = undefined;
-    var glTextureBarrier: *const function_signatures.glTextureBarrier = undefined;
 };
 
 test {
